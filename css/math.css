@@ -1,0 +1,110 @@
+/*'Old Standard TT',"Times New Roman",sans-serif,*/
+
+var{
+    font-family:"STIX Two Text","Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: normal;
+}
+.math{
+    font-family:"STIX Two Text","Times New Roman",Times, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.matheq{
+    text-align: center;
+    font-size: 1.4em;
+    vertical-align: middle;
+    
+    font-weight: normal;
+}
+.math .blank, .blank var,.matheq .blank{
+    font-weight: normal;
+} 
+.division{
+    display:inline-grid;
+    grid-template-rows: 1.2em 5px 1.2em;
+    
+    vertical-align: middle;
+}
+.division::before{
+    grid-row: 2;
+    position: relative;
+    content: "";
+    background-color: var(--t_font);
+    height: 1px;
+    width: 100%;
+    margin:auto;
+}
+.division>*:nth-child(1){
+    grid-row: 1;
+    margin:0.1em 0.4em;
+}
+.division>*:nth-child(2){
+    grid-row: 3;   
+    margin:0.1em 0.4em;
+}
+.vector{
+    position: relative;
+}
+.vector::after{
+    position: absolute;
+    display: block;
+    content:"\2192";
+    text-align: center;
+    top:-0.9em;
+    font-size: 0.5em;
+    max-width:80%;
+    right:10%;
+    left:10%
+}
+var.vector::after{
+    top:-0.9em;
+}
+.sumcover{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.2em 0;
+}
+.sum{
+    display: grid;
+    padding: 0;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr auto 1fr;
+    vertical-align: middle;
+}
+.sum::before{
+    display: block;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    content: "\3a3";
+    font-size: 2em;
+    padding: 0;
+}
+.sum>*:nth-child(1){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: auto auto;
+    padding: 0 0 0 0.4em;
+}
+
+.sum>*:nth-child(2){
+    
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
+    line-height: 0.9em;
+}
+.sum>*:nth-child(3){
+    
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8em;
+}

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>法律と刑罰|おまけ - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            法律と刑罰
+        </h1>
+        <p>
+            <a href="https://elaws.e-gov.go.jp/document?lawid=140AC0000000045" target="_blank">刑法</a>を参考に作成しました。これを作るために上から下まで読みました。
+        </p>
+        <p>
+            テストとは一切合切関連がございません。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h2>
+                これを学ぶところでどのような利点があるか
+            </h2>
+            <ul>
+                <li>
+                    「わるいことだめ、ぜったい」ってことがよくわかる
+                </li>
+                <li>
+                    いじわるしてくるひとたちに「～罪は懲役X年だよ、いやだったらやめて」といって、相手を事実でおびえさせてわるいことをやめさせることができる、かもしれない。
+                </li>
+            </ul>
+        </article>
+        <section>
+            <h2>
+                用語の確認
+            </h2>
+            <section>
+                <h3>
+                    刑罰の種類
+                </h3>
+                
+            <ul>
+                <li>
+                    死刑
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            禁錮
+                        </dt>
+                        <dd>
+                            刑事施設につかまえる。強制的に働くなどはない。
+                        </dd>
+                        <dd>
+                            有期禁錮の期間は<span id="a1">1月</span>以上<span id="a2">20年</span>以下である。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            懲役
+                        </dt>
+                        <dd>
+                            刑事施設につかまえて、所定の作業を行わせる。
+                        </dd>
+                        <dd>
+                            有期懲役の期間は禁錮と同じ。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            罰金
+                        </dt>
+                        <dd>
+                            <span id="a3">10,000</span>円以上払わせる。
+                        </dd>
+                        <dd>
+                            完納できない場合は<span id="a6">労役所</span>というところに留置される。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            科料
+                        </dt>
+                        <dd>
+                            <span id="a4">1,000</span>円～<span id="a5">10,000</span>円払わせる。
+                        </dd>
+                        <dd>
+                            完納できない場合は<span id="a7">労役所</span>というところに留置される。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            拘留
+                        </dt>
+                        <dd>
+                            1日以上<span id="a8">30日</span>未満の間、刑事施設につかまえる。
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            </section>
+            <section>
+                <h3>
+                    親告罪
+                </h3>
+                <p>
+                    被害者が「告訴」しなければ起訴(刑事裁判を起こすこと)ができない犯罪。
+                </p>
+                <p>
+                    つまり被害者が許してくれれば、裁判にはならない。
+                </p>
+            </section>
+        </section>
+        <section>
+            <!--20-->
+            <h2>
+                窃盗犯(刑法犯)
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a20">窃盗</span>罪
+                        </dt>
+                        <dd>
+                            他人のものを(危害を加えず)盗んだら、<span id="a21">10年</span>以下懲役 or <span id="a22">500,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            刑法<span id="a23">235</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a30">強盗</span>罪
+                        </dt>
+                        <dd>
+                            他人の物を暴行や脅迫を用いて盗んだら、<span id="a31">5年</span>以上の有期懲役。[刑法<span id="a32">236</span>条]
+                        </dd>
+                        <dd>
+                            その結果、人を負傷させたり、死亡させた場合は、<span id="a33">強盗致傷</span>罪となる。
+                            負傷させた場合は、<span id="a34">6年</span>以上(無期含む)の懲役。
+                            死亡させた場合は<span id="a35">死刑</span> or <span id="a36">無期懲役</span>。 [刑法<span id="a37">240</span>条]
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+
+        </section>
+        <section>
+            <!--100-->
+            <h2>
+                粗暴犯(刑法犯)
+            </h2>
+            <p>
+                乱暴な犯罪の総称
+            </p>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            放火
+                        </dt>
+                        <dd>
+                            火を(故意に)放つ罪
+                        </dd>
+                        <dd>
+                            <ul>
+                                <li>
+                                    人がいる建造物に放火 &DoubleRightArrow; <span id="a100">死刑</span>or<span id="a101">5年</span>以上(無期含む)の懲役
+                                </li>
+                                <li>
+                                    人がいない建物に放火 &DoubleRightArrow; <span id="a102">2年</span>以上の懲役
+                                </li>
+                                <li>
+                                    人がいない自己の建物に放火しても、公共の危険を生じなかったら罰しない。
+                                </li>
+                                <li>
+                                    建物以外の他人所有物への放火(公共の危険有り) &DoubleRightArrow; <span id="a103">1年</span>以上<span id="a104">10年</span>以下の懲役
+                                </li>
+                                <li>
+                                    建物以外の自己所有物への放火(公共の危険有り) &DoubleRightArrow; <span id="a105">1年</span>以下の懲役or<span id="a106">100,000</span>円以下罰金
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            未遂も罰せられる。
+                        </dd>
+                        <dd>
+                            刑法<span id="a107">108 ～ 110</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            失火
+                        </dt>
+                        <dd>
+                            火を(過失で)放ってしまう罪
+                        </dd>
+                        <dd>
+                            他人の所有物を焼損した場合<span id="a108">500,000</span>円以下の罰金。
+                        </dd>
+                        <dd>
+                            自己の所有物であっても公共の危険を生じさせたら、同様の罰。
+                        </dd>
+                        <dd>
+                            刑法<span id="a109">116</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a110">殺人</span>罪
+                        </dt>
+                        <dd>
+                            人を殺したら<span id="a111">死刑</span> or <span id="a112">5年</span>以上(無期含む)の懲役。
+                        </dd>
+                        <dd>
+                            刑法<span id="a113">199</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a120">傷害</span>罪
+                        </dt>
+                        <dd>
+                            人の体を(故意に)傷害したら、<span id="a121">15年</span>以下懲役 or <span id="a122">500,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            その結果人を死亡させた場合は、<span id="a123">傷害致死</span>罪として<span id="a124">3年</span>以上の有期懲役。(刑法<span id="a125">205</span>条)
+                        </dd>
+                        <dd>
+                            刑法<span id="a126">204</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a140">過失傷害</span>罪
+                        </dt>
+                        <dd>
+                            人の体を(過失で)傷害したら、<span id="a141">300,000</span>円以下罰金 or 科料。
+                        </dd>
+                        <dd>
+                            親告罪である。
+                        </dd>
+                        <dd>
+                            刑法<span id="a142">209</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a145">過失致死</span>罪
+                        </dt>
+                        <dd>
+                            人を過失で死亡させてしまったら、<span id="a146">500,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            刑法<span id="a147">210</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a130">暴行</span>罪
+                        </dt>
+                        <dd>
+                            人に(故意に)暴力を振ったけど、相手を傷害するに至らなかった場合。(相手がケガしなかった)
+                        </dd>
+                        <dd>
+                            <span id="a131">2年</span>以下懲役 or <span id="a132">300,000</span>円以下罰金 or 拘留 or 科料
+                        </dd>
+                        <dd>
+                            刑法<span id="a133">208</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            脅迫罪
+                        </dt>
+                        <dd>
+                            「生命、身体、自由、名誉又は財産に対し害を加える」意図を示し、人を脅迫した場合、<span id="a150">2年</span>以下懲役 or <span id="a151">300,000</span>円以下罰金
+                        </dd>
+                        <dd>
+                            刑法<span id="a152">222</span>条 
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            強要罪
+                        </dt>
+                        <dd>
+                            「生命、身体、自由、名誉又は財産に対し害を加える」意図を示し、人を脅迫して、人に義務のないことを行わせたり、人の権利の行使を妨害したりしたら、<span id="a155">3年</span>以下懲役。
+                        </dd>
+                        <dd>
+                            刑法<span id="a156">223</span>条
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <!--300-->
+            <h2>
+                風俗犯(刑法犯)
+            </h2>
+            <p>
+                省略
+            </p>
+        </section>
+        <section>
+            <!--400-->
+            <h2>
+                知能犯(刑法犯)
+            </h2>
+            <p>
+
+            </p>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a400">公文書</span>偽造罪
+                        </dt>
+                        <dd>
+                            公務所や公務員の作成すべき文書等を偽造する罪。
+                        </dd>
+                        <dd>
+                            行使目的ならば、<span id="a401">1年</span>以上<span id="a402">10年</span>以下懲役。
+                        </dd>
+                        <dd>
+                            ただ偽造しただけならば、<span id="a403">3年</span>以下懲役 or <span id="a404">200,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            刑法<span id="a405">155</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a410">私文書</span>偽造罪
+                        </dt>
+                        <dd>
+                            他人のつくる権利、義務、事実証明に関する文章を偽造する罪。
+                        </dd>
+                        <dd>
+                            講師目的ならば、<span id="a411">3年</span>以上<span id="a412">5年</span>以下懲役。
+                        </dd>
+                        <dd>
+                            ただ偽造しただけならば、<span id="a413">1年</span>以下懲役 or <span id="a414">100,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            刑法<span id="a415">159</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            御璽偽造罪, 不正使用罪
+                        </dt>
+                        <dd>
+                            御璽, 国璽, 御名を偽造したら<span id="a420">2年</span>以上有期懲役。
+                        </dd>
+                        <dd>
+                            偽造したものを使った場合も同じ。
+                        </dd>
+                        <dd>
+                            刑法<span id="a421">164</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            公印偽造罪, 不正使用罪
+                        </dt>
+                        <dd>
+                            公印(公務所, 公務員の署名や印章)を偽造したら<span id="a422">3月</span>以上<span id="a423">5年</span>以下懲役。
+                        </dd>
+                        <dd>
+                            偽造したものを使った場合も同じ。
+                        </dd>
+                        <dd>
+                            刑法<span id="a424">165</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            私印偽造罪, 不正使用罪
+                        </dt>
+                        <dd>
+                            他人の印章, 署名を偽造したら<span id="a425">3年</span>以下懲役。
+                        </dd>
+                        <dd>
+                            偽造したものを使った場合も同じ。
+                        </dd>
+                        <dd>
+                            刑法<span id="a426">167</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a430">詐欺</span>罪
+                        </dt>
+                        <dd>
+                            人を欺いて、金をとったり、他人に与えたりしたら、<span id="a431">10年</span>以下の懲役。
+                        </dd>
+                        <dd>
+                            刑法<span id="a432">246</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a440">横領</span>罪
+                        </dt>
+                        <dd>
+                            他人の物をひそかに自己のものにしたり、自身のために使ったりした場合、<span id="a441">5年</span>以下の懲役。
+                        </dd>
+                        <dd>
+                            刑法<span id="a442">252</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a450">遺失物横領</span>罪
+                        </dt>
+                        <dd>
+                            落とし物をひそかに自分のものにしたら、<span id="a451">1年</span>以下の懲役 or <span id="a452">100,000</span>円以下の罰金 or 科料
+                        </dd>
+                        <dd>
+                            <em>
+                                落とし物は必ず警察に届けましょう。
+                            </em>
+                        </dd>
+                        <dd>
+                            刑法<span id="a453">254</span>条
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <!--600-->
+            <h2>
+                その他刑法犯
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a600">公務執行妨害</span>及び<strong>職務強要</strong>
+                        </dt>
+                        <dd>
+                            公務員にある処分をさせる、あるいはさせないようにするために暴行や脅迫を加えるとつく罪名。
+                        </dd>
+                        <dd>
+                            <span id="a601">3年</span>以下の<span id="a602">懲役 or 禁錮</span>か、<span
+                                id="a603">500,000</span>円以下の罰金
+                        </dd>
+                        <dd>
+                            刑法<span id="a604">95</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a610">内乱</span>の罪 [知っているとマウントをとれる]
+                        </dt>
+                        <dd>
+                            <q>国の統治機構を破壊し、又はその領土において国権を排除して権力を行使し、その他憲法の定める統治の基本秩序を壊乱することを目的として暴動をした者</q>に与えられる罪。
+                        </dd>
+                        <dd>
+                            簡単に言えば、「国をぶっ壊すぞ」って言って、暴動を起こした人につく罪名。
+                        </dd>
+                        <dd>
+                            首謀者は<span id="a611">死刑</span>または<span id="a502">無機禁錮</span>の刑に処される。
+                        </dd>
+                        <dd>
+                            刑法<span id="a612">77</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            逃走の罪
+                        </dt>
+                        <dd>
+                            裁判の執行のためにつかまっていた、刑が既決or未決の人が逃走した場合につく罪。
+                        </dd>
+                        <dd>
+                            <span id="a620">1年</span>以下の懲役
+                        </dd>
+                        <dd>
+                            刑法<span id="a621">97</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            逃走援助の罪
+                        </dt>
+                        <dd>
+                            法律のためにつかまっていた人を逃がすのに(器具を提供するなどして)協力した人は、<span id="a622">3年</span>以下の懲役
+                        </dd>
+                        <dd>
+                            刑法<span id="a623">100</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            犯人蔵匿罪
+                        </dt>
+                        <dd>
+                            逃走したり、罰金刑に当たる罪をおかした人を、隠した人は、<span id="a624">3年</span>以下の懲役か、<span
+                                id="a625">300,000</span>円以下の罰金。
+                        </dd>
+                        <dd>
+                            犯人の親族が犯人の利益のためにこれを行うと、刑が免除されることもある(刑法<span id="a626">105</span>条)<small>&leftarrow;制作者はこの規定を初めて知った。</small> 
+                        </dd>
+                        <dd>
+                            刑法<span id="a627">103</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>証拠隠滅罪</dt>
+                        <dd>
+                            証拠を消したり、偽造したり、変造したりしたら、<span id="a628">3年</span>以下の懲役か、<span id="a629">300,000</span>円以下の罰金。
+                        </dd>
+                        <dd>
+                            犯人の親族が犯人の利益のためにこれを行うと、刑が免除されることもある(刑法<span id="a630">105</span>条)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            住居<span id="a635">侵入</span>罪
+                        </dt>
+                        <dd>
+                            正当な理由なしに人の住居や建造物に侵入したり、要求されても退去しなかった場合<span id="a636">3年</span>以下懲役 or <span id="a637">100,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            刑法<span id="a638">130</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a640">名誉棄損</span>罪
+                        </dt>
+                        <dd>
+                            事実を摘示し、人の名誉を棄損したら、<span id="a641">3年</span>以下の懲役や禁錮 or <span id="a642">500,000</span>円以下罰金。
+                        </dd>
+                        <dd>
+                            これは、摘示された事実の有無にかかわらない。
+                        </dd>
+                        <dd>
+                            死者の名誉棄損は、摘示された事実が虚偽でなければ罰しない。
+                        </dd>
+                        <dd>
+                            親告罪である。
+                            (皇族への名誉棄損の場合は総理大臣がかわりに告訴を行う)
+                        </dd>
+                        <dd>
+                            刑法<span id="a643">230</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a650">侮辱</span>罪
+                        </dt>
+                        <dd>
+                            事実を摘示しなくても、公然と人を侮辱した者は<span id="a651">1年</span>以下の懲役や禁錮 or <span id="a652">300,000</span>円以下罰金 or 拘留 or 科料。
+                        </dd>
+                        <dd>
+                            親告罪である。
+                            (皇族への侮辱の場合は総理大臣がかわりに告訴を行う)
+                        </dd>
+                        <dd>
+                            刑法<span id="a653">231</span>条
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a660">器物損壊</span>罪
+                        </dt>
+                        <dd>
+                            人のものを壊したり、傷つけたら、<span id="a661">3年</span>以下の懲役 or <span id="a662">300,000</span>円以下の罰金 or 科料
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <!--750-->
+            <h2>
+                特別法犯
+            </h2>
+            <p>
+                刑法以外の法律違反
+            </p>
+            <p>
+                例えば道交法違反とか。
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

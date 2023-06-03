@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>現代文・緑の冊子</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="./ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- アクセス解析 つかいたければコメントアウト。 読み込みが遅くなる-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ0LBXTQ87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQ0LBXTQ87');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            5 情報・通信
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。<br />
+            <!--<a href="https://elaws.e-gov.go.jp/document?lawid=140AC0000000045" target="_blank">刑法</a>を参考に作成しました。これを作るために上から下まで読みました。-->
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <!--Kawa宛て-->
+    <!--かなり体裁を修正したので確認よろ-->
+    <main>
+        <section>
+            <h2>
+                5 情報・通信
+            </h2>
+            <section>
+                <h3>
+                    1 インターネット
+                </h3>
+                <p>
+                    <span id="a1">ブロードバンド</span>・・高速、大容量のデータ通信が可能な通信回線<br/>
+                    <span id="a2">情報モラル教育</span>・・児童、生徒が情報社会に生きるうえで必要な能力や態度を養うための教育<br/>
+                    <span id="a3">電子商取引(EC)</span>・・インターネットを利用した商取引
+                </p>
+            </section>
+            <section>
+                <h3>
+                    2 ICT
+                </h3>
+                <p>
+                    <!--ここどうした?-->・・<span id="a4">ユビキタス社会</span>の考え方を現実化した技術
+                </p>
+                <p>
+                    <span id="a5">デジタル・デバイド（情報格差</span>）があり、<span id="a6">情報弱者</span>が生じ公平なサービスが受けられないと懸念される。
+                </p>
+                <p>
+                    <span id="a7">フィルタリング</span>・・有害サイトへのアクセスを防ぐためWebサイトの閲覧を制限できるサービス
+                </p>
+            </section>
+            <section>
+                <h3>
+                    3 携帯電話
+                </h3>
+                <p>
+                    <span id="a8">フィルタリング</span>・・有害サイトへのアクセスを防ぐためWebサイトの閲覧を制限できるサービス
+                </p>
+            </section>
+            <section>
+                <h3>
+                    4 ソーシャルメディア
+                </h3>
+                <p>
+                    2010末から2011にかけて中東・北アフリカの各国で起こった <span id="a9">アラブの春</span>
+                   <span id="a10">実名型と匿名型</span> が存在する。てすとではのりでこたえよう
+                </p>
+                <p>
+                    <span id="a11">企業のソーシャルメディア活用</span> ・・名前の通り
+                </p>
+            </section>
+            <section>
+                <h3>
+                    5 マスメディア
+                </h3>
+                <p>
+
+                    マスメディアは立法・行政・司法の三権に続く　<span id="a12">第四の権力　</span>と呼ばれる。
+                    
+                </p>
+                <p>
+                    マスメディアは権力側に甘んじるのではなく、改めて　<span id="a13">ジャーナリズム</span>の原点に立ち返る必要がある。
+                </p>
+                <!-- Kawa宛て: 見やすいように修正しました-->
+                <!-- dlの中にdt(説明単語), dd(説明本体)を入れて使うやつです-->
+                <!-- ul liは箇条書きです-->
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a14">放送倫理・番組向上機関(BPO)(Business Process Outsourcing)</span>
+                            </dt>
+                            <dd>
+                                政府や官公庁などを継続的に取材するジャーナリストたちにより構成される取材・報道のための自主的な組織。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a15">記者クラブ</span>
+                            </dt>
+                            <dd>
+                                政府や官公庁などを継続的に取材するジャーナリストたちによって構成される取材、報道のための自主的な組織
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    6 情報リテラシー
+                </h3>
+                <!-- Kawa宛て: 見やすいように修正しました-->
+                <!-- dlの中にdt(説明単語), dd(説明本体)を入れて使うやつです-->
+                <!-- ul liは箇条書きです-->
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a16">コンピューター・リテラシー</span>
+                            </dt>
+                            <dd>
+                                コンピューターやモバイル端末の機能を使いこなす知識と能力を持っていること
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a17">メディア・リテラシー</span>
+                            </dt>
+                            <dd>
+                                各種メディアの特性を理解し、情報を取捨選択して必要なものを引き出す能力
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a19">風評被害</span>
+                            </dt>
+                            <dd>
+                                根拠のないうわさや虚偽の報道、デマなどによる経済的精神的被害
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <p>
+                    虚偽の情報で作られた　<span id="a18">フェイクニュース</span>がネット上で拡散され社会的に大きな影響を及ぼす。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    7 サイバー犯罪
+                </h3>
+                <p>
+                    サイバー犯罪検挙件数は「<span id="a20">児童買収・自動禁止ポルノ禁止違反</span>」が24.0%、
+                    「<span id="a21">コンピュータ・電磁的記録対象犯罪</span>」
+                    「<span id="a22">不正指令電磁的記録に関する罪</span>」が4.6%、　
+                    「<span id="a23">不正アクセス禁止法違反</span>」が8.6%。<br/>
+                </p>
+                <p>
+                    2011/6 「<span id=" a24">ウイルス作成罪</span>」が成立・・「サイバー犯罪条約」を批准するため
+                    サイバー攻撃
+                </p>
+            </section>
+
+            <section>
+                <h3>
+                    8 個人情報の保護
+                </h3>
+                <p>
+                    1998: <span id="a25">個人情報保護法</span>の制定<br/>
+                    2005: 5000件以上の個人情報を保有する事業者は<span id="a26">個人情報取扱事業者</span>として振舞わなければならない<br/>
+                    2017: <span id="a27">マイナンバー制度</span>の開始<br/>
+                         
+                </p>
+                <p>
+                    <span id="a28">行動ターゲティング広告</span>・・ユーザーの行動情報に基づいて関心を推測し、それに応じた広告を自動配信するシステム
+                    こいつのせいで我々はYouTubeを閉じれない ...oh my god
+                </p>
+            </section>
+            <section>
+                <h3>
+                    9 知的財産権
+                </h3>
+                <p>
+                    <span id="a29">著作権</span>・・文化的な創作活動によって生み出されるものを保護する　
+                    
+                </p>
+                <p>
+                    産業に関わる　<span id="a30">産業財産権</span>
+                    その他にわけられる
+                </p>
+            </section>
+
+            <section>
+                <h3>
+                    +&alpha; <!--&alpha; でアルファを表示。 こうしたほうがバグりにくい-->
+                </h3>
+                <p>
+                    <span id="a31">バーチャルリアリティー</span>・・コンピュータやネットワークが作り出す仮想の空間を現実であるかのように知覚させること
+                    <span id="a32">拡張現実</span>・・コンピュータによって現実の環境に映像やデータを付加し、利用者に情報を提示する技術
+                </P>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../index.html" class="bt bt_home">トップへ</a>
+    
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+       <p>
+           サイトに関する提案があれば教えてください。
+       </p>
+       <p>
+            Copyright&copy; 2022-2023
+            <!--ここにあなたの名前-->S_kawa.
+            All Right Reserved.
+        </p>
+     </footer>
+    </body>
+</html>

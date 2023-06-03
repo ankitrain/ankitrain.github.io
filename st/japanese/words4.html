@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>現代文・緑の冊子</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="./ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- アクセス解析 つかいたければコメントアウト。 読み込みが遅くなる-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ0LBXTQ87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQ0LBXTQ87');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            4科学・技術
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。<br />
+            <!--<a href="https://elaws.e-gov.go.jp/document?lawid=140AC0000000045" target="_blank">刑法</a>を参考に作成しました。これを作るために上から下まで読みました。-->
+        </p>
+        <p>
+            沢山打ちたくないし、読みたくないだろうなと思い、かなり省略しました。内容は前回と異なり、網羅しています。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                4科学・技術
+            </h2>
+            <p>
+                <span id="a1">宇宙開発</span>の成果として、<em>1969/7</em>にアポロ11号の乗組員が初めて月面に降り立った。
+            </p>
+            <section>
+                <h3>
+                    1AI(人工知能)
+                </h3>
+                <p>
+                    <span id="a2">ICT</span>を支える技術として、AIに大きな期待が寄せられている。
+                </p>
+                <p>
+                    その背景には<span id="a3">ビッグデータ</span>と呼ばれる大量のデータからAI地震が知識を獲得する機械学習が実用化され、
+                    抽象的なデータ認識と複雑な処理を可能とする<span id="a4">ディープラーニング</span>が登場した。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    2ロボット開発
+                </h3>
+                <p>
+                    さまざまは過大を解決するための<span id="a5">次世代ロボット</span>
+                </p>
+                <p>
+                    従来のロボットには産業分野で活躍してきた<span id="a6">産業用ロボット</span>と<span id="a7">サービスロボット</span>がある。
+                </p>
+                <p>
+                    サービスロボットには<span id="a8">コミュニケーションロボット</span>にもわけられる。
+                </p>
+                <p>
+                    強い放射線など特殊環境下での作業を担う<span id="a9">特殊用途ロボット</span>
+                </p>
+                <p>
+                    <span id="a10">ロボットの軍事利用</span>・・人命を奪う無人兵器
+                </p>
+            </section>
+            <section>
+                <h3>
+                    3宇宙開発
+                </h3>
+                <p>
+                    <span id="a11">国際宇宙ステーション(ISS)</span>を柱とする宇宙開発へと変化した。
+                </p>
+                <p>
+                    <u>2010</u><span id="a12">宇宙航空研究開発機構(JAXA)</span>による<span id="a13">小惑星探査機「はやぶさ」</span>
+                    が月以外の天体の物質を持ち帰る世界初の偉業を達成。
+                </p>
+                <p>
+                    <u>2008</u>国際的な宇宙開発戦略を定めた<span id="a14">宇宙基本法</span>を成立
+                </p>
+                <p>
+                    <u>2016,2020</u><span id="a16">宇宙基本計画</span>を改訂し
+                    <span id="a15">宇宙ごみ</span>の除去対策を認めた
+                </p>
+                <p>
+                    ロケットエンジンなど宇宙関連技術の多くは、
+                    軍事目的への転用が可能な<span id="a17">デュアルユース技術</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    4ゲノム編集
+                </h3>
+                <p>
+                    生命のしくみを解明し環境保全に役立てようとする技術が
+                    <span id="a20">バイオテクノロジー（生物工学）</span>
+                </p>
+                <p>
+                    1970遺伝子組み換え技術
+                </p>
+                <p>
+                    <span id="a21">遺伝子組み換え作物</span>・・ある特定の有用な性質を持つ遺伝子だけを組みこんだ作物
+                </p>
+                <p>
+                    <span id="a22">クローン技術</span>・・同じ遺伝子情報を持つ個体や
+                    細胞の集団（クローン）を人工的に作製する技術
+                </p>
+                <p>
+                    狙った特定の遺伝子を書き換える<span id="a23">ゲノム編集</span>技術
+                </p>
+                <p>
+                    ゲノム編集技術で親が望む外見や知能を持たせた<span id="a24">デザイナーベイビー</span>の誕生が可能
+                    しかし生命の選別や<span id="a25">優性思想</span>につながりかねない
+                </p>
+            </section>
+            <section>
+                <h3>
+                    5再生可能エネルギー
+                </h3>
+                <p>
+                    <span id="a30">バイオマス</span>（生物由来の再生可能な有機性資源）をエネルギー源とするものがある
+                </p>
+                <p>
+                    <u>1997</u><span id="a31">京都議定書</span>・・CO2排出量の削減
+                </p>
+                <p>
+                    <u>2015</u><span id="a32">パリ協定</span>・・温暖化防止対策
+                </p>
+                <p>
+                    太陽光発電や風力発電などを<span id="a33">新エネルギー</span>
+                </p>
+                <p>
+                    福原第一原発事故を受け<span id="a34">再生可能エネルギー特別措置法</span>が成立
+                </p>
+                <p>
+                    <u>2018/7</u>再生可能エネルギーによる電気を一定期間、固定価格で買い取るよう電力会社に義務づける
+                    <span id="a35">固定価格買取制度（全量買取制度）</span>
+                </p>
+                <p>
+                    <span id="a36">スマートグリット</span>・・IT技術を活用し、電力もう全体の需給の効率化・最適化を図る仕組み。
+                    再生可能エネルギーの効率的な利用につながる。
+                </p>
+                <p>
+                    <span id="a37">燃料電池</span>・・環境負荷が少ない。自動車や家庭用コージュネレーションなどに利用されている。
+                </p>
+                <p>
+                    <span id="a38">コージュネレーション</span>・・発電時に発生した廃熱を冷暖房や給油などに利用する熱併給システム。
+                </p>
+                <p>
+                    <span id="a39">トリジュネレーション</span>・・CO2も利用する。温室栽培などで実用化。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    6原子力発電
+                </h3>
+                <p>
+                    <u>1999</u><span id="a40">東海村臨界事故</span>、<u>2004</u><span id="a41">美浜原発事故</span>
+                </p>
+                <p>
+                    放射性廃棄物が処分できないのは、国が<span id="a42">核燃料サイクル</span>
+                    （具体的には<span id="a48">プルサーマル計画</span>）
+                    の政策を推進してきたことによる。
+                </p>
+                <p>
+                    しかし青森県六ケ所村の<span id="a43">再処理工場</span>、
+                    <span id="a47">高速増殖炉「もんじゅ」</span>も廃炉が決定している。
+                </p>
+                <p>
+                    <span id="a44">チェルノブイリ原発事故</span>・・<u>1986</u>ウクライナのチェルノブイリ原子力発電所で起きた事故
+                </p>
+                <p>
+                    <span id="a45"> メルトダウン（炉心溶解）</span>・・冷却系統の故障によって原子炉内にある炉心
+                    （核反応が起こり、熱が発生する核燃料成分を含む原子炉の部分）の温度が異常に上昇し、核燃料が溶け落ちる現象。だって、何これのんたんにきこ
+                </p>
+                <p>
+                    <span id="a46">ストレステスト</span>・・FUが福島第一原発の事故後に導入した、原発の安全性を再確認するための検査。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    +&alpha; <!--&alpha; でアルファを表示させる。 こちらの記述のほうがバグりにくい-->
+                </h3>
+                <p>
+
+                    近代科学の根底には<span id="a50">人間中心主義</span>の思想がある。
+                </P>
+                <p>
+                    1972国連で採択された<span id="a51">人間環境宣言</span>では、人間は自然から切り離された存在ではなく、
+                    豊かな自然がなくては人間の暮らしも成り立たないことを指摘している。
+                </p>
+                <p>
+                    近年、ヨーロッパ諸国で<span id="a52">参加型テクノロジー・アセスメント</span>（新しい科学技術の社会的影響を、市民も参加して評価しよう！）が盛んになっている
+                </p>
+                <p>
+                    <span id="a53">機械論的自然観</span>・・自然は、ある種の規則に従っていて、数量化でき、機械の運動と同 じようにみることができるという考え方。
+                </P>
+            </section>
+        </section>
+    </main>
+    <footer>        
+        <div class="btbar">
+        <div>
+            <a class="bt bt_eject" href="#">上に戻る</a>
+            <a href="../index.html" class="bt bt_home">トップへ</a>
+
+            <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+            <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+        </div>
+    </div>
+       <p>
+           サイトに関する提案があれば教えてください。
+       </p>
+       <p>
+            Copyright&copy; 2022-2023
+            <!--ここにあなたの名前-->S_kawa.
+            All Right Reserved.
+        </p>
+     </footer>
+</body>
+
+</html>

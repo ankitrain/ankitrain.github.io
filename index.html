@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="Anki Trainのトップページ。いわゆる暗記サイト。皆様の睡眠時間が伸びますように。">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>Home - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="js/app2.js"></script>
+
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="./ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>
+            Anki Train
+        </h1>
+        <p>
+            <strong>
+                電車(Train)の中で強化(Train)できるということで, Anki Trainという名前をつけました。
+            </strong>
+        </p>
+        <p>
+            初めて使う人たちは, 一応, 「<a href="terms.html">初めて使う人たちへ</a>」に目を通しておいてください。
+        </p>
+        <p>
+            個人管理サイトなので, 誤植等がある可能性もあります。
+            表記されている漢字を信用せず, 必要に応じて調べてください。
+        </p>
+        <div class="btbar">
+            <div>
+                <span class="bt bt_lightdark" onclick="DandL()">
+                    テーマ
+                </span>
+                <span>
+                    &larr; 夏デザインです
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h2>
+                更新履歴
+            </h2>
+            <p>
+                詳細は, <a href="https://github.com/ankitrain/ankitrain.github.io" target="_blank">GitHub</a>上のreleasenote.mdを参照のこと
+            </p>
+            <dl>
+                <dt>
+                    v.1.0
+                </dt>
+                <dd>
+                    いろいろ作った
+                </dd>
+            </dl>
+            <!--
+            <dl>
+                <dt>
+                    v.
+                </dt>
+                <dd>
+
+                </dd>
+            </dl>
+
+            -->
+        </article>
+        <section>
+            <h2>
+                入試対策
+            </h2>
+            <section>
+                <h3>
+                    理科
+                </h3>            <details>
+                    <summary>
+                        化学
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="ee/chemistry/chemistry_basic.html">
+                                化学基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/chemistry/theoretical_colloidalsolution.html">
+                                コロイド - 理論化学
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/chemistry/inorganic_nonmetallic_14-16.html">
+                                14族から16族 - 無機化学
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/chemistry/inorganic_nonmetallic_17.html">
+                                ハロゲン - 無機化学
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        物理
+                    </summary>
+                    <p>
+                        数式表示のためにKaTeXというライブラリを使っているページがあります。それらのページは読み込みが遅くなります。
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="ee/physics/physics_basic.html">
+                                物理基礎 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/physics/physics_mechanics.katex.html">
+                                力学 - 物理
+                            </a> <small>KaTeX利用</small>
+                        </li>
+                        <li>
+                             <a href="ee/physics/physics_electrodynamics.katex.html">
+                                電磁気学 - 物理
+                             </a> <small>KaTeX利用</small>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        生物
+                    </summary>
+                    <p>
+                        専門生物の制作予定は今のところはないです. ごめんね.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="ee/biology/creature.html">
+                                細胞 - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/metabolism.html">
+                                代謝 - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/dna.html">
+                                DNA - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/protain_rna.html">
+                                RNAとタンパク質 - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/cell_division.html">
+                                細胞分裂 - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/circulation.html">
+                                循環と肝臓腎臓 - 生物基礎
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/biology/transmission.html">
+                                ホルモンと伝達 - 生物基礎
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    数学
+                </h3>
+                <details>
+                    <summary>
+                        数学
+                    </summary>
+                    <p>
+                        数式表示のためにKaTeXというライブラリを使っているページがあります。それらのページは読み込みが遅くなります。
+                    </p>
+                    <ul>
+                        <Li>
+                            <a href="ee/math/limit.html">
+                                極限 - 数III
+                            </a><small>KaTeX利用</small>
+                        </Li>
+                        <li>
+                            <a href="ee/math/differential.html">
+                                微分 - 数III
+                            </a><small>KaTeX利用</small>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    地歴公民
+                </h3>
+                <details>
+                    <summary>
+                        地理
+                    </summary>
+                    <section>
+                        <h4>
+                            系統地理
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="ee/geo/climate.html">
+                                    気候
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/nation.html">
+                                    国家と民族
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/agriculture.html">
+                                    農業
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/population.html">
+                                    人口
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/villageandcity.html">
+                                    村落と都市
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/fishery.html">
+                                    水産業
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/env.html">
+                                    環境
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>
+                            地誌
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="ee/geo/topo_BRICS.html">
+                                    BRICS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/topo_EU.html">
+                                    EU
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ee/geo/topo_SEAsia.html">
+                                    東南アジア
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </details>
+                <details>
+                    <summary>
+                        政経
+                    </summary>
+                    <ul>
+                        <li>
+                            <a href="ee/politics/constitutionalism.html">
+                                立憲主義 - 国内政経
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/politics/vote.html">
+                                選挙 - 国内政経
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ee/politics_national/nations.html">
+                                国際社会と国際法 - 国際政経
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section> 
+        <section>
+            <h2>
+                考査対策
+            </h2>
+            <p>
+                -- Closed --
+            </p>
+        </section>
+        <section>
+            <h2>
+                おまけ
+            </h2>
+            <details>
+                <summary>
+                    法学系
+                </summary>
+                <ul>
+                    <li>
+                        <a href="kn/law/law_and_penalties.html">
+                            法律と刑罰
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <p style="margin-top:3em ;">
+                非テスト期間の利用数はテスト期間の利用数の1/10にも満たないようです。
+            </p>
+        </section>
+        <article>
+            <h2>
+                謝辞とクレジット
+            </h2>
+            <p>
+                ボタンのアイコン:
+                <a href="https://fonts.google.com/icons" target="_blank">
+                    Google Fonts
+                </a><br />
+                数式フォント (KaTeX未利用):
+                <a href="https://fonts.google.com/specimen/STIX+Two+Text" target="_blank">
+                    STIX Two Text (Google Fonts)
+                </a><br/>
+                数式表示ライブラリ:
+                <a href="https://katex.org/" target="_blank">
+                    KaTeX
+                </a>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a href="#" class="bt bt_eject">
+                    <span>
+                        上に戻る
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

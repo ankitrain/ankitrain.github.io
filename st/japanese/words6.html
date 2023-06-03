@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>緑の冊子 6 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            緑の冊子 6
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>    <main>
+        <section>
+            <h2>
+                6教育
+            </h2>
+                ICTの進歩に伴て教育の情報化が起こっている
+            <section>
+                <h3>
+                    1学校現場をめぐる問題
+                </h3>
+                <ul>
+                    <li>
+                        いじめ
+                    </li>
+                    <li>不登校</li>
+                    <li>
+                        学級崩壊
+                    </li>
+                    <li>
+                        体罰
+                    </li>
+                    <li>
+                        モンスターペアレント
+                    </li>
+                    <li>
+                        スクールカウンセラー
+                    </li>
+                </ul>
+                <p>
+                    説明いりませんよね?　ね?
+                </p>
+                <p>
+                    2013/6　<span id="a1">いじめ対策推進法</span>(いじめ防止のための組織設置を学校に義務付ける)が成立
+                </p>
+            </section>
+            <section>
+                <h3>
+                    2学力低下
+                </h3>
+                <p>
+                    2000初めから本格化した　<span id="a2">ゆとり教育</span>が　
+                    <span id="a3">PISA(Programme for International Student Assessment)(生徒の学習到達度調査)</span>
+                    等を故に　<span id="a4">脱ゆとり教育</span>へ路線転換した
+                </p>
+                <p>
+                    それにより2007から<span id="a5">全国学力テスト</span>を実施している
+                </p>
+            </section>
+            <section>
+                <h3>
+                    留学
+                </h3>
+                <p>
+                    留学する人の減少要因の一つに<span id="a31">TOEFL(Test Of English as a Foreign Language)</span>のスピーキングテストによる
+                    留学に必要なスコアが取りづらく鳴っていることがある
+                </p>
+                <p>
+                    第三期教育振興基本計画の中で
+                    大学等における留学情報の収集・提供の強化<span id="a32">就職・採用活動開始時期</span>(8開始から6開始に(海外の大学は5に卒業するらしい))
+                    の変更で留学しやすい環境を促進することが示されている
+                </p>
+            </section>
+            <section>
+                <h3>
+                    4教育の情報化
+                </h3>
+                <ul>
+                    <li>オンライン教育</li>
+                    <li>デジタル教科書</li>
+                    <li>情報リテラシー</li>
+                </ul>
+                <p>
+                    説明不要
+                </p>
+            </section>
+            <section>
+                <h3>
+                    5キャリア教育
+                </h3>
+                <p>
+                    社会が急激に変化し価値観が多様化しているため自らの<span id="a51">キャリア</span>を形成する為のキャリア教育が重要
+                </p>
+                <p>
+                    キャリア教育で育成すべき基礎的・汎用的能力として
+                    <span id="a52" onclick="Set(52);Set(701);Set(702);Set(703);">人間関係形成・社会形成能力</span>, <span id="a701" onclick="Set(52);Set(701);Set(702);Set(703);">自己理解・自己管理能力</span>, <span id="a702" onclick="Set(52);Set(701);Set(702);Set(703);">課題対応能力</span>, <span id="a703" onclick="Set(52);Set(701);Set(702);Set(703);">キャリアプランニング能力</span>
+                    <!--こいつも,、を赤文字の途中にいれたい
+                        ひとつのくりっくですべて表示されるように-->
+                    <!--A. やっといたぜ-->
+                    がある　
+                </p>
+                <p>
+                    手段として職業体験や<span id="a53">インターンシップ</span>がある
+                </p>
+                <p>
+                    なんでキャリア教育が重視されてるんや？ <br/>A.職業選びがむずくなってきてるからや
+                </p>
+            </section>
+            <section>
+                <h3>
+                    6生涯学習
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a61">生涯学習の始まり</span>
+                            </dt>
+                            <dd>
+                                1965ユネスコの成人教育に関する会議で生涯教育の考え糧が提案されたことに端を発する
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <p>
+                    昔は<span id="a62">リカレント教育</span>(社会人が高等教育機関でまた勉強すること)をうけるのは高齢者や専業主婦が中心だった
+                </p>
+                <p>
+                    生涯学習を単なる知的消費で終わらせないためには、学ぶことが社会参加や生活の向上につながるような社会的な仕組み作りが必要
+                </p>
+            </section>
+            <section>
+                <h3>
+                    7英語教育
+                </h3>
+                <p>
+                   　小学校から英語やってんの、コミュニケーション能力鍛えるためらしい。でも<span id="a71">日本語の乱れ</span>がある状態でやってええんか？<em>TOEIC</em>で点とることちゃうで
+                </p>
+            </section>
+            <section>
+                <h3>
+                    8競技スポーツと健康スポーツ
+                </h3>
+                <p>
+                    スポーツは<span id="a81">クオリティ・オブ・ライフ</span>を高めるらしい
+                </p>
+                <p>
+                    こうした健康スポーツの考え方は気軽にスポーツに親しむことに価値を置く<span id="a82">生涯スポーツ</span>の視点と共通する
+                </p>
+                <p>
+                    2011に制定された<span id="a83">スポーツ基本法</span>ではすべての人
+                    がスポーツをたのしむ<span id="a84">スポーツ権</span>や<span id="a85">障害者スポーツ</span>の推進が盛り込まれている
+                </p>
+            </section>
+            <section>
+                <h3>
+                    +&alpha; <!--&alpha; でアルファを表示。 こうしたほうがバグりにくい-->教育の自由と強制
+                </h3>
+                <p>
+                    2006憲法に準ずる<span id="a91">教育基本法</span>が、その後<span id="a92">教育関連３法</span>が改定された
+                    (これに伴い<span id="a93">教員免許更新制度</span>の導入がある)
+                </p>
+                <p>
+                    教育基本法は、教育の目的を人格の完成とし、行政権力による教育への不当な配慮の禁止など<span id="a94">平和・民主教育の原則</span>を定めた
+                </p>
+                <p>
+                    しかし社会の変化に対応できてないと指摘され、いじめや不登校等の諸問題に対処するために改正することになった
+                </p>
+                <p>
+                    主な改正点は<span id="a95">公共の精神</span>を尊ぶことや<span id="a96" & id="a97">伝統や文化の尊重</span>、<span id="a96" & "a97">愛国心条項</span>
+                    <!--こいつも-->が追加されたこと
+                    </p>
+                    <p>
+                        各校で大胆な教育改革が試みられている
+                    </p>
+                    <p>
+                        その例として小中学校の<span id="a98">学校選択制</span>や<span id="a99">校長公募制</span>がある
+                    </p>
+                    <p>
+                        但しこれによる<span id="a100">学校間格差</span>の問題がある
+                    </p>
+                </section>
+            </section>
+        </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 KawaS.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
