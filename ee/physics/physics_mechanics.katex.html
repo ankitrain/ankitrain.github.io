@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>力学|物理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <h1>
+                力学 物理
+            </h1>
+            <p>
+                それぞれの用語の意味は調べてください。
+            </p>
+            <p>
+                それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+            </p>
+            <p>
+                このページの利用に起因するいかなる損害も免責とします。
+            </p>
+            <div class="btbar">
+                <div>
+                    <a href="../../index.html" class="bt bt_home">トップへ</a>
+                    <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                    <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                    <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+                </div>
+                <div>
+                    このページは数式表示のため, KaTeXを利用しています。読み込み遅延がある可能性があります。
+                </div>
+                <div>
+                    表示バグが生じたら<a href="./physics_mechanics.html">旧版</a>を参照。
+                </div>
+            </div>
+        </header>
+        <main>
+            <p>
+                「厳密な表現」は心がけていない。
+                用語の解説も特に行っていないので自身で調べていただければ幸い。<br />
+                必要な時を除いて正の向きの定義は省略する。
+                (制作者がミスっているものを除けば、省略されているものは、どちらに正の向きを定義しても式が成立する)
+            </p>
+            <p>
+                &quot;変数リスト&quot;はタップして展開できる。
+                式に使う文字は&quot;変数リスト&quot;に準ずる。
+                単位は基本[]で囲ってある。
+            </p>
+            <section>
+                <h2>
+                    水平投射/斜方投射
+                </h2>
+                <section>
+                    <h3>
+                        水平投射
+                    </h3>
+                    <img src="img/physics_1.svg" alt="水平投射の図">
+                    <p>
+                        原点Oから初速度 \( v_0 \)[m/s] で投射した時を考える。
+                    </p>
+                    <h4 style="clear: both;">
+                        水平方向(<var>x</var>軸)
+                    </h4>
+                    <ul>
+                        <li>
+                            \(v_x = \) <span id="a1">\(v_0\)</span>
+                        </li>
+                        <li>
+                            \(x =\)
+                            <span id="a2">
+                                \( v_0 t\)
+                            </span>
+                        </li>
+                    </ul>
+                    <details>
+                        <summary>変数リスト</summary>
+                        <ul>
+                            <li>
+                                \(v_x\) [m/s]: 速度の\(x\)成分
+                            </li>
+                            <li>
+                                \(v_y\) [m/s]: 速度の\(y\)成分
+                            </li>
+
+                            <li>
+                                \(x\) [m]: 位置の\(x\)成分
+                            </li>
+                            <li>
+                                \(y\) [m]: 位置の\(y\)成分
+                            </li>
+                            <li>
+                                \(v_0\) [m/s]: 初速度
+                            </li>
+                            <li>
+                                \(g\) [m/s<sup>2</sup>]: 重力加速度
+                            </li>
+                            <li>
+                                \(t\) [s]: 時刻 (物体が運動を始めたとき\(t=0\) )
+                            </li>
+                        </ul>
+                    </details>
+                    <p>
+                        水平成分の式は、速度<span id="a7">\(v_0\)</span>[m/s]の<span id=a5>等速直線</span>運動と同じ
+                    </p>
+                    <h4>
+                        鉛直方向(<var>y</var>軸)
+                    </h4>
+                    <p>
+                        鉛直下向きを正とする
+                    </p>
+                    <ul>
+                        <li>
+                            \(v_y = \) <span id="a3">\(gt\)</span>
+                        </li>
+                        <li>
+                            \(y =\) <span id="a4">
+                                \(\frac{1}{2}gt^2 \)
+                            </span>
+                        </li>
+                    </ul>
+                    <details>
+                        <summary>変数リスト</summary>
+                        <ul>
+                            <li>
+                                \(v_x\) [m/s]: 速度の\(x\)成分
+                            </li>
+                            <li>
+                                \(v_y\) [m/s]: 速度の\(y\)成分
+                            </li>
+
+                            <li>
+                                \(x\) [m]: 位置の\(x\)成分
+                            </li>
+                            <li>
+                                \(y\) [m]: 位置の\(y\)成分
+                            </li>
+                            <li>
+                                \(v_0\) [m/s]: 初速度
+                            </li>
+                            <li>
+                                \(g\) [m/s<sup>2</sup>]: 重力加速度
+                            </li>
+                            <li>
+                                \(t\) [s]: 時刻 (物体が運動を始めたとき\(t=0\) )
+                            </li>
+                        </ul>
+                    </details>
+                    <p>
+                        鉛直成分の式は<span id="a6">自由落下</span>運動と同じ
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        斜方投射
+                    </h3>
+                    <img src="img/physics_2.svg" alt="斜方投射の図">
+                    <p>
+                        <var>x</var>軸から<var>&theta;</var>回転させた向きに、<var>v</var><sub>0</sub>[m/s]で射法投射したときを考える。
+                    </p>
+                    <p>
+                        \(t=0\)のとき、\(v_x=\)<span id="a17">\(v_0 \cos \theta\)</span>, \(v_y =\) <span id="a18">\(v_0
+                            \sin \theta\)</span>
+                    </p>
+                    <h4 style="clear: both;">
+                        水平方向
+                    </h4>
+                    <ul>
+                        <li>
+                            \(v_x =\) <span id="a10">\(v_0 \cos \theta \)</span>
+
+                        </li>
+                        <li>
+                            \(x=\) <span id="a11">
+                                \(v_0t \cos \theta \)
+                            </span>
+                        </li>
+                    </ul>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+
+                        <ul>
+                            <li>
+                                \(v_x\) [m/s]: 速度の\(x\)成分
+                            </li>
+                            <li>
+                                \(v_t\) [m/s]: 速度の\(y\)成分
+                            </li>
+                            <li>
+                                \(x\) [m]: 位置の\(x\)成分
+                            </li>
+                            <li>
+                                \(y\) [m]: 位置の\(y\)成分
+                            </li>
+                            <li>
+                                \(v_0\) [m/s]: 初速度
+                            </li>
+                            <li>
+                                \(g\) [m/s<sup>2</sup>]: 重力加速度
+                            </li>
+                            <li>
+                                \(\theta\): \(x\)軸と\(\vec{v_0}\)のなす角
+                            </li>
+                            <li>
+                                \(t\) [s]: 時刻 (物体が運動を始めたとき\(t=0\))
+                            </li>
+                        </ul>
+                    </details>
+                    <p>
+                        水平成分の式は、速度<span id="a12" class="math"><var>v</var><sub>0</sub> cos
+                            <var>&theta;</var></span>の等速直線運動の式に同じ。
+                    </p>
+                    <h4>
+                        鉛直方向
+                    </h4>
+                    <p>
+                        鉛直上向きを正とする
+                    </p>
+
+                    <ul>
+                        <li>
+                            \(v_y =\) <span id="a13">\(-gt + v_0 \sin \theta\)</span>
+
+                        </li>
+                        <li>
+                            \(y=\) <span id="a14">
+                                \(-\frac{1}{2}gt^2 + v_0 t \sin \theta \)
+                            </span>
+                        </li>
+                    </ul>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \(v_x\) [m/s]: 速度の\(x\)成分
+                            </li>
+                            <li>
+                                \(v_t\) [m/s]: 速度の\(y\)成分
+                            </li>
+                            <li>
+                                \(x\) [m]: 位置の\(x\)成分
+                            </li>
+                            <li>
+                                \(y\) [m]: 位置の\(y\)成分
+                            </li>
+                            <li>
+                                \(v_0\) [m/s]: 初速度
+                            </li>
+                            <li>
+                                \(g\) [m/s<sup>2</sup>]: 重力加速度
+                            </li>
+                            <li>
+                                \(\theta\): \(x\)軸と\(\vec{v_0}\)のなす角
+                            </li>
+                            <li>
+                                \(t\) [s]: 時刻 (物体が運動を始めたとき\(t=0\))
+                            </li>
+                        </ul>
+                    </details>
+                    <p>
+                        鉛直成分の式は初速度<span id="a15">\(v_0 \sin \theta \)</span>,
+                        加速度<span id="a16">\(-g\)</span>の等加速度直線運動の式と同じ
+                    </p>
+                    <!--18利用済み-->
+                </section>
+            </section>
+            <section>
+                <h2>
+                    力のモーメント
+                </h2>
+                <img src="img/physics_4.svg" alt="力のモーメント">
+                <p>
+                    回転中心から \(r\) [m]はなれた点Pに \( F \) [N]の力を加えたときの,
+                    点Oの周りの力のモーメントを考える。
+                </p>
+                <h4>
+                    力のモーメントとは
+                </h4>
+                <p>
+                    力のモーメントは、図でいう点Oを中心にして、剛体を回転させるためのはたらきのことを指す。<br />
+                    単位は[<span id="a21">N&middot;m</span>]である。
+
+                </p>
+                <h4 style="clear: both;">
+                    大きさの式
+                </h4>
+                <div>
+                    <span id="a20">
+                        \( N = rF \sin \theta \)
+                    </span>
+                </div>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+
+                    <ul>
+                        <li>
+                            \( N \) [<span id="a22">N&middot;m</span>]: 力のモーメントの大きさ
+                        </li>
+                        <li>
+                            \( r \) [m]: 回転中心Oから作用点Pまでの距離
+                        </li>
+                    </ul>
+                </details>
+                <h4>
+                    符号
+                </h4>
+                <p>
+                    回転の向きが時計回りの時、符号は<span id="a23">負</span>。
+                </p>
+                <p>
+                    反時計回りの時、符号は<span id="a24">正</span>。
+                </p>
+                <h4>
+                    おまけの話
+                </h4>
+                <details>
+                    <summary>
+                        おまけの話
+                    </summary>
+                    <p>
+                        力のモーメントは回転中心Oからの点Pの位置ベクトル \( \vec{r} \) と, 点Pに加えた力のベクトル \( \vec{F} \) のベクトル積(外積)で示される。
+                    </p>
+                    <p>
+                        $$
+                        \vec{N} = \vec{r} \times \vec{F}
+                        $$
+                    </p>
+                </details>
+            </section>
+            <section>
+                <h2>
+                    運動量と力積
+                </h2>
+                <section>
+                    <h3>
+                        運動量
+                    </h3>
+                    <p>
+                        &quot;運動の激しさ&quot;のイメージ
+                    </p>
+                    <div>
+                        <span id="a30">
+                            \( \vec{p} = m \vec{v} \)
+                        </span>
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+
+                        <ul>
+                            <li>
+                                \( \vec{p} \) [<span id="a31">kg&middot;m/s</span>]: 運動量
+                            </li>
+                            <li>
+                                \( \vec{v} \) [m/s]: 物体の速度
+                            </li>
+                            <li>
+                                \( m \) [kg]: 物体の質量
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        力積
+                    </h3>
+                    <div>
+                        <span id="a32">\( \vec{I} = \vec{F}\Delta t \) </span>
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+
+                        <ul>
+                            <li>
+                                \( \vec{I} \) [<span id="a33">N&middot;s</span>]: 力積
+                            </li>
+                            <li>
+                                \( \Delta t \) [s]: 力が働いた時間
+                            </li>
+                            <li>
+                                \( \vec{F} \) [N]: 力
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        運動量と力積
+                    </h3>
+                    <p>
+                        物体の<span id="a34">運動量</span>の変化は<span id="a35">力積</span>がもたらす。
+                    </p>
+                    <div>
+                        <span id="a36">
+                            \( m\vec{v^\prime} - m\vec{v} = \vec{F}\Delta t \)
+                        </span>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        運動量保存の法則
+                    </h3>
+                    <p>
+                        物体の系の外から力が<span id="a37">はたらかない</span>ときに、衝突の前後で系の運動量の総和は保存される。
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        反発係数
+                    </h3>
+                    <p>
+                        物体Aが \( v_1 \) [m/s]で、物体Bが \( v_2 \) [m/s]で運動し、ぶつかったとき、
+                    </p>
+                    <div>
+                        <span id="a38">
+                            $$
+                            e = -\frac{{v_1}^\prime - {v_2}^\prime}{v_1 - v_2}
+                            $$
+                        </span>
+                    </div>
+                    <p>
+                        \( e=1 \) の時は力学的エネルギーが保存される。
+                    </p>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( e \) : 反発係数
+                            </li>
+                            <li>
+                                \( v_1 \) [m/s]: 衝突前の物体Aの速度
+                            </li>
+
+                            <li>
+                                \( v_2 \) [m/s]: 衝突前の物体Aの速度
+                            </li>
+
+                            <li>
+                                \( {v_1}^\prime \) [m/s]: 衝突後の物体Aの速度
+                            </li>
+
+                            <li>
+                                \( {v_2}^\prime \) [m/s]: 衝突後の物体Aの速度
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h2>
+                    等速円運動
+                </h2>
+                <p>
+                    原点Oを中心とした半径 \( R \) [m]の円周上を, 物体が運動している様子を考える。
+                </p>
+                <section>
+                    <h3>
+                        用語の確認
+                    </h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    \( \omega \) [<span id="a100">rad/s</span>]: 角速度
+                                </dt>
+                                <dd>
+                                    単位時間あたりに、円周上を何rad分回転したか。
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        角速度の式
+                    </h3>
+                    <section>
+                        <h4>
+                            \( \theta \) , \( t \) , \( \omega \) の関係式
+                        </h4>
+                        <div>
+                            <span id="a102">
+                                \( \theta = \omega t \)
+                            </span>
+                        </div>
+
+                        <details>
+                            <summary>
+                                変数リスト
+                            </summary>
+                            <ul>
+                                <li>
+                                    \( \theta \) [rad]: 回転角(位置向きの情報)
+                                </li>
+                                <li>
+                                    \( \omega \) [rad/s]: 角速度
+                                </li>
+                                <li>
+                                    \( t \) [s]: 時刻
+                                </li>
+                            </ul>
+                        </details>
+                    </section>
+
+                    <section>
+                        <h3>
+                            位置, 速度, 加速度, 向心力
+                        </h3>
+                        <p>
+                            原点Oを中心とした半径 \( R \) [m]の円周上を, 物体が運動している様子を考える。
+                        </p>
+                        <section>
+                            <h4>
+                                位置 \( \vec{r} \)
+                            </h4>
+                            <p>
+                                ここでは, \( \theta = 0, t=0 \) で運動を開始してから, \( t \) [s]後の物体の位置を考える。
+                            </p>
+                            <div>
+                                \( x \) 成分
+                            </div>
+                            <div id="a110">
+                                $$r_x = R \cos \omega t $$
+                            </div>
+                            <div>
+                                \( y \) 成分
+                            </div>
+                            <div id="a111">
+                                $$r_y = R \sin \omega t $$
+                            </div>
+                            <div>
+                                大きさ ( \(r \) )
+                            </div>
+                            <div id="a112">
+                                $$r=|\vec{r}| = R$$
+                            </div>
+                        </section>
+                        <section>
+                            <h4>
+                                速度 \( \vec{v} \)
+                            </h4>
+                            <p>
+                                定義より, \( \vec{v} \) は, \( \vec{r} \) を \( t \) で微分して得られる。
+                            </p>
+                            <div>
+                                \( x \) 成分
+                            </div>
+                            <div id="a115">
+                                $$v_x = -R\omega \sin \omega t$$
+                            </div>
+                            <div>
+                                \( y \) 成分
+                            </div>
+                            <div id="a116">
+                                $$v_y = R\omega \cos \omega t$$
+                            </div>
+                            <div>
+                                大きさ ( \( v \) )
+                            </div>
+                            <div id="a117">
+                                $$v=|\vec{v}| = r\omega $$
+                            </div>
+                            <details>
+                                <summary>
+                                    導出
+                                </summary>
+                                <p>
+                                    $$v_x=\frac{\mathrm{d}r_x}{\mathrm{d}t}=-R\omega \sin \omega t$$
+                                </p>
+                                <p>
+                                    $$v_y=\frac{\mathrm{d}r_y}{\mathrm{d}t}=R\omega \cos \omega t$$
+                                </p>
+                            </details>
+                        </section>
+                        <section>
+                            <h4>
+                                加速度 \( \vec{a} \)
+                            </h4>
+                            <p>
+                                定義より, \( \vec{a} \) は, \( \vec{v} \) を \( t \) で微分して得られる。
+                            </p>
+                            <div>
+                                \( x \) 成分
+                            </div>
+                            <div id="a120">
+                                $$a_x=-R\omega^2 \cos \omega t$$
+                            </div>
+                            <div>
+                                \( y \) 成分
+                            </div>
+                            <div id="a121">
+                                $$a_y = -R\omega^2 \sin \omega t$$
+                            </div>
+                            <p>
+                                \( \vec{r} \) と, \( \vec{a} \) の関係として, <span id="a123">\( \vec{a}= -\omega^2 \vec{r} \)
+                                </span>が成り立つ。
+                            </p>
+                            <div>
+                                大きさ ( \( a \) )
+                            </div>
+                            <div id="a122">
+                                $$a=|\vec{a}| = r\omega^2 = \frac{|\vec{v}|^2}{|\vec{r}|}= \frac{v^2}{r}$$
+                            </div> 
+                            <details>
+                                <summary>
+                                    導出
+                                </summary>
+                                <p>
+                                    $$a_x=\frac{\mathrm{d}v_x}{\mathrm{d}t}=-R\omega^2 \cos \omega t$$
+                                </p>
+                                <p>
+                                    $$a_y=\frac{\mathrm{d}v_y}{\mathrm{d}t}=-R\omega^2 \sin \omega t$$
+                                </p>
+                            </details>
+                        </section>
+                        <section>
+                            <h4>
+                                向心力
+                            </h4>
+                            <p>
+                                円運動において中心に向かう力。
+                                加速度を生ませている力。
+                            </p>
+                            <div>
+                                向心力 \( \vec{F} \) の式
+                            </div>
+                            <div id="a125">
+                                $$\vec{F} = -m\omega^2 \vec{r}$$
+                            </div>
+                        </section>
+                    </section>
+                    <section>
+                        <h3>
+                            ベクトルの向き
+                        </h3>
+                        <section>
+                            <h4>
+                                位置( \( \vec{r} \) )と速度( \( \vec{v} \) ), 速度( \( \vec{v} \) )と加速度( \( \vec{a} \) )
+                            </h4>
+                            <div>
+                                \( \vec{r}\cdot\vec{v} = \vec{v}\cdot\vec{a} = \) <span id="a130">\( 0 \)</span>
+                            </div>
+                        </section>
+                        <section>
+                            <h4>
+                                位置( \( \vec{r} \) )と加速度( \( \vec{a} \) )
+                            </h4>
+                            <div>
+                                \( \vec{r}\cdot\vec{a} = \) <span id="a131">\( -|\vec{r}||\vec{a}| \)</span>
+                            </div>
+                        </section>
+                    </section>
+                    <section>
+                        <h3>
+                            周期
+                        </h3>
+                        <p>
+                            何秒間で物体が1周するか。
+                        </p>
+                        <div>
+                            <span id="a140">
+                                $$
+                                T=\frac{2\pi}{\omega} = \frac{2\pi r}{v}
+                                $$
+                            </span>
+                        </div>
+
+                        <details>
+                            <summary>
+                                変数リスト
+                            </summary>
+                            <ul>
+                                <li>
+                                    \( r \) [m]: 円運動の半径
+                                </li>
+                                <li>
+                                    \( \omega \) [rad/s]: 角速度
+                                </li>
+                                <li>
+                                    \( v \) [m/s]: 速さ (速度の大きさ \( |\vec{v}| \) のこと)
+                                </li>
+                                <li>
+                                    \( T \) [s]: 周期 (物体が1週まわるまでの時間)
+                                </li>
+                            </ul>
+                        </details>
+                    </section>
+                </section>
+            </section>
+            <section>
+                <h2>
+                    単振動
+                </h2>
+                <p>
+                    等速円運動をしている物体のその運動面上にある直線への正射影の運動(By アクセス)
+                </p>
+                <section>
+                    <h3>
+                        変位と速度と加速度
+                    </h3>
+                    <p>
+                        振動中心を \( x=0 \) とする。
+                    </p>
+                    <div>
+                        \( x= \) <span id="a200">\( A\sin \omega t \)</span>
+                    </div>
+                    <div>
+                        \( v= \) <span id="a201">\( A\omega \cos \omega t \)</span>
+                    </div>
+                    <div>
+                        \( a= \) <span id="a202">\( -A\omega^2 \sin \omega t = -\omega^2 x \) </span>
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( x \) [m]: (振動中心からの)変位
+                            </li>
+                            <li>
+                                \( v \) [m/s]: 速度
+                            </li>
+                            <li>
+                                \( a \) [m/s<sup>2</sup>]: 加速度
+                            </li>
+                            <li>
+                                \( t \) [s]: 時刻
+                            </li>
+                            <li>
+                                \( A \) [m]: 振幅
+                            </li>
+                            <li>
+                                \( \omega \) [rad/s]: 角振動数
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        周期と振動数
+                    </h3>
+                    <div>
+                        周期 \( T \)
+                    </div>
+                    <div id="a205">
+                        $$T=\frac{2\pi}{\omega}$$
+                    </div>
+                    <div>
+                        振動数 \( f \)
+                    </div>
+                    <div id="a206">
+                        $$f=\frac{1}{T} = \frac{\omega}{2\pi}$$
+                    </div>
+
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( A \) [m]: 振幅
+                            </li>
+                            <li>
+                                \( \omega \) [rad/s]: 角振動数
+                            </li>
+                            <li>
+                                \( T \) [s]: 周期
+                            </li>
+                            <li>
+                                \( f \) [Hz]: 振動数
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        復元力
+                    </h3>
+                    <p>
+                        単振動中の物体にはたらく力。常に振動中心を向いている。
+                    </p>
+                    <div id="a210">
+                        $$F=-m\omega^2 x$$
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( F \) [N]: 復元力の大きさ
+                            </li>
+                            <li>
+                                \( m \) [kg]: 物体の質量
+                            </li>
+                            <li>
+                                \( x \) [m]: 変位
+                            </li>
+                            <li>
+                                \( \omega \) [rad/s]: 角振動数
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h2>
+                    万有引力
+                </h2>
+                <section>
+                    <h3>
+                        ケプラーの法則
+                    </h3>
+                    <dl>
+                        <dt>
+                            第1法則
+                        </dt>
+                        <dd>
+                            惑星は<span id="a300">太陽</span>を1つの焦点とする<span id="a301">楕円</span>軌道を描く
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            第2法則
+                        </dt>
+                        <dd>
+                            惑星と太陽を結ぶ線分が一定時間に描く面積は, それぞれの惑星で一定である。
+                        </dd>
+                        <dd>
+                            &rArr; 太陽から遠いときは惑星が"遅い"
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            第3法則
+                        </dt>
+                        <dd>
+                            惑星の公転周期 \( T \) の<span id="a305">2<span class="b">乗</span></span>は, 楕円軌道の半長軸 \( a \) の<span
+                                id="a306">3<span class="b">乗</span></span>に比例する。
+                        </dd>
+                        <dd>
+                            <span id="a307">
+                                \( T^2=ka^3 \)
+                            </span>
+                            (\( k \): 定数)
+                        </dd>
+                    </dl>
+                </section>
+                <section>
+                    <h3>
+                        万有引力
+                    </h3>
+                    <p>
+                        質量 \( M \) , \( m \) の2つの物体は互いに引き合う。<br />
+                        &rArr; 万有引力
+                    </p>
+                    <div id="a310">
+                        $$
+                        F=G\frac{Mm}{r^2}
+                        $$
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( F \) [N]: 万有引力の大きさ
+                            </li>
+                            <li>
+                                \( m \) , \( M \) [kg]: それぞれの物体の質量
+                            </li>
+                            <li>
+                                \( r \) [m]: 2つの物体の距離
+                            </li>
+                            <li>
+                                \( G \) [N&middot;m<sup>2</sup>/kg<sup>2</sup>]: <span id="a311">万有引力定数</span><br />
+                                物体によらない定数で, \( G= \) <span id="a312">\( 6.67\times 10^{-11} \) </span>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>
+                            導出
+                        </summary>
+                        <ol>
+                            <li>
+                                <p>
+                                    \( m \) [kg] の惑星が, 太陽を中心に, 半径 \( r \) [m], 角速度 \( \omega \) で等速円運動をしているとき, 向心力の大きさ
+                                    \( F \) は
+                                </p>
+                                <div id="a315">
+                                    \( F=mr\omega^2 \)
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    角速度 \( \omega \) は 周期 \( T \) を用いて, <span id="a316">\( \omega=\frac{2\pi}{T} \)
+                                    </span>としてされるので, 向心力の大きさは,
+                                </p>
+                                <div id="a317">
+                                    $$
+                                    F=mr\left(\frac{2\pi}{T}\right)^2
+                                    $$
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    ケプラーの第3法則 <span id="a318">\( T^2=kr^3 \)</span> (\( k \) は定数)より,
+                                </p>
+                                <div id="a319">
+                                    $$
+                                    F=\frac{4\pi^2mr}{kr^3}=\frac{4\pi^2m}{kr^2}
+                                    $$
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    したがって, 向心力の大きさ \( F \) は, 惑星の質量 \( m \) に比例する。
+                                </p>
+                                <div>
+                                    \( F \propto m \)
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    作用反作用の法則により, 太陽は同じ大きさの力を惑星から受けるので, <br />
+                                    向心力の大きさ \( F \) は, 太陽の質量 \( M\) に比例する
+                                </p>
+                                <div>
+                                    \( F \propto M \)
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    4.と5.より, \( \displaystyle \frac{4\pi^2}{k}=GM \) (\( G \)は比例定数)として, 3.の式を変形すると,
+                                </p>
+                                <div>
+                                    $$
+                                    F=G\frac{Mm}{r^2}
+                                    $$
+                                </div>
+                            </li>
+                        </ol>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        万有引力の位置エネルギー
+                    </h3>
+                    <p>
+                        無限遠を0(基準)として, 
+                    </p>
+                    <p>
+                        <span id="a330">
+                            $$U=-G\frac{Mm}{r}$$
+                        </span>
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="btbar">
+                <div>
+                    <a class="bt bt_eject" href="#">上に戻る</a>
+                    <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                    <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                    <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+                </div>
+            </div>
+            <p>
+                サイトに関する提案があれば教えてください。
+            </p>
+            <p>
+                数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+            </p>
+            <p>
+                Copyright&copy; 2022-2023 C-Sharper.
+                All Rights Reserved.
+            </p>
+        </footer>
+    </body>
+
+</html>

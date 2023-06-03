@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>細胞|生物基礎 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            細胞
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                全生物の共通性
+            </h2>
+            <ol>
+                <li>
+                    <p>
+                        全生物は、[a]<span id="a1">細胞</span>でできている。
+
+                    </p>
+                    <p>
+                        [a]が1つで構成される<span id="a2">単細胞生物</span>と、[a]が複数個で構成される<span id="a3">多細胞生物</span>がある。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        全生物は、生きる上でエネルギーが必要であり、エネルギーの受け渡しは、アデノシン三リン酸(<span id="a4">ATP</span>)という分子を介して行われる。
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        親から子へと受け継ぐ遺伝情報によって、体を構成する。
+                        遺伝情報は、<span id="a5">DNA</span>と呼ばれる分子が持っている。
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                細胞の中
+            </h2>
+
+            <p>
+                細胞の主な構造はどの生物でも同じである。<br />
+                「核」という構造を持つ細胞を[a]<span id="a7">真核細胞</span>といい、それらで構成される生物を、<span
+                    id="a8">真核生物</span>という。<br />
+                「核」という構造を持たない細胞を[b]<span id="a9">原核細胞</span>といい、それらで構成される生物を、<span id="a10">原核生物</span>という。<br/>
+                [a]は葉緑体やミトコンドリアなどの<span id="a6">細胞小器官</span>が入っている。
+                [b]には入っていないけど、<span id="a62">リボソーム</span>はある。
+            </p>
+        </section>
+        <section>
+            <h2>
+                核
+            </h2>
+            <p>
+                「核」は<span id="a51">真核細胞</span>のみが持っている。
+            </p>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            [A]<span id="a11">核膜</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    核の最外層にある。
+                                    核内外の物質の出入りを調整する役割を担う。
+                                </li>
+                                <li>
+                                    <strong>二重膜</strong>である。
+                                </li>
+                                <li>
+                                    この中は透明な核液というもので満たされている。
+                                </li>
+                                <li>
+                                    <span id="a12">核膜孔</span>と呼ばれる小さな穴をたくさん持つ。
+                                </li>
+                            </ul>
+
+
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+
+                    <dl>
+                        <dt>
+                            [B]<span id="a13">染色体</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <strong>DNA</strong>と<span id="a63">ヒストン</span>と呼ばれる<strong>タンパク質</strong>からなるもの。
+                                </li>
+                                <li>
+                                    本体であるDNAは、細胞や個体の形、性質を決めて、その特徴を子などに継承する役割を担う。
+                                </li>
+                                <li>
+                                    分裂期は、凝縮して太いひも状になるが、そうでない時は核の全体に分散している。
+                                </li>
+                                <li>
+                                    <span id="a64">酢酸カーミン</span>や
+                                    <span id="a65">酢酸オルセイン</span>で染色できる。
+                                </li>
+                            </ul>
+
+                        </dd>
+
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [C]<span id="a14">核小体</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    核内に1~数個ある
+                                </li>
+                                <li>
+                                    <strong>RNA</strong>と<strong>タンパク質</strong>からなるもの。
+                                </li>
+                                <li>
+                                    <span id="a15">リボソーム</span>を生成し、生成されたそれらは核内を出て、細胞質をただよったり、<span
+                                        id="a16">粗面小胞体</span>に付着したりする。
+                                </li>
+                            </ul>
+                            、
+
+                        </dd>
+                    </dl>
+
+                </li>
+
+            </ul>
+        </section>
+        <section>
+            <h2>核外</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            [D]<span id="a17">細胞膜</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    細胞を包む一重膜。
+                                </li>
+                                <li>
+                                    細胞内外を仕切り、物質の出入りを取り仕切る。また細胞外の刺激や情報を細胞内に伝える仕事を担う
+                                </li>
+                                <li>
+                                    タンパク質と[1]<span id="a18">リン脂質</span>と呼ばれる脂質からなる。<br />
+                                </li>
+
+                            </ul>
+                            <p>
+                                [1]には親水性部分と疎水性部分があり、これらが疎水性部分同士を内側に向けて2重に並んでいる。&rightarrow;
+                                細胞外の水環境と独立している&amp;イオンも通さない&rightarrow;
+                                物質のやり取りができない&rightarrow;
+                                <span id="a19">イオンチャネル</span>と呼ばれる、特定のイオンだけを通過させるタンパク質が必要。
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [E]<span id="a20">ミトコンドリア</span>
+                        </dt>
+                        <dd>
+                            <img src="img/mitochondrion.jpg" alt="ミトコンドリアの画像">
+                            <ul>
+                                <li>
+                                    細胞の<span id="a21">呼吸</span>の仕事をする。
+                                </li>
+                                <li>
+                                    <span id="a22">外膜</span>と<span
+                                        id="a23">内膜</span>から構成される<strong>二重膜</strong>構造
+                                </li>
+                                <li>
+                                    二重膜の内側の膜は、ひだ状に入り組んだ構造をしている。
+                                    このしわしわな構造のうち、突起部分を<span id="a24">クリステ</span>という。<br />
+                                    ひだ状に入り組んだほうが、呼吸効率が上がる。(表面積)
+                                </li>
+                                <li>
+                                    内側の膜で囲まれた部分を<span id="a25">マトリックス</span>という。
+                                </li>
+                                <li>
+                                    独自の<strong>DNA</strong>を持つ。
+                                </li>
+                                <li>
+                                    酸素を利用して有機物を分解して、生命活動に必要なエネルギーを生成し、<span id="a26">ATP</span>に保存する。
+                                </li>
+                            </ul>
+
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [F]<span id="a27">葉緑体</span>
+                        </dt>
+                        <dd>
+                            <img src="img/chloroplast.jpg" alt="葉緑体の画像">
+                            <ul>
+                                <li>
+                                    細胞の<span id="a28">光合成</span>の仕事をする。
+                                    植物のみにある
+                                </li>
+                                <li>
+                                    内部には、[1]<span id="a29">チラコイド</span>という、平べったく、扁平状な袋状の構造であるものがあり、それが持つ、光合成色素で吸収した光エネルギーを用いて有機物を生成する。
+                                </li>
+                                <li>
+                                    [1]が密になった部分を[2]<span id="a30">グラナ</span>という。
+                                </li>
+                                <li>
+                                    [1]や[2]ではない、残った空間を<span id="a31">ストロマ</span>という。 (正しくは、[1]や[2]を支える透明な基質という表現が正しい)
+                                </li>
+                                <li>
+                                    独自のDNAを持つ。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [G]<span id="a32">中心体</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    鞭毛や繊毛の形成にかかわる。
+                                </li>
+                                <li>
+                                    <strong>筒状</strong>の<span id="a33">中心粒</span>(中心小体)が2つ<strong>直角</strong>に配置される。
+                                </li>
+                                <li>
+                                    核膜近くに配置
+                                </li>
+                                <li>
+                                    基本動物細胞のみが持つ(植物も持つことも)
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [H]<span id="a34">小胞体</span>
+                        </dt>
+                        <dd>
+                            <img src="img/er.jpg" alt="小胞体の画像">
+                            <ul>
+                                <li>
+                                    一重膜の扁平な袋状の構造。
+                                    細胞質を網目状に連絡している。
+                                </li>
+                                <li>
+                                    核膜の外膜とつながっていることもある。
+                                </li>
+                                <li>
+                                    「<span id="a35">粗面</span>小胞体」は、<span
+                                        id="a36">リボソーム</span>が付着していて、<span
+                                        id="a37">タンパク質</span>の輸送の役割をする。
+                                </li>
+                                <li>
+                                    「<span id="a38">滑面</span>小胞体」は、<span
+                                        id="a39">脂質</span>の合成や、<span
+                                        id="a40">カルシウムイオン</span>の濃度調整、輸送の役割をする。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [I]<span id="a41">リボソーム</span>
+                        </dt>
+                        <dd>
+
+                            <ul>
+                                <li>
+                                    <span id="a42">タンパク質</span>を合成する
+                                </li>
+                                <li>
+                                    <span id="a43">核小体</span>で形成されて、核を出て、一部は細胞質をただよい、一部は<span
+                                        id="a44">粗面小胞体</span>に付着する。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [J]<span id="a45">リソソーム</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    細胞内で様々な物質の分解を行う小器官。
+                                    いわゆる細胞内消化の場。
+                                </li>
+                                <li>
+                                    一重膜で球状
+                                </li>
+                                <li>
+                                    内部に「<span id="a46">加水分解</span>酵素」を含む。
+                                </li>
+                            </ul>
+                    </dl>
+                    </dd>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [K]<span id="a47">ゴルジ体</span>
+                        </dt>
+                        <dd>
+                            <img src="img/golgi.jpg" alt="ゴルジ体の画像">
+                            <ul>
+                                <li>
+                                    細胞内で作られた物質を濃縮、化学的修飾(いろいろ原子をくっつけること)し、膜で包んで細胞外へ<span id="a48">分泌</span>する。
+                                </li>
+                                <li>
+                                    一重膜の扁平な構造が層状になった構造。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [L]<span id="a49">細胞質基質</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    液状成分からなり、細胞小器官の間を埋める。
+                                </li>
+                                <li>
+                                    様々な酵素を含む。
+                                </li>
+                                <li>
+                                    多くの<strong>代謝</strong>の場
+                                </li>
+                                <li>
+                                    細い繊維状で、細胞の形を保つ働きを持つ、<span id="a50">細胞骨格</span>が、この中に存在する。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [M]<span id="a52">液胞</span>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    植物や酵母などの真核細胞内にある。
+                                </li>
+                                <li>
+                                    成熟した植物細胞では細胞体積の90%以上を占める。
+                                </li>
+                                <li>
+                                    糖類、有機酸、無機塩類、アントシアニン色素などを貯蔵する。
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [N]<span id="a53">細胞壁</span>
+                        </dt>
+                    </dl>
+                    <dd>
+                        <ul>
+                            <li>
+                                細胞膜の外側にあり、細胞の保護と形の維持をする。
+                            </li>
+                            <li>
+                                植物細胞と、原核細胞が持つ。
+                                ただし、植物細胞のそれと、原核細胞のそれの構成物質は異なる。
+                            </li>
+                            <li>
+                                有機物の、<span id="a54">セルロース</span>や<span
+                                    id="a55">ペクチン</span>が主成分である。
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span id="a56">原形質連絡</span>
+                                    </dt>
+                                    <dd>
+                                        植物細胞の細胞壁にある小さな通路。
+                                        隣人さんとの間をつなぎ、物質や、情報のやり取りをする。
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </dd>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                ミトコンドリアと葉緑体の由来
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            [A]<span id="a57">細胞内共生説</span>
+                        </dt>
+                        <dd>
+                            <p>
+                                原核細胞の中に、いろいろな原核細胞が取り込まれてそれらがミトコンドリアや葉緑体になったという説。
+                            </p>
+                            <p>
+                                その説によると、<br />
+                                まず、原核生物が真核細胞に進化する過程で、好気性の細菌が共生して<span id="a58">ミトコンドリア</span>になり、<br />
+                                シアノバクテリアが共生して、<span id="a59">葉緑体</span>になった。
+                            </p>
+                            <p>
+                                根拠は、ミトコンドリアと葉緑体がそれぞれ細胞核と異なる独自の<span id="a60">DNA</span>を持つことと、それぞれが分裂によって増殖すること、<span id="a61">2</span>重の膜におおわれていることなどがあげられる。
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

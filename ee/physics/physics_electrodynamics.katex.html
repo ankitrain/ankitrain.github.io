@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>電磁気学|物理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            電磁気学 物理
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+            <div>
+                このページは数式表示のため, KaTeXを利用しています。読み込み遅延がある可能性があります。
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                電荷と電場
+            </h2>
+            <section>
+                <h3>
+                    電気素量
+                </h3>
+                <p>
+                    <span id="a1">電子</span>, <span id="a2">陽子</span>1つ当たりの電気量の大きさのこと。
+                </p>
+                <div>
+                    \( |e|= \) <span id="a3">\( 1.60 \times 10^{-19} \) </span> [C]
+                </div>
+            </section>
+            <section>
+                <h3>
+                    静電気力
+                </h3>
+                <p>
+                    点電荷 \( q_1 \) [C]と \( q_2 \) [C]がたがいに及ぼしあう力の大きさ。
+                    <span id="a5">クーロン<span class="b">の法則</span></span>より導かれる。
+                </p>
+                <div id="a6">
+                    $$
+                        F=k_0\frac{q_1 q_2}{r^2}
+                    $$
+                </div>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( q_1 \) , \( q_2 \) [C]: 点電荷の電気量の大きさ 
+                        </li>
+                        <li>
+                            \( F \) [N]: 静電気力の大きさ
+                        </li>
+                        <li>
+                            \( r \) [m]: 点電荷同士の距離
+                        </li>
+                        <li>
+                            \( k_0 \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数。<br/>
+                            真空中では, \( k_0 =9.0 \times 10^9 \) 
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    電場
+                </h3>
+                <p>
+                    荷電粒子が作る空間の"ゆがみ"。<br/>
+                    別の接触した荷電粒子が力を受ける。<br/>
+                    空間をゆがめている"本人"は力を受けない。
+                </p>
+                <section>
+                    <h4>
+                        電場と静電気力
+                    </h4>
+                    <p>
+                        \( q \) [C]の電荷が, 電場 \( \vec{E} \) [N/C] に接触したときに受ける静電気力 \( \vec{F} \) は,
+                    </p>
+                    <div id="a10">
+                        \(
+                            \vec{F}=q\vec{E}
+                        \)
+                    </div>
+                </section>
+                <section>
+                    <h4>
+                        点電荷が作る電場
+                    </h4>
+                    <p>
+                        点電荷 \( Q \) [C]から \( r \) [m] 離れたところでの点電荷 \( Q \) [C]が作る電場の大きさ \( E \) は, 
+                    </p>
+                    <div id="a15">
+                        $$
+                            E=k_0\frac{Q}{r^2}
+                        $$
+                        
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( E \) [N/C]: 電場の大きさ
+                            </li>
+                            <li>
+                                \( Q \) [C]: 電場 \( E \) を作る点電荷の電気量の大きさ
+                            </li>
+                            <li>
+                                \( k_0 \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数
+                            </li>
+                            <li>
+                                \( r \) [m]: 点電荷 \( Q \) [C]からの距離
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h4>
+                        電場の重ね合わせ
+                    </h4>
+                    <p>
+                        複数の点電荷が作る電場は, 個々が作る電場の<span id="a19">ベクトル和</span>に等しい。
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    電位
+                </h3>
+                <p>
+                    荷電粒子の"高さ"
+                </p>
+                <p>
+                    単位電荷あたりが受ける電場による力がする仕事
+                </p>
+                <section>
+                    <h4>
+                        電位差と仕事
+                    </h4>
+                    <p>
+                        点電荷 \( q \) [C]が, 電場による力による仕事 \( W \) を受けたときの, 仕事を受ける前と受けた後の電位差を \( V \) [V]として, 
+                    </p>
+                    <div id="a25">
+                        $$
+                            V=\frac{W}{q}
+                        $$
+                        
+                    </div>
+                </section>
+                <section>
+                    <h4>
+                        静電気力による仕事と電位差
+                    </h4>
+                    <p>
+                        点電荷 \( q \) [C]が, 電場 \( E \) [C]内で, 電場と同じ方向に \( d \) [m]動いたとすると, 静電気力は<span id="a30">\( qE \) </span>[N]である。<br/>
+                        静電気力が電荷 \( q \) [C] にした仕事は<span id="a31">\( W=qEd \) </span>である。
+                    </p>
+                    <p>
+                        よって距離が \( d \) [m]である点AB間の電位差 \( V \) [V]は, 
+                    </p>
+                    <div id="a32">
+                        $$
+                            V=Ed
+                        $$
+                        
+                    </div>
+                </section>
+                <section>
+                    <h4>
+                        点電荷のポテンシャルエネルギー
+                    </h4>
+                    <p>
+                        \( Q \) [C]の電荷から \( r \)[m] 離れている \( q \) [C]が持つポテンシャルエネルギー \( U \) は, 無限遠を基準として,
+                    </p>
+                    <div id="a35">
+                        $$
+                            U=k_0\frac{qQ}{r}
+                        $$
+                        
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( U \) [J]: \( q \)[C] が持つポテンシャルエネルギー
+                            </li>
+                            <li>
+                                \( r \) [m]: 距離
+                            </li>
+                            <li>
+                                \( k_0 \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数
+                            </li>
+                        </ul>
+                    </details>
+                    <p>
+                        よって, \( q \) [C]が持つ電位 \( V \) [V]は, 無限遠を基準として,
+                    </p>
+                    <div id="a36">
+                        $$
+                            V=k_0\frac{Q}{r}
+                        $$
+                        
+                    </div>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( U \) [J]: \( q \)[C] が持つポテンシャルエネルギー
+                            </li>
+                            <li>
+                                \( r \) [m]: 距離
+                            </li>
+                            <li>
+                                \( k_0 \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+                <article>
+                    <h4>
+                        注意事項
+                    </h4>
+                    <ol>
+                        <li>
+                            <p>
+                                「電位」と「電位差」で同じ変数 ( \( V \) )を使う傾向にあるため, 区別をしっかりする。
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                電位 \( V \) は, 基準を明確に。<br/>
+                                (どこを \( V=0 \) とするの?)
+                            </p>
+                        </li>
+                    </ol>
+                </article>
+            </section>
+        </section>
+        <section>
+            <h2>
+                コンデンサー
+            </h2>
+            <p>
+                コンデンサーは, 電荷を蓄えることができる。
+            </p>
+            <p>
+                電荷を蓄えることを<span id="a50">充電</span>といい, その逆を<span id="a51">放電</span>という
+            </p>
+            <section>
+                <h3>
+                    コンデンサーの式
+                </h3>
+                <p>
+                    局番に蓄えられる電気量の大きさ \( Q \) は, <span id="a52">極板間電圧 \( V \)  </span>に比例する
+                </p>
+                <p>
+                    <span id="a53">
+                        $$Q=CV$$
+                    </span>
+                </p>
+                <p>
+                    \( C \) を<span id="a53">電気容量</span>といい, 単位は[<span id="a54">F</span>]
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

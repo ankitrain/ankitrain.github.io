@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>数IA - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+        <!-- The loading of KaTeX is deferred to speed up page rendering -->
+        <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+    
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+            
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+</head>
+<body>
+    <header>
+        <h1>
+            数IA
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                整式と二重根号
+            </h2>
+            <section>
+                <h3>
+                    整式
+                </h3>
+                <p>
+                    \( (a+b)^2 = \) <span id="a1">\( a^2 + 2ab + b^2 \) </span>  
+                </p>
+                <p>
+                    \( (a-b)^2 = \) <span id="a2">\( a^2 - 2ab + b^2 \) </span>  
+                </p>
+                <p>
+                    \( (a+b)(a-b) = \) <span id="a3">\( a^2 - b^2 \) </span>
+                </p>
+                <p>
+                    \( a^3+b^3 = \) <span id="a6">\( (a+b)(a^2-ab+b^2) \) </span>
+                </p>
+                <p>
+                    \( a^3-b^3 = \) <span id="a7">\( (a-b)(a^2+ab+b^2) \) </span>
+                </p>
+                <p>
+                    \( (a+b)^3 = \) <span id="a8">\( a^3+3a^2b+3ab^2+b^3 \) </span>
+                </p>
+                <p>
+                    \( (a-b)^3 = \) <span id="a9">\( a^3 -3a^2b + 3ab^2 -b^3 \) </span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    二重根号
+                </h3>
+                <p>
+                    \( a\gt 0, b \gt 0 \) について, <br/>
+                    \( \sqrt{a+b+2\sqrt{ab}} = \) <span id="a20">\( \sqrt{a} + \sqrt{b} \) </span>
+                </p>
+                <p>
+                    \( a \gt b \gt 0 \) について, <br/>
+                    
+                    \( \sqrt{a+b-2\sqrt{ab}} = \) <span id="a21">\( \sqrt{a} - \sqrt{b} \) </span>
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                図形と計量
+            </h2>
+            <section>
+                <h3>
+                    三角比
+                </h3>
+                <p>
+                    単位円上の点 \( (x,y) \) において, 
+                </p>
+                <p>
+                    \( \sin \theta= \) <span id="a100">\( x \) </span>
+                </p>
+                <p>
+                    \( \cos \theta= \) <span id="a101">\( y \) </span>
+                </p>
+                <p>
+                    \( \displaystyle \tan \theta = \) <span id="a102">$$ \displaystyle \frac{y}{x} $$ </span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    三角比の関係式
+                </h3>
+                <ol>
+                    <li>
+                        <span id="a103">$$\tan \theta = \frac{\sin \theta}{\cos \theta}$$</span>
+                    </li>
+                    <li>
+                        <span id="a104">$$\sin^2 \theta + \cos^2 \theta = 1$$</span>
+                    </li>
+                    <li>
+                        <span id="a105">$$1+\tan^2 \theta = \frac{1}{\cos^2 \theta} $$</span>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>
+                    正弦定理
+                </h3>
+                <p>
+                    <span id="a110">
+                        $$\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C} = 2R $$
+                    </span><br/>
+                    \( R \) : 外接円の半径
+                </p>
+            </section>
+            <section>
+                <h3>
+                    余弦定理
+                </h3>
+                <p>
+                    <span id="a111">
+                        $$a^2 = b^2 +c^2 - 2bc \cos A $$
+                    </span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    三角形の面積
+                </h3>
+                <p>
+                    \( b \) , \( c \) , \( \angle A \) を使うやつ
+                </p>
+                <p>
+                    <span id="a112">
+                        $$S=\frac{1}{2} bc\sin A$$
+                    </span>
+                </p>
+                <p>
+                    内接円の半径 \( r \) を使うやつ
+                </p>
+                <p>
+                    <span id="a113">
+                        $$S=\frac{1}{2}(a+b+c)r $$
+                    </span>
+                </p>
+                <p>
+                    ヘロンの公式
+                </p>
+                <p>
+                    <span id="a114">
+                        $$S=\sqrt{s(s-a)(s-b)(s-c)}$$
+                    </span>
+                    <br/>
+                    <br/>
+                    ただし, \( \displaystyle s=\frac{1}{2}(a+b+c) \) 
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

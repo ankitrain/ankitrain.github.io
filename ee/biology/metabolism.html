@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>代謝|生物基礎 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            代謝
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                代謝
+            </h2>
+            <p>
+                生体内での化学反応全体を[A]<span id="a1">代謝</span>という。
+            </p>
+            <p>
+                [A]のうち、複雑な物質を単純な物質にすることを、[B]<span id="a2">異化</span>[取り出す/使用する]
+            </p>
+            <p>
+                [A]のうち、単純な物質を複雑な物質にすることを、[C]<span id="a4">同化</span>[取り出す/使用する]
+            </p>
+            <p>
+                一般的に細胞内の代謝によるエネルギーのやり取りは、ATP(<span id="a6">アデノシン三リン酸</span>)と呼ばれる分子を仲立ちにする。<br/>
+                ATPは、<span id="a7">アデニン</span>(糖)で構成される、「アデノシン」に3つのリン酸が結合した化合物である。<br/>
+                リン酸同士は<span id="a9">高エネルギーリン酸結合</span>)とリン酸に分解されるとき、エネルギーを放出する。
+            </p>
+            <p>
+                生体内の反応は、[D]<span id="a11">酵素</span>によって、促進される。
+                [D]の主成分はタンパク質で、DNAの遺伝情報によって、必要に応じて細胞内で合成される。<br/>
+                [D]は、あくまで[E]という「反応を促進させる物質」であり、[D]自身は、反応によって変化しない。
+            </p>
+            <p>
+                [D]には、反応に最適な、すなわち反応速度が最も大きくなる<strong>温度</strong>である、<span id="a13">最適温度</span>があり、ヒトの細胞の[D]の場合、それは40度前後であることが多い。<br/>
+                また、[D]には、反応に最適な、すなわち反応速度が最も大きくなる<strong>pH</strong>もあり、<span id="a14">最適pH</span>)でpH2前後というのがある。
+            </p>
+            <p>
+                [A]はいくつもの連続した反応から成り立っていて、それぞれ異なる[D]がかかわるので、n[回]の反応につき、一般に[D]は<span id="a16">n</span>個必要である。<br/>
+                [D]はそれぞれ決まった物質としか反応しない。[D]が作用する相手の物質を<span id="a17">基質</span>という。
+            </p>
+        </section>
+        <section>
+            <h2>
+                光合成
+            </h2>
+            <p>
+                すべて書かせる形式の化学式は以下の通り。後ろのほうに穴埋め形式もあるので需要があれば。
+            </p>
+            <div style="text-align: center;">
+                <span id="a19">6CO<sub>2</sub> + 12H<sub>2</sub>O &rightarrow; (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>) + 6O<sub>2</sub> + 6H<sub>2</sub>O</span>
+                
+            </div>
+            <p>
+                光合成反応をざっくり言葉で説明すると、<span id="a27">光</span>を合成して、それを分解したときに出るエネルギーを用いて有機物を作る反応。
+                <span id="a29">葉緑体</span>で行われる。
+            </p>
+            <section>
+                
+                <h3>
+                    葉緑体の構造。
+                </h3>
+                <img src="img/chloroplast.jpg" alt="葉緑体の画像です">
+                <p>
+                    [a]<span id="a30">チラコイド</span>という扁平な袋状の構造が発達している。(画像でいう、緑色の部分)
+                </p>
+                <p>
+                    [a]が層状に重なった部分を<span id="a31">グラナ</span>という。(画像でいう、緑色が縦に並んでいる部分)
+                </p>
+                <p>
+                    残った空間を、[b]<span id="a32">ストロマ</span>という。
+                </p>
+                <p>
+                    [a]上には<span id="a33">クロロフィル</span>などの光合成色素が存在して光エネルギーを受容する。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    反応の詳細
+                </h3>
+                <ol>
+                    <li>
+                        光合成色素によって光エネルギーが吸収される。
+                    </li>
+                    <li>
+                        チラコイド膜にて<br/>
+                        吸収された光エネルギーによって<span id="a34">H<sub>2</sub>O</span>が分解され、<br/>
+                        <span id="a35">O<sub>2</sub></span>(水素イオンや電子の運び屋)と、ATPが合成される。
+                        
+                    </li>
+                    <li>
+                        ストロマにて<br/>
+                        <span id="a38">カルビン・ベンソン回路</span>の中で、<br/>
+                        <span id="a39">CO<sub>2</sub></span>(水素イオンや電子の運び屋)が運んできたH<sup>+</sup>やe<sup>-</sup>や、ATPが運んできた化学エネルギーによって還元され、<br/>
+                        <span id="a41">H<sub>2</sub>O</span>が作られる。
+                        
+                    </li>
+                </ol>
+            </section>
+            <p>
+                穴埋め形式化学式は以下の通り。[a]から[g]までにあてはまる自然数を後に示す回答欄に埋めて使ってください。
+            </p>
+            <div style="text-align: center;">
+                [a]CO<sub>2</sub> + [b]H<sub>2</sub>O &rightarrow; (C<sub>[c]</sub>H<sub>[d]</sub>O<sub>[e]</sub>) + [f]O<sub>2</sub> + [g]H<sub>2</sub>O
+            </div>
+            <table>
+                <tr>
+                    <td>[a]</td>
+                    <td><span id="a20">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[b]</td>
+                    <td><span id="a21">12</span></td>
+                    </tr>
+                <tr>
+                    <td>[c]</td>
+                    <td><span id="a22">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[d]</td>
+                    <td><span id="a23">12</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[e]</td>
+                    <td><span id="a24">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[f]</td>
+                    <td><span id="a25">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[g]</td>
+                    <td><span id="a26">6</span></td>
+                    
+                </tr>
+
+            </table>
+
+                
+        </section>
+        <section>
+            <h2>
+                呼吸
+            </h2>
+            <p>
+                化学式は以下の通り。穴埋め形式は下のほうにある。
+            </p>
+            <div style="text-align:center ;">
+                <span id="a44">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> + 6H<sub>2</sub>O &rightarrow; 6CO<sub>2</sub> + 12H<sub>2</sub>O</span>
+            </div>
+            <p>
+                呼吸反応をざっくり言葉で説明すると、有機物を分解した際に放出されるエネルギーを用いて、ADPからATPを合成する。
+                おもに<span id="a45">ミトコンドリア</span>で行われる。
+            </p>
+            <section>
+                <h3>
+                    ミトコンドリアの構造
+                </h3>
+                <img src="img/mitochondrion.jpg" alt="ミトコンドリアの画像">
+                <p>
+                    ミトコンドリアは二重の膜構造でできていて、内膜は内側に折れ込んだひだ(<span id="a46">クリステ</span>)を作っている。
+                </p>
+                <p>
+                    内膜に囲われた部分を<span id="a47">マトリックス</span>という。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    反応の詳細
+                </h3>
+                <ol>
+                    <li>
+                        ミトコンドリア外の細胞質基質の「<span id="a48">解糖</span>系」にて<br/>
+                        <span id="a49">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> (グルコース)</span>が
+                        <span id="a50">C<sub>3</sub>H<sub>4</sub>O<sub>3</sub> (ピルビン酸)</span>に分解される。<br/>
+                        その過程で、<span id="a51">NADH</span>(エネルギーや電子の運び屋)と少量のATPが合成される。
+                    </li>
+                    <li>
+                        ミトコンドリア内の「<span id="a37">クエン酸</span>回路」にて<br/>
+                        先ほど生成された、<span id="a43">C<sub>3</sub>H<sub>4</sub>O<sub>3</sub> (ピルビン酸)</span>が、ミトコンドリア内の酵素によって段階的に分解され、<br/>
+                        <span id="a52">CO<sub>2</sub></span>(エネルギーや電子の運び屋)と少量のATPが合成される。
+                    </li>
+                    <li>
+                        ミトコンドリア内の内膜上の「<span id="a54">電子伝達系</span>」にて、<br/>
+                        今までに生じた、<span id="a55">NADH</span>の持つエネルギーを用いて、大量のATPを合成する。<br/>
+                        この過程で<span id="a56">O<sub>2</sub></span>が利用され、
+                        <span id="a57">H<sub>2</sub>O</span>が発生する。
+                    </li>
+
+                </ol>
+                    <p>
+                        呼吸で発生するATPの大部分は<span id="a58">電子伝達系</span>で発生する。
+                    </p>
+            </section>
+            <section>
+                <h3>
+                    授業中に脱線していた話のメモ
+                </h3>
+                <p>
+                    名探偵コナンでおなじみの、青酸カリ(KCN/シアン化カリウム)は、<span id="a59">電子伝達系</span>を機能不全にする。
+                    
+                </p>
+                <p>
+                    余談だが、摂取して胃酸と反応すると、いわゆるアーモンド臭(収穫前の)がするらしいが、実際にこのにおいを感じるのは遺伝的に半数ほどらしい。
+                    つまり彼は2分の1の当たりくじを引いた(?)わけである。<br/>
+                    また、KCN含むシアン化合物は、法規制の対象である。具体的には「毒物及び劇物取締法」に基づいた購入時の身元確認や販売記録の保管、鍵がかかる倉庫などでの保管や在庫量の記録が求められている。
+                </p>
+            </section>
+            <p>
+                穴埋め形式化学式は以下の通り。[a]から[g]までにあてはまる自然数を後に示す回答欄に埋めて使ってください。
+            </p>
+            <div style="text-align: center;">
+                C<sub>[a]</sub>H<sub>[b]</sub>O<sub>[c]</sub> + [d]O<sub>2</sub> + [e]H<sub>2</sub>O &rightarrow; [f]CO<sub>2</sub> + [g]H<sub>2</sub>O
+            </div>
+            <table>
+                <tr>
+                    <td>[a]</td>
+                    <td><span id="a60">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[b]</td>
+                    <td><span id="a61">12</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[c]</td>
+                    <td><span id="a62">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[d]</td>
+                    <td><span id="a63">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[e]</td>
+                    <td><span id="a64">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[f]</td>
+                    <td><span id="a65">6</span></td>
+                    
+                </tr>
+                <tr>
+                    <td>[g]</td>
+                    <td><span id="a66">12</span></td>
+                    
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <h2>
+                酸素を用いずに有機物からエネルギーを取り出す生物の話
+            </h2>
+            <p>
+                微生物の中には、酸素を使わないで有機物を分解し、エネルギーを得るものがいる。
+                この働きを<span id="a67">発酵</span>という。
+            </p>
+            <p>
+                細菌の一種の<span id="a68">乳酸菌</span>は
+                「<span id="a70">乳酸発酵</span>」
+                を行い、酸素を使わずにグルコースを分解して、<span id="a69">乳酸</span>を生成する。
+                この過程でATPを合成している。<br/>
+                これはヨーグルトづくりなどに活用される。
+            </p>
+            <p>
+                単細胞の真核生物の<span id="a71">酵母</span>は、<strong>酸素があるときは呼吸している</strong>が、酸素が少ないときは、
+                「<span id="a72">アルコール発酵</span>」
+                を行い。酸素を使わずにグルコースを分解して、<span id="a73">エタノール</span>を生成する。
+                この過程でATPを合成している。<br/>
+                これは酒類の製造に活用されたり、パンを膨らませるのに利用される。
+            </p>
+            <p>
+                ただしこれで生成される、ATP量は呼吸の10分の1ほどである。
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

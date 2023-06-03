@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>気候 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            気候|地理
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                自然環境の気候概略
+            </h2>
+            <section>
+                <h3>
+                    気候
+                </h3>
+                <p>
+                    1つの地域で長年にわたって繰り返される大気の状態を[a]<span id="a2">気候</span>という。
+                </p>
+                <p>
+                    [a]の様子を示すものとして、気温、風、降水量、湿度などといった、<span id="a3">気候要素</span>があり, それらは緯度経度、地形や海流、海岸からの距離などの<span id="a4">気候因子</span>の影響を受けている。
+                </p>
+                <p>
+                    <span id="a5">日較差</span>(日最高気温と日最低気温の差) や <span id="a6">年較差</span>(最暖月平均気温と再寒月平均気温の差)は海岸部で小さく、内陸部で大きくなる。<br/>
+                    それは、水は冷めたり温まったりし<span id="a7">にく</span>い一方、陸は冷めたり温まったりし<span id="a8">やす</span>いためである。[やす/にく]
+                </p>
+            </section>
+            <section>
+                <h3>
+                    風
+                </h3>
+                <p>
+                    気温は標高が100m高くなるごとに<span id="a9">0.55</span>℃下がる。
+                    この割合のことを、気温の<span id="a10">逓減<span class="b">率</span></span>という。
+                </p>
+                <p>
+                    一方山を越えた<em>乾いた風</em>は、標高が100m低くなるごとに、約<span id="a11">1.0</span>℃上がる。
+                </p>
+                <p>
+                    <a href="https://www.data.jma.go.jp/cpd/j_climate/hokuriku/column01.html" target="_blank">気象庁</a>によると「湿潤な空気が山を越えて反対側に吹き下りたときに、風下側で吹く乾燥した高温の風のこと」を[b]<span id="a12">フェーン</span>と呼ぶ。<br/>
+                    一方で, 春から夏にかけて地中海方面からアルプス山脈を越えて中央ヨーロッパに吹き降ろす風自体を[b]とする場合もある。
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                大気大循環と風
+            </h2>
+            <p>
+                <span id="a13">大気大循環</span>は地球規模の大気の流れ、循環のことである。<br/>
+                この循環のおかげで、暑い地域から寒い地域へ熱が運ばれる。
+                それゆえ、高緯度地方と低緯度地方の気温差が激しくなることが防がれている。<br/>
+                風は気圧の<span id="a14">高</span>いところからそうでないところに流れる。[高/低]
+            </p>
+            <img src="img/img1.png" alt="大気大循環の模式図 [A]赤道直下の低圧帯 [B]Aの周りの高圧帯 [C]Bより高緯度の低圧体 [D]北極や南極の高圧帯 [E]DからCに吹く風 [F]BからCに吹く風 [G]BからAに吹く風"/>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            [A]<span id="a15">赤道低圧帯</span>
+                        </dt>
+                        <dd>
+                            赤道直下に広がる。
+                            地面が熱せられて上昇気流が発生し、低圧帯となる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [B]<span id="a16">亜熱帯高圧帯</span>
+                        </dt>
+                        <dd>
+                            [A]の上昇気流の空気が下降し、高圧帯となる。
+                            緯度20-30度あたりに分布し、下降した気流はさらに低緯度側と高緯度側に分流する。
+                            低緯度側は[A]に向かい、[G]という。
+                            高緯度側は[C]に向かい、[F]という。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [C]<span id="a17">高緯度低圧帯</span>
+                        </dt>
+                        <dd>
+                            山などの影響を考慮しなければ、この地域は全体的に冷涼湿潤な気候である
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [D]<span id="a18">極高圧帯</span>
+                        </dt>
+                        <dd>
+                            空気が冷えて、下降気流が生じて高圧帯となる。
+                            [D]から[C]に[E]が吹く。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [E]<span id="a19">極偏東風</span>
+                        </dt>
+                        <dd>
+                            高圧帯である[D]から低圧帯である[C]に向かって吹く恒常風。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [F]<span id="a20">偏西風</span>
+                        </dt>
+                        <dd>
+                            高圧帯である[B]から低圧帯である[C]に向かって吹く恒常風。
+                            日本の上空にも吹いている。
+                            この風が発達する地域では。高緯度から流れ込む寒冷な空気とぶつかって上昇気流が発生し、<span id="a21">寒帯前線</span>が生まれる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            [G]<span id="a22">貿易風</span>
+                        </dt>
+                        <dd>
+                            高圧帯である[B]から低圧帯である[A]に向かって吹く恒常風。
+                            地球の自転の影響で、[G]は<span id="a23">東</span>寄りに吹く。[西/東]
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <section>
+                <h3>
+                    季節風
+                </h3>
+                <p>
+                    季節によって風向きが変化する大規模な風を[1]<span id="a24">モンスーン/季節風</span>という。<br/>
+                    
+                </p>
+                <p>
+                    なぜこのような風が発生するか、それは水は冷めたり温まったりし<span id="a25">にく</span>い一方、陸は冷めたり温まったりし<span id="a26">やす</span>いためである。[やす/にく]
+                </p>
+                <p>
+                    冬は内陸部に<span id="a27">高</span>気圧が形成され、陸から海に向かって乾いた[1]が吹く。
+                </p>
+                <p>
+                    夏は内陸部に<span id="a28">低</span><button id="b28" onclick="Set(28)">A</button>気圧が形成され、海から陸に向かって湿った[1]が吹く。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    その他
+                </h3>
+                <p>
+                    ユーラシア大陸や北米大陸の中緯度で、同緯度で比較すると、基本、西岸のほうが東岸のほうより、年較差が小さい。
+                </p>
+                <p>
+                    西岸では、中緯度の上空を通る恒常風である、[2]<span id="a29">偏西風</span>によって、風上の影響を受けて、寒さの厳しくない[3]<span id="a30">西岸気候</span>になる。<br/>
+                    一方、東岸では風上の大陸や、低緯度側の高温な海洋の影響で、年較差が大きい[4]<span id="a31">東岸気候</span>になる。<br/>
+                </p>
+                <p>
+                    特にユーラシア大陸西岸、すなわち西ヨーロッパでは、暖流である<span id="a32">北大西洋海流</span>のもたらす熱が、[2]によって内陸近くまで運ばれるため、高緯度であっても比較的温和な気候が広がる。<br/>
+
+                    ノルウェー北西岸では、北極圏内であるにもかかわらず冬でも海氷に閉ざされない<span id="a35">不凍港</span>が見られる。
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [簡易的] ゆうじ気候区分判定法
+            </h2>
+            <p>
+                厳密な判定法とは異なる。地理受験組は実際の判定法を教科書あたりで確認されたし。
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        年降水量を調べる。
+                    </p>
+                    <ul>
+                        <li>
+                            0mm ～ <span id="a36">250</span>mm の時は、気候区分は<span id="a37">BW/砂漠気候</span><br/>
+                            &rightarrow;判別終了
+                        </li>
+                        <li>
+                            <span id="a38">250</span>mm ～ <span id="a39">500</span>mm の時は、気候区分は<span id="a40">BS/ステップ気候</span><br/>
+                            &rightarrow;判別終了
+                        </li>
+                        <li>
+                            どちらでもなければ次のステップへ
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        最寒月平均気温を調べる。
+                    </p>
+                    <ul>
+                        <li>
+                            <span id="a41">18</span>&#8451; 以上ならば、<span id="a42">A/熱帯</span>気候。<br/>
+                            &rightarrow;Step 4へ
+                        </li>
+                        <li>
+                            <span id="a43">-3</span>&#8451; 以上ならば、<span id="a44">C/温帯</span>気候。<br/>
+                            &rightarrow;Step 5へ
+                        </li>
+                        <li>
+                            そうではない場合、次は最暖月平均気温を調べる。<br/>&rightarrow;Step 3へ
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        2.で最寒月平均気温が<span id="a45">-3</span>&#8451;未満の場合 最暖月平均気温を調べる。
+                    </p>
+                    <ul>
+                        <li>
+                            <span id="a46">10</span>&#8451; 以上ならば、<span id="a47">D/冷帯/亜寒帯</span>気候。
+                            <br/> &rightarrow;Step 5へ
+                        </li>
+                        <li>
+                            <span id="a48">0</span>&#8451; 以上ならば、気候区分は<span id="a49">ET/ツンドラ気候</span><br/>
+                            &rightarrow;判別終了
+                        </li>
+                        <li>
+                            それ未満ならば、気候区分は<span id="a50">EF/氷雪気候</span><br/>
+                            &rightarrow;判別終了
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        「A/熱帯気候」内の区分は、毎月の月降水量をもとに判別する。
+                    </p>
+                    <ul>
+                        <li>
+                            どの月も、<span id="a51">60</span>mm/月 以上ならば、気候区分は、<span id="a52">Af/熱帯雨林気候</span><br/>
+                            &rightarrow;判別終了 
+                        </li>
+                        <li>
+                            そうでなかったら、気候区分は<span id="a53">Aw/サバナ気候</span><br/>
+                            &rightarrow;判別終了
+                        </li>
+                        <li>
+                            この簡易的な判定法ではAmの判別は行わない。
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        「C/温帯気候」、「D/冷帯気候/あ寒帯気候」内の区分は、夏と冬の降水量を調べる。<br/>
+                        <strong>注意: 南半球は夏と冬の時期が日本と異なることに注意</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            冬のほうが雨の量が少ないうえ、月降水量の最小値が、月降水量の最大値の <span id="a53">10</span>/1 未満であれば、C, Dの文字の後ろの小文字は<span id="a54">w</span>である。
+                            冬季少雨気候という。
+                        </li>
+                        <li>
+                            夏のほうが雨の量が少ないうえ、月降水量の最小値が、月降水量の最大値の <span id="a55">3</span>/1 未満であれば、C, Dの文字の後ろの小文字は<span id="a56">s</span>である。
+                            夏季少雨気候という。<br/> 
+                            極めて特異であり、地中海性気候(<span id="a57">Cs</span>)のみしか夏季少雨型はない。
+                        </li>
+                        <li>
+                            それ以外の場合は、C, Dの文字の後ろの小文字は<span id="a58">f</span><button id="b58" onclick="Set(58)">A</button>である。<br/>
+                            
+                        </li>
+                    </ul>
+                    <p>
+                        Dはこれで判別完了。<br/>
+                            CはStep 6へ。 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Cf気候内の区分は、最暖月平均気温で調べる。
+                    </p>
+                    <ul>
+                        <li>
+                            <span id="a59">22</span>&#8451;以上ならば、気候区分は、<span id="a60">Cfa/温暖湿潤気候</span>
+                        </li>
+                        <li>
+                            否ならば、気候区分は、<span id="a61">Cfb/西岸海洋性気候</span>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                気候区
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            Af/<span id="a62">熱帯雨林</span>気候
+                        </dt>
+                        <dd>
+                            ほぼ毎日、午後になると<span id="a63">スコール</span>と呼ばれる突風を伴う強いにわか雨が発生する。<br/>
+                            土壌は高温と豊かな水分のため、風化が激しく、養分が流出して、赤色で酸性の強い<span id="a64">ラトソル</span>になる。<br/>
+                            高温多湿故、特定の地域だけに発生する病気である、マラリアや黄熱病などの<span id="a65">風土病</span>が発生しやすい。
+                        </dd>
+                        <dd>
+                            アマゾン川中流域には、<span id="a66">セルバ</span>と呼ばれるAf気候が広がる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Aw/<span id="a67">サバナ</span>気候
+                        </dt>
+                        <dd>
+                            雨季乾季がはっきりしている。
+                            疎林と草原が広がる。
+                        </dd>
+                        <dd>
+                            アフリカに広がるサバナを<span id="a68">サバンナ</span>と、南米に広がるサバナを<span id="a69">リャノ</span>と、ブラジル高原やデカン高原に広がるサバナを<span id="a70">カンポ</span>という。<br/>
+                            特にブラジル高原の土壌は、玄武岩が風化した赤紫色の肥沃な土壌である、<span id="a71">テラローシャ</span>が広がり、デカン高原のほうは、粘土質の黒色の肥沃な土壌である<span id="a72">レグール土</span>が広がる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            BW/<span id="a73">砂漠</span>気候
+                        </dt>
+                        <dd>
+                            年中少雨である気候。<br/>
+                            雨が降るときだけ水が流れる<span id="a74">ワジ/涸れ川</span>は乾季は交通路として使用される。<br/>
+                            一方砂漠といえど、上流の湿潤地域や山岳氷河などを水源として、水が枯れない川である<span id="a75">外来河川</span>が流れたり、地下水のわくところには、<span id="a76">オアシス</span>が見られる。<br/>
+                            人間は、<span id="a77">カナート</span>と呼ばれる地下水路を掘って、農業用水や飲料用水に使用している。<br/>
+                            土壌は水分の蒸発が激しすぎるため、塩基性の塩分を大量に含む<span id="a78">砂漠土</span>が広がる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            BS/<span id="a79">ステップ</span>気候
+                        </dt>
+                        <dd>
+                            長～い乾季と短い雨期で構成される気候。<br/>
+                            旧大陸(モンゴルなどの発展途上国)は遊牧がメイン。新大陸(ヨーロッパなどの先進国)は企業的農業。
+                            土壌は降水が少ないため養分が流されず、肥沃である。ウクライナ州周辺の、<span id="a80">チェルノゼム</span>が有名であり、世界的な穀倉地帯となっている。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Cw/<span id="a81">温暖冬季少雨</span>気候
+                        </dt>
+                        <dd>
+                            A気候に似ている。夏は高温多雨、冬は温暖少雨。
+                            最多雨月の降水量は最小雨月の降水量の<span id="a82">10</span>倍以上になる。
+                            これはモンスーンや梅雨前線などの影響である。
+                        </dd>
+                        <dd>
+                            大規模農園農業(<span id="a83">プランテーション</span>の発祥である。
+                        </dd>
+                        <dd>
+                            この地域には、カシ・シイなどの<span id="a84">常緑広葉樹林</span><button id="b84" onclick="Set(84)">A</button>が多く見られる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Cs/<span id="a85">地中海性</span>気候
+                        </dt>
+                        <dd>
+                            B気候に似ている。冬は温暖降水、夏は高温乾燥。<br/>
+                            最多雨月の降水量は最小雨月の降水量の<span id="a86">3</span>倍以上になる。<br/>
+                            夏季&rArr;亜熱帯高圧帯におおわれて晴天が続いて乾燥する。<br/>
+                            冬季&rArr;偏西風が高緯度から移動してきて低気圧の活動が活発になり、降水量が多い。
+                        </dd>
+                        <dd>
+                            植生は、乾燥に耐える<span id="a87">硬葉樹</span>がおおい。
+                        </dd>
+                        <dd>
+                            土壌は、準乾燥帯というだけあって、養分が降水で流されず、肥沃である。<br/>
+                            地中海沿岸には、ラテン語で「バラ色の土」という意味の<span id="a90">テラロッサ</span>という土が人がっていて、オリーブ栽培に適している。
+                        </dd>
+                        <dd>
+                            農業が盛んな地域では、コルクがし、オリーブ、ブドウといった、乾燥にも耐える、<span id="a88">耐乾性作物</span>の栽培が盛ん<br/>
+                            山岳地帯などでは、[A]<span id="a89">移牧</span>が盛んである。<br/>
+                            [A]というのは、夏は乾燥を嫌って山の上に行き、冬は、降水するから山の下に行くという垂直的な遊牧。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Cfb/<span id="a91">西岸海洋性</span>気候
+                        </dt>
+                        <dd>
+                            D気候に似ている。夏は冷涼、冬は温和。
+                        </dd>
+                        <dd>
+                            月平均気温が<span id="a92">22</span><button id="b92" onclick="Set(92)">A</button>&#8451;を超えない。
+                            年間を通して適度な雨が降る。
+                        </dd>
+                        <dd>
+                            牧草が育ちやすいため、<span id="a93">酪農</span>や、<span id="a94">有畜農業</span>が盛ん。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Cfa/<span id="a95">温暖湿潤</span>気候
+                        </dt>
+                        <dd>
+                            四季があり、いわゆるれっきとした「温帯」気候である。夏は高温多湿、冬は寒冷少雨。
+                            人口が密集しやすい。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Df/<span id="a96">亜寒帯湿潤</span>気候
+                        </dt>
+                        <dd>
+                            冬の積雪が<span id="a97">多</span>い気候。[多/少な]
+                            短い夏と長い冬が特徴である。
+                            
+                        </dd>
+                        <dd>
+                            北部は、[B]<span id="a98">タイガ</span><button id="b98" onclick="Set(98)">A</button>と呼ばれる針葉樹林が広がる。<br/>
+                            南部は、[C]<span id="a99">混合林</span>が広がる。
+                            
+                        </dd>
+                        <dd>
+                            土壌は、グレー色で肥沃でない、[D]<span id="a100">ポドゾル</span>が広がる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            Dw/<span id="a101">亜寒帯冬季少雨</span>気候
+                        </dt>
+                        <dd>
+                            冬の積雪が<span id="a102">少な</span>い気候。[多/少な]
+                            短い夏と長い冬が特徴である。
+                        </dd>
+                        <dd>
+                            Dwは<span id="a103">北</span>半球のみにしかない。[北/南]<br/>
+                            年較差が他の気候と比べ最も大きくなる。<br/>
+                            北半球の<span id="a104">寒極</span>(最も低い気温が記録されているところ)はDw内にある。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            ET/<span id="a105">ツンドラ</span>気候
+                        </dt>
+                        <dd>
+                            最暖月平均気温が<span id="a106">0</span>&#8451;以上<span id="a107">10</span>&#8451;未満である気候。
+                        </dd>
+                        <dd>
+                            夏は短いが雪が消えるので、<span id="a108">地衣類</span>(ちいるい)や<span id="a109">蘚苔類</span>(せんたいるい)、草などが生息する。
+                        </dd>
+                        <dd>
+                            イヌイットなどの少数民族による、狩猟、漁労が行われる。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            EF/<span id="a110">氷雪</span>気候
+                        </dt>
+                        <dd>
+                            最暖月平均気温が、<span id="a111">0</span>&#8451;未満である気候。<br/>
+                            人が住める場所ではなく、研究目的で設置された基地以外に人が住んでいるという報告はない。
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

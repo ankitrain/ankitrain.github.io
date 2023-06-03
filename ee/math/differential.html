@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>微分|数III - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+        <!-- The loading of KaTeX is deferred to speed up page rendering -->
+        <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+    
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+            
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+</head>
+<body>
+    <header>
+        <h1>
+            微分
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                導関数
+            </h2>
+            <section>
+                <h3>
+                    微分の定義
+                </h3>
+                <p>
+                    \( f^\prime (a) =\)<span id="a1">$$\lim_{h\to 0}\frac{f(a+h)-f(a)}{h}$$</span> 
+                </p>
+            </section>
+            <section>
+                <h3>
+                    導関数公式
+                </h3>
+                <p>
+                    \( u \), \( v \) は \( x \)の関数で微分可能 
+                </p>
+                <ul>
+                    <li>
+                        \( (ku+lv)^\prime = \) <span id="a5">\( ku^\prime + lv^\prime \) </span> 
+                    </li>
+                    <li>
+                        \( (uv)^\prime = \) <span id="a6">\( u^\prime v + u v ^\prime \) </span> 
+                    </li>
+                    <li>
+                        \( \displaystyle\left( \frac{1}{v} \right)^\prime =\) <span id="a7">$$ -\frac{v^\prime}{v^2}$$</span>
+                    </li>
+                    <li>
+                        \( \displaystyle\left( \frac{u}{v} \right)^\prime =\) <span id="a8">$$\frac{u^\prime v - uv^\prime}{v^2}$$</span>
+                    </li>
+                    <li>
+                        \( (x^a)^\prime = \)<span id="a9">\( ax^{a-1} \) </span> (\( a\in\mathbb{R} \) ) 
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    dxとかdvとかの公式
+                </h3>
+                <p>
+                    \( y=f(u) \), \( u=g(x) \) として, 
+                </p>
+                <ul>
+                    <li>
+                        \( \displaystyle \frac{dy}{dx}= \)<span id="a10">$$\frac{dy}{du}\cdot\frac{du}{dx}$$</span> 
+                    </li>
+                    <li>
+                        \( \displaystyle \frac{1}{\frac{dx}{dy}}= \)<span id="a11">$$\frac{dy}{dx}$$</span> 
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    三角関数の導関数
+                </h3>
+                <ul>
+                    <li>
+                        \( (\sin x)^\prime = \)<span id="a20">\( \cos x \) </span> 
+                    </li>
+                    <li>
+                        \( (\cos x)^\prime =\)<span id="a21">\( -\sin x \) </span> 
+                    </li>
+                    <li>
+                        \( (\tan x)^\prime= \)<span id="a22">$$\frac{1}{\cos^2 x}$$</span> 
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    指数対数の導関数
+                </h3>
+                <ul>
+                    <li>
+                        \( (e^x)^\prime= \)<span id="a25">\( e^x \) </span> 
+                    </li>
+                    <li>
+                        \( (a^x)^\prime= \)<span id="a26">\( a^x \log a \) </span> 
+                    </li>
+                    <li>
+                        \( (\log|x|)^\prime =\)<span id="a27">$$\frac{1}{x}$$</span> 
+                    </li>
+                    <li>
+                        \( (\log_a|x|)^\prime= \)<span id="a28">$$\frac{1}{x\log a}$$</span> 
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                平均値の定理
+            </h2>
+            <p>
+                関数\( f(x) \)が区間\( [a,b] \)で連続, 区間\( (a,b) \)で微分可能ならば,  
+                $$\frac{f(b)-f(a)}{b-a}=f^\prime(c)$$
+                を満たす実数 \( c \) が存在する   
+            </p>
+            <p>
+                ただし <span id="a30">\( a\lt c\lt b \)</span>  
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

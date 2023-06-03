@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>RNAとタンパク質|生物基礎 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            RNAとタンパク質
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                たんぱく質
+            </h2>
+            <p>
+                タンパク質は、[a]<span id="a1">アミノ酸</span>が多数鎖状に連結したものである。
+            </p>
+            <section>
+                <h3>
+                    アミノ酸
+                </h3>
+                <img src="img/AminoAcidball.svg" alt="アミノ酸の構造式">
+                <small>画像出典: <a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%9F%E3%83%8E%E9%85%B8#/media/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:AminoAcidball.svg">wikipedia</a></small>
+                <p>
+                    タンパク質は、アミノ酸が、<span id="a2">H<sub>2</sub>O</span>(化学式)<button
+                        onclick="Set(2)">A</button>を発生させながら、<span id="a3">ぺプチド</span>結合<button
+                        onclick="Set(3)">A</button>することで構成される。
+                </p>
+                <p>
+                    構造式中の<b>R</b>が、<span id="a4">側鎖</span><button
+                        onclick="Set(4)">A</button>というもので、そこにつながる分子によって、[a]二種類が出る。
+                </p>
+                <p>
+                    構造式左側の、NH<sub>2</sub>を<span id="a5">アミノ</span>基、構造式右側の、COOHを<span
+                        id="a6">カルボキシ</span>基という。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    たんぱく質の構造
+                </h3>
+                <p>
+                    タンパク質は、多数のアミノ酸が、<span id="a7">ペプチド</span>結合<button
+                        onclick="Set(7)">A</button>にて、連結した鎖、すなわち、&quot;<span id="a8">ポリペプチド</span><button
+                        onclick="Set(8)">A</button>&quot;である。
+                </p>
+                <dl>
+                    <dt>
+                        一次構造
+                    </dt>
+                    <dd>
+                        アミノ酸の配列順序そのもの。<br />
+                        立体構造を考えない
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        二次構造
+                    </dt>
+                    <dd>
+                        <p>
+                            アミノ酸鎖の部分的な立体構造
+                        </p>
+                        <p>
+                            主に2種類ある。
+                        </p>
+                        <details>
+                            <summary>
+                                &alpha;ヘリックス
+                            </summary>
+                            <img src="img/alpha.png" alt="αヘリックス" style="max-width: 50%;float: right;">
+                            <p>
+
+                                らせん構造の部分的立体構造
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                &beta;シート
+                            </summary>
+                            <img src="img/beta.png" alt="βシート" style="max-width: 50%;float:right;">
+                            <p>
+
+                                段折り状の部分的立体構造
+                            </p>
+                        </details>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        三次構造
+                    </dt>
+                    <dd>
+                        二次構造の&alpha;ヘリックスや、&beta;シートがたくさんつながって、より複雑になる立体構造
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        四次構造
+                    </dt>
+                    <dd>
+                        複数の三次構造がさらに集まってカオスになった構造
+                    </dd>
+                </dl>
+            </section>
+
+        </section>
+        <section>
+            <h2>
+                RNA
+            </h2>
+            <p>
+                RNAは、<span id="a9">リボ核酸</span>の略。<br />
+                リン酸と糖(<span id="a10">リボース</span>)と、塩基を持つ物質である。<br />
+                DNAとは異なり、1本鎖である。
+            </p>
+            <p>
+                主にタンパク質の合成時に働く核酸である。
+            </p>
+            <section>
+                <h3>
+                    RNAの持ちうる塩基
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                記号
+                            </th>
+                            <th>
+                                物質名
+                            </th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                A
+                            </td>
+                            <td>
+                                <span id="a11">アデニン</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                U
+                            </td>
+                            <td>
+                                <span id="a12">ウラシル</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                C
+                            </td>
+                            <td>
+                                <span id="a13">シトシン</span>
+                            </td>
+                        <tr>
+                        <tr>
+                            <td>
+                                G
+                            </td>
+                            <td>
+                                <span id="a14">グアニン</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>
+                    RNAとDNAの違いを整理
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+
+                            </th>
+                            <th>
+                                DNA
+                            </th>
+                            <th>
+                                RNA
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                名前
+                            </th>
+                            <td>
+                                <span id="a15">デオキシリボ核酸</span>
+                            </td>
+                            <td>
+                                <span id="a16">リボ核酸</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                糖
+                            </th>
+                            <td>
+                                <span id="a17">デオキシリボース</span>
+                            </td>
+                            <td>
+                                <span id="a18">リボース</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                構造
+                            </th>
+                            <td>
+                                二重らせん
+                            </td>
+                            <td>
+                                一本鎖
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                塩基
+                            </th>
+                            <td>
+                                A <span id="a19">T</span> C G
+                            </td>
+                            <td>
+                                A <span id="a20">U</span> C G
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section>
+            <h2>
+                DNAの情報をもとにタンパク質を合成する手順
+            </h2>
+            <ol>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a21">転写</span>
+                        </dt>
+                        <dd>
+                            <p>
+                                DNAの塩基配列が、<span id="a22">RNAポリメラーゼ</span><button
+                                    onclick="Set(22)">A</button>(またはRNA合成酵素)によって、<span id="a23">mRNA前駆体</span><button
+                                    onclick="Set(23)">A</button>に写される。
+                            </p>
+                            <p>
+                                DNAのらせん構造をいったんほどいて、相補性で対応するRNA塩基を連れてきて、構成するみたい。
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a24">スプライシング</span>
+                        </dt>
+                        <dd>
+                            <p>
+                                写されたRNAの中で、必要な部分だけをつなぎ合わせて、[a]<span id="a25">mRNA</span><button
+                                    onclick="Set(25)">A</button>をつくる。
+                            </p>
+                            <ul>
+                                <li>
+                                    必要な部分(タンパク質の情報になる塩基配列)&DoubleRightArrow;<span id="a26">エキソン</span><button
+                                        onclick="Set(26)">A</button>
+                                </li>
+                                <li>
+                                    いらない部分(タンパク質の情報ではない塩基配列)&DoubleRightArrow;<span id="a27">イントロン</span><button
+                                        onclick="Set(27)">A</button>
+                                </li>
+                            </ul>
+                            <p>
+                                ここまで、核内で行われる。
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    [a]が核を出て、<span id="a28">リボソーム</span>が付着する。
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a29">翻訳</span>
+                        </dt>
+                        <dd>
+                            <p>
+                                [b]<span id="a30">tRNA</span>がアミノ酸を持ってくる。
+                            </p>
+                            <p>
+                                [b]が持ってきた、アミノ酸を結合させることによって、タンパク質完成。
+                            </p>
+                            <p>
+                                [b]は、[a]の<em>コドン</em>に対応した<span id="a31">アンチコドン</span>というのを持っている。
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+            </ol>
+            <section>
+                <h3>
+                    情報の流れ
+                </h3>
+                <p>
+                    DNA &DoubleRightArrow; RNA &DoubleRightArrow; タンパク質
+                </p>
+                <p>
+                    遺伝情報はこのように一方向の流れで伝達される(<span id="a32">セントラルドグマ</span>)
+                </p>
+            </section>
+            <section>
+                <h3>
+                    塩基がアミノ酸を指定する
+                </h3>
+                <p>
+                    タンパク質を合成するためのアミノ酸は<span id="a33">20</span>種類ある。<br/>
+                    一方アミノ酸の配列順序を決定するための塩基は4つのみしかない。
+                </p>
+                <p>
+                    よって、塩基<span id="a34">3</span>つの組み合わせがアミノ酸をしている。
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                遺伝子突然変異
+            </h2>
+            <p>
+                何らかの理由により、塩基配列に変化が起きることを<strong>遺伝子突然変異</strong>という。
+            </p>
+            <p>
+                突然変異の種類には次の種類がある
+            </p>
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>
+                        <span id="a35">置換</span>
+                    </td>
+                    <td>
+                        塩基の一部が置き換わる
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>
+                        <span id="a36">失欠</span>
+                    </td>
+                    <td>
+                        塩基の一部が失われる
+                    </td>
+                    <td>
+                        
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>
+                        <span id="a37">挿入</span>
+                    </td>
+                    <td>
+                        塩基の一部が割り込まれる
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+            <p>
+                一般に、AよりB, Cのほうが影響が大きい。<br/>
+                それは、より多くのタンパク質内のアミノ酸が変化してしまうためである。
+            </p>
+            <section>
+                <h3>
+                    突然変異の例
+                </h3>
+                <p>
+                    「<span id="a38">鎌状赤血球症</span>」が有名。
+                </p>
+                <p>
+                    日本人での発症頻度は低いが、発展途上国では多い。
+                </p>
+                <p>
+                    赤血球自体は一般的には円盤状だが、遺伝子の突然変異によって固い棒状の鎌状の構造をとる赤血球が時に現れる。<br/>
+                    その赤血球は貧血の原因になりやすく、また血液の流れを悪くするなどの作用も引き起こす。
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

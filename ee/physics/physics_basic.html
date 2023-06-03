@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>物理基礎 公式集 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/math.css">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap">--->
+    
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">  
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            物理基礎 公式集
+        </h1>
+        <p>
+            分数の表記がうまくいっていません。直す気もありません。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <p>
+            このページの利用に起因するいかなる損害も免責とします。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>
+            「厳密な表現」は心がけていません。本気で物理をやる人にとっては、このページのあらゆる表現を指摘しまくるほど、問題の多いページであることでしょう。
+        </p>
+        <section>
+            <h2>
+                [力学]物体の運動
+            </h2>
+            <section>
+                <h3>
+                    用語の確認
+                </h3>
+                <p>
+                    []の中に単位が入ります。正しい単位を入れてください。
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <var class="vector">x</var> [<span id="a1">m</span>] 位置
+                            </dt>
+                            <dd>
+                                物体の位置を示す。
+                            </dd>
+                            <dd>
+                                物体の位置の変化(<span id="a2">変位</span>)は <var>&Delta;x</var> という変数を用いる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <var class="vector">v</var> [<span id="a3">m/s</span>] 速度
+                            </dt>
+                            <dd>
+                                物体の単位時間あたりの位置の変化を示す。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <var class="vector">a</var> [<span id="a4">m/s<sup>2</sup></span>] 加速度
+                            </dt>
+                            <dd>
+                                物体の単位時間当たりの速度の変化を示す。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    等加速度運動
+                </h3>
+                <p>
+                    ベクトル表記を省略する。<var>x</var>, <var>v</var>, <var>a</var>はベクトル量である。
+                </p>
+                <ol>
+                    <li>
+                        <span class="math matheq" id="a10">
+                            <var>v</var> = <var>a</var><var>t</var> + <var>v</var><sub>0</sub>
+                        </span>
+                        (<var>v</var>と<var>t</var>の関係式)
+                    </li>
+                    <li>
+                        <span class="math matheq" id="a11">
+                            <var>x</var> = 0.5 <var>a</var><var>t</var><sup>2</sup> + <var>v</var><sub>0</sub><var>t</var>
+                        </span>
+                        (<var>x</var>と<var>t</var>の関係式)
+                    </li>
+                    <li>
+                        <span class="math matheq" id="a12">
+                            <var>v</var><sup>2</sup> - <var>v</var><sub>0</sub><sup>2</sup> = 2<var>a</var><var>x</var>
+                        </span>
+                        (<var>v</var>と<var>x</var>の関係式)
+                    </li>
+                </ol>
+                <ul>
+                   <li>
+                        <var>x</var> [m]: 位置
+                   </li> 
+                   <li>
+                        <var>v</var> [m/s]: 速度
+                   </li>
+                   <li>
+                        <var>v</var><sub>0</sub> [m/s]: 初速度
+                   </li>
+                   <li>
+                        <var>a</var> [m/s<sup>2</sup>]: 加速度
+                   </li>
+                   <li>
+                        <var>t</var> [s]: 時刻
+                   </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [力学]力
+            </h2>
+            <section>
+                <h3>
+                    運動方程式と力の釣り合いの式
+                </h3>
+                <p>
+                    力の釣り合いの式 (物体が等速直線運動 or 静止)
+                </p>
+                <div>
+                    <span class="math matheq" id="a20">
+                        <var class="vector">F</var> = <span class="vector">0</span>
+                    </span>
+                </div>
+                <p>
+                    運動方程式 (物体が加速度運動)
+                </p>
+                <div>
+                    <span class="math matheq" id="a21">
+                        <var>m</var><var class="vector">a</var> = <var class="vector">F</var>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>m</var> [kg]: 物体の質量
+                    </li>
+                    <li>
+                        <var class="vector">a</var> [m/s<sup>2</sup>]: 物体の加速度
+                    </li>
+                    <li>
+                        <var class="vector">F</var> [N]: 物体の受ける合力
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    いろいろな力の大きさ
+                </h3>
+                <section>
+                    <h4>
+                        重力の大きさ
+                    </h4>
+                    <p>
+                        
+                    </p>
+                    <div>
+                        <span class="math matheq" id="a22">
+                            <var>W</var> = <var>m</var><var>g</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>W</var> [N]: 重力
+                        </li>
+                        <li>
+                            <var>m</var> [kg]: 物体の質量
+                        </li>
+                        <li>
+                            <var>g</var> [m/s<sup>2</sup>]: 重量加速度
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        弾性力の大きさ
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a23">
+                            <var>F</var> = <var>k</var><var>x</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>F</var> [N]: 弾性力の"大きさ"
+                        </li>
+                        <li>
+                            <var>k</var> [N/m]: ばね定数(ばねの固さのイメージ)
+                        </li>
+                        <li>
+                            <var>x</var> [m]:ばねの伸び縮み
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        動摩擦力の大きさ
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a24">
+                            <var>f'</var> = <var>&mu;'</var><var>N</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>f'</var> [N]: 動摩擦力
+                        </li>
+                        <li>
+                            <var>&mu;'</var>: 動摩擦係数
+                        </li>
+                        <li>
+                            <var>N</var> [N]: 垂直抗力
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        最大摩擦力の大きさ(静止摩擦力の最大)
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a25">
+                            <var>f</var><sub>0</sub> = <var>&mu;</var><var>N</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>f</var><sub>0</sub> [N]: 静止摩擦力の最大
+                        </li>
+                        <li>
+                            <var>&mu;'</var> : 静止摩擦係数
+                        </li>
+                        <li>
+                            <var>N</var> [N]: 垂直抗力
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        浮力
+                    </h4>
+                    <p>
+                        密度 <var>&rho;</var> の流体内の体積<var>V</var>の物体が受ける力
+                    </p>
+                    <div>
+                        <span class="math matheq" id="a26">
+                            <var>F</var> = <var>&rho;Vg</var> 
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>F</var> [N]: 浮力の大きさ
+                        </li>
+                        <li>
+                            <var>&rho;</var> [kg/m<sup>3</sup>]: 流体の密度
+                        </li>
+                        <li>
+                            <var>V</var> [m<sup>3</sup>]: 浮力を受ける物体の体積
+                        </li>
+                        <li>
+                            <var>g</var> [m/s<sup>2</sup>]: 重力加速度
+                        </li>
+                    </ul>
+                    <p>
+                        水圧の公式(<span class="math" id="a27"><var>p</var> = <var>&rho;hg</var></span>)から導かれる。(<var>h</var> [m]: 深さ, <var>p</var> [Pa]: 水圧)
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [力学]仕事とエネルギー
+            </h2>
+            <section>
+                <h3>
+                    仕事
+                </h3>
+                <section>
+                    <h4>
+                        仕事
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a30">
+                            <var>W</var> = <var>F</var><var>x</var> cos <var>&theta;</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>W</var> [<span id="a31">J</span>]: 仕事
+                        </li>
+                        <li>
+                            <var>F</var> [N]: 物体に加えた力の大きさ
+                        </li>
+                        <li>
+                            <var>x</var> [m]: 物体の変位(移動距離)
+                        </li>
+                        <li>
+                            <var>&theta;</var> : 物体の移動方向と力のなす角
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    運動エネルギー
+                </h3>
+                <section>
+                    <h4>
+                        運動エネルギーの大きさ
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a32">
+                            <var>K</var> = (1/2)<var>m</var><var>v</var><sup>2</sup>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>K</var> [J]: 運動エネルギー
+                        </li>
+                        <li>
+                            <var>m</var> [kg]: 物体の質量
+                        </li>
+                        <li>
+                            <var>v</var> [m/s]: 物体の速さ (方向は関係ない)
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        運動エネルギーの変化は仕事が与える。
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a33">
+                            (1/2)<var>m</var><var>v</var><sup>2</sup> - (1/2)<var>m</var><var>v</var><sub>0</sub><sup>2</sup> = <var>W</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>W</var> [J]: 仕事
+                        </li>
+                        <li>
+                            <var>m</var> [kg]: 物体の質量
+                        </li>
+                        <li>
+                            <var>v</var><sub>0</sub> [m/s]: 物体の速さ(変化前) (方向は関係ない)
+                        </li>
+                        <li>
+                            <var>v</var> [m/s]: 物体の速さ(変化後) (方向は関係ない)
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+            <section>
+                <h3>
+                    位置エネルギー
+                </h3>
+                <section>
+                    <h4>
+                        重力による位置エネルギー
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a40">
+                            <var>U</var> = <var>m</var><var>g</var><var>h</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>U</var> [J]: 位置エネルギー
+                        </li>
+                        <li>
+                            <var>m</var> [kg]: 物体の質量
+                        </li>
+                        <li>
+                            <var>g</var> [m/s<sup>2</sup>]: 重力加速度
+                        </li>
+                        <li>
+                            <var>h</var> [m]: 基準面からの高さ (基準を明確に!)
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        弾性力による位置エネルギー
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a41">
+                            <var>U</var> = (1/2)<var>k</var><var>x</var><sup>2</sup>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>U</var> [J]: 位置エネルギー
+                        </li>
+                        <li>
+                            <var>k</var> [N/m]: ばね定数
+                        </li>
+                        <li>
+                            <var>x</var> [m]: ばねののび
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [波動]波動
+            </h2>
+            <section>
+                <h3>
+                    用語の確認
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <var>v</var> [<span id=a100>m/s</span>]: 波の速さ
+                        </dl>
+                        <dd>
+                            波の進む速さ
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>
+                            <var>&lambda;</var> [<span id=a101>m</span>]: 波長
+                        </dl>
+                        <dd>
+                            波の繰り返す、山々の間隔、あるいは谷谷の間隔
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>
+                            <var>T</var>[<span id="a102">s</span>]: 周期
+                        </dl>
+                        <dd>
+                            <var>t</var> = 0の時の波形と重なる一番最初の時刻
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>
+                            <var>f</var> [<span id="a103">Hz</span>]: 振動数
+                        </dl>
+                        <dd>
+                            1s間に媒質が振動する回数[回/s]
+                        </dd>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    波の基本の式
+                </h3>
+                <div>
+                    <span class="math matheq" id="a110">
+                        <var>v</var> = <var>f</var> <var>&lambda;</var>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>v</var> [m/s]: 波の速さ
+                    </li>
+                    <li>
+                        <var>f</var> [Hz]: 振動数
+                    </li>
+                    <li>
+                        <var>&lambda;</var> [m]: 波長
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    音波のうなり
+                </h3>
+                <div>
+                    <span class="math matheq" id="a111">
+                        <var>f</var> = | <var>f</var><sub>1</sub> - <var>f</var><sub>2</sub> |
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>f</var> [Hz]: うなりの振動数
+                    </li>
+                    <li>
+                        <var>f</var><sub>1</sub>, <var>f</var><sub>2</sub> [Hz]: それぞれの音の振動数
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [熱力学] 熱と温度
+            </h2>
+            <section>
+                <h3>
+                    絶対温度
+                </h3>
+                <div>
+                    <span class="math matheq" id="a150">
+                        <var>T</var> = <var>t</var> + 273
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>T</var> [<span id="a152">K</span>]: 絶対温度
+                    </li>
+                    <li>
+                        <var>t</var> [&#8451;]: セ氏温度
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    熱量の計算
+                </h3>
+                <section>
+                    <h4>
+                        温度上昇下降の熱量
+                    </h4>
+                    <div>
+                        <span class="math matheq" id="a153">
+                            <var>Q</var> = <var>C&Delta;T</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>Q</var> [J]: 物質の温度を<var>&Delta;T</var> [K]変化させるために吸収、放出する熱量
+                        </li>
+                        <li>
+                            <var>&Delta;T</var> [K]: 温度上昇下降
+                        </li>
+                        <li>
+                            <var>C</var> [J/K]: 熱容量
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        比熱
+                    </h4>
+                    <p>
+                        比熱: 1gの温度を1Kあげるのに必要な熱量
+                    </p>
+                    <div>
+                        <span class="math matheq" id="a154">
+                            <var>C</var> = <var>mc</var>
+                        </span>
+                    </div>
+                    <ul>
+                        <li>
+                            <var>C</var> [J/K]: 熱容量
+                        </li>
+                        <li>
+                            <var>m</var> [g]: 物質の質量
+                        </li>
+                        <li>
+                            <var>c</var> [J/(g&middot;K)]: 比熱
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                [電磁気学] 電気
+            </h2>
+            <section>
+                <h3>
+                    電気量(電荷の量)と電流
+                </h3>
+                <p>
+                    電流と電気量の関係式
+                </p>
+                <div>
+                    <span class="math matheq" id="a200">
+                        <var>Q</var> = <var>I</var><var>t</var>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>Q</var> [<span id=a201>C</span>]: <var>t</var> [s]間電気を流した時の電気量
+                    </li>
+                    <li>
+                        <var>I</var> [A]: 電流
+                    </li>
+                    <li>
+                        <var>t</var> [s]: 電気を流した時間
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    オームの法則
+                </h3>
+                <div>
+                    <span class="math matheq" id="a202">
+                        <var>V</var> = <var>R</var><var>I</var>
+                    </span>
+                </div>
+                <ul>
+                    <li>
+                        <var>V</var> [<span id=a201>V</span>]: 抵抗にかかる電圧
+                    </li>
+                    <li>
+                        <var>I</var> [A]: 抵抗を流れる電流
+                    </li>
+                    <li>
+                        <var>R</var> [&Omega;]: 抵抗の大きさ
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            覚えてなかったことって多いよね。
+        </p>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023
+            C-Sharper.
+            All Right Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

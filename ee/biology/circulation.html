@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>循環と肝臓腎臓|生物基礎 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            循環と肝臓腎臓
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                体内環境と対外環境
+            </h2>
+            <dl>
+                <dt>
+                    体外環境
+                </dt>
+                <dd>
+                    細胞に囲まれていない外側の空間。
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    体内環境
+                </dt>
+                <dd>
+                    細胞に囲まれている空間。<span id="a1">体液</span>で構成され、体内環境は一定に維持されている。
+                </dd>
+            </dl>
+            <section>
+                <h3>
+                    体液
+                </h3>
+                <section>
+                    <h4>
+                        体液の種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a2">血しょう</span>
+                                </dt>
+                                <dd>
+                                    血管を流れる血液の液体成分
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a3">組織液</span>
+                                </dt>
+                                <dd>
+                                    組織の細胞を取り巻く液体成分
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a4">リンパ液</span>
+                                </dt>
+                                <dd>
+                                    免疫に働いていて、<span id="a5">リンパ管</span>をとおる。
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        血液の成分
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a6">赤血球</span>
+                                </dt>
+                                <dd>
+                                    酸素の運搬をする。
+                                    核を持たない。
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a7">白血球</span>
+                                </dt>
+                                <dd>
+                                    免疫。
+                                    核を持つ。
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a8">血小板</span>
+                                </dt>
+                                <dd>
+                                    血液凝固
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <p>
+                        血球は<span id="a9">造血幹細胞</span>(脊髄にある)と呼ばれる細胞が分化したものである。
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                循環
+            </h2>
+            <section>
+                <h3>
+                    血管
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                動脈
+                            </dt>
+                            <dd>
+                                心臓から各毛細血管に向かって流れている血管。
+                            </dd>
+                            <dd>
+                                比較して、<span id="a20">平滑筋</span>と呼ばれる筋肉が厚く、血液が速く流れても耐えられる作りになっている。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                静脈
+                            </dt>
+                            <dd>
+                                各毛細血管から心臓に向かって流れている血管。
+                            </dd>
+                            <dd>
+                                <span id="a21">弁</span>が存在する。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    血管系
+                </h3>
+                <ul>
+                    <li>
+
+                        <dl>
+                            <dt>
+                                <span id="a30">開放</span>血管系
+                            </dt>
+                            <dd>
+                                <img src="./img/cirtype1.svg" alt="開放循環系の模式図">
+                            </dd>
+                            <dd>
+                                血管が途中で途切れていて、各細胞に酸素を供給する。
+                            </dd>
+                            <dd>
+                                血液はいったん血管外に出て、各組織を経て血管内に戻り、心臓に帰ってくる。
+                            </dd>
+                            <dd>
+                                e.g.) <span id="a31">軟体動物</span>, <span id="a32">節足動物</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        
+                        <dl>
+                            <dt>
+                                <span id="a35">閉鎖</span>血管系
+                            </dt>
+                            <dd>
+                                <img src="./img/cirtype2.svg" alt="閉鎖循環系の模式図">
+                            </dd>
+                            <dd>
+                                血管が途中で途切れておらず、毛細血管を用いて各細胞に酸素を供給する。
+                            </dd>
+                            <dd>
+                                血液の大部分は血管を出ず、毛細血管を経て心臓に帰ってくる。
+                            </dd>
+                            <dd>
+                                e.g.) <span id="a36">脊椎動物</span>, 環形動物
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                心臓
+            </h2>
+            <section>
+                <h3>
+                    心臓のつくり
+                </h3>
+                <div>
+                    <img src="./img/heart.svg" alt="心臓のつもりの図">
+                </div>
+                <p>
+                    見ずらい心臓の図をPowerPointで作りました。(ノルマ)<br/>
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Diagram_of_the_human_heart_%28cropped%29_ja.svg" target="_blank">Wikipediaに載っている心臓の図</a>のほうが見やすいです。
+                </p>
+                <p>
+                    以下の[1] - [4]と、[A] - [D]は、図の緑丸, 水色丸と一致しています。
+                </p>
+                <section>
+                    <h4>
+                        心臓の部位
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [1]: <span id="a40">右心房</span>
+                                </dt>
+                                <dd>
+                                    体内から来た静脈血を<span id="a41">受け取る</span>[受け取る/送り出す]
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [2]: <span id="a42">右心室</span>
+                                </dt>
+                                <dd>
+                                    静脈血を肺に<span id="a43">送り出す</span>[受け取る/送り出す]
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [3]: <span id="a44">左心房</span>
+                                </dt>
+                                <dd>
+                                    肺から来た動脈血を<span id="a45">受け取る</span>[受け取る/送り出す]
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [4]: <span id="a46">左心室</span>
+                                </dt>
+                                <dd>
+                                    動脈血を体内に<span id="a47">送り出す</span>[受け取る/送り出す]
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [A]: <span id="a48">大静脈</span>
+                                </dt>
+                                <dd>
+                                    静脈血が流れる。
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [B]: <span id="a49">大動脈</span>
+                                </dt>
+                                <dd>
+                                    動脈血が流れる。
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [C]: <span id="a50">肺動脈</span>
+                                </dt>
+                                <dd>
+                                    静脈血が流れる。
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [D]: <span id="a51">肺静脈</span>
+                                </dt>
+                                <dd>
+                                    動脈血が流れる。
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                赤血球
+            </h2>
+            <section>
+                <h3>
+                    ヘモグロビン
+                </h3>
+                <p>
+                    <span id="a70">&alpha;鎖</span>が<span id="a71">2<span class="b">本</span></span>と、<span id="a72">&beta;鎖</span>が<span id="a73">2<span class="b">本</span></span>の、計4本のポリペプチドが結合したタンパク質
+                </p>
+                <p>
+                    ヘモグロビン周囲の酸素が豊富な時は酸素と結合し、少ないときは酸素を放す。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    ミオグロビン
+                </h3>
+                <p>
+                    <span id="a74">1<span class="b">本</span></span>のポリペプチドのタンパク質
+                </p>
+                <p>
+                    <span id="a75">筋肉</span>に存在する。
+                </p>
+                <p>
+                    ヘモグロビンに比べ、<em>低い酸素濃度でも酸素と結合可能</em>
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                血液凝固
+            </h2>
+            <p>
+                血管が破れたら...
+            </p>
+            <ol>
+                <li>
+                    血管が破れたら、最初に敗れた個所に<span id="a100">血小板</span>が集まり、壁を作る。
+                </li>
+                <li>
+                    それと同時に血液中の<span id="a101">血液凝固因子</span>やCa<sup>+</sup>が集まり、血液中の<span id="a102">プロトロンビン</span>という物質を<span id="a103">トロンビン</span>という酵素に変える。
+                </li>
+                <li>
+                    2. で発生した酵素は、血液中の<span id="a104">フィブリノーゲン</span>という物質を<span id="a105">フィブリン</span>という物質に変える。
+                </li>
+                <li>
+                    3. で発生した物質が, <span id="a106">白血球</span>, <span id="a107">赤血球</span>などをつなげて壁を作る。
+                    (これを「<span id="a108">血ぺい</span>」という)
+                </li>
+                <li>
+                    4. の壁で止血している間に、血管を修復する。
+                </li>
+                <li>
+                    血管修復後は、4. の壁を溶かす「<span id="a109">線溶(フィブリン溶解)</span>」という現象が起こる。
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                肝臓
+            </h2>
+            <section>
+                <h3>
+                    他の臓器とのつながり
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a200">肝門脈</span>
+                            </dt>
+                            <dd>
+                                [1]<span id="a201">小腸</span>から[2]<span id="a202">肝臓</span>へ流れている。
+                            </dd>
+                            <dd>
+                                [1]で吸収した物質を含んでいるので、他の血液とは異なる成分が流れている。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a210">胆管</span>
+                            </dt>
+                            <dd>
+                                [3]<span id="a211">肝臓</span>から[4]<span id="a212">十二指腸</span>へ流れている。
+                            </dd>
+                            <dd>
+                                [3]で<span id="a213">ビリルビン</span>や、<span id="a214">胆汁酸</span>などから合成した<span id="a215">胆汁</span>を、[4]に放出する。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    肝臓のつくり
+                </h3>
+                <figure>
+                    <img src="./img/liver.svg" alt="肝臓">
+                    <figcaption>
+                        肝臓のつくりの模式図: 右側は左側の薄い灰色部分の拡大
+                    </figcaption>
+                </figure>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                [1]<span id="a220">肝小葉</span>
+                            </dt>
+                            <dd>
+                                肝臓の1単位
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [2]<span id="a221">中心静脈</span>
+                            </dt>
+                            <dd>
+                                [1]の中央を通る。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [3]<span id="a222">肝門脈</span>
+                            </dt>
+                            <dd>
+                                <span id="a223">小腸</span>から流れてくる
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [4]<span id="a224">肝動脈</span>
+                            </dt>
+                            <dd>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [5]<span id="a225">胆管</span>
+                            </dt>
+                            <dd>
+                                <span id="a226">十二指腸</span>へ流れていく
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [6]肝細胞
+                            </dt>
+                            <dd></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [a]<span id="a227">胆細管</span>
+                            </dt>
+                            <dd>
+                                <span id="a228">[2]中心静脈</span>とはつながっておらず, <span id="a229">[5]胆管</span>方面に, 流れている。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                [b]<span id="a230">類洞</span>
+                            </dt>
+                            <dd>
+                                <span id="a231">酸素</span>と<span id="a232">小腸で吸収した物質</span>を含んでおり, <span id="a233">[3]肝門脈</span>と<span id="a234">[4]肝動脈</span>から, <span id="a235">中心静脈</span>に向けて流れている。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    肝臓のお仕事
+                </h3>
+                <section>
+                    <h4>
+                        血統濃度調節
+                    </h4>
+                    <p>
+                        血糖: 血液中の<span id="a240">グルコース</span> (約<span id="a241">0.1</span>%)
+                    </p>
+                    <p>
+                        血糖多: 血液中の<span id="a242">グルコース</span>から<span id="a243">グリコーゲン</span>を合成して, 肝臓に貯蓄
+                    </p>
+                    <p>
+                        血糖少: 貯蓄した<span id="a244">グリコーゲン</span>を<span id="a245">グルコース</span>に戻す。
+                    </p>
+                    <p>
+                        グリコーゲン: グルコースがつながったもの。
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                腎臓
+            </h2>
+            <section>
+                <h3>
+                    構造
+                </h3>
+                <section>
+                    <h4>
+                        １つの腎臓
+                    </h4>
+                    <img src="./img/kidney1.svg" alt="腎臓">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [1]<span id="a300">腎う</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [2]<span id="a301">髄質</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [3]<span id="a302">皮質</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [a]<span id="a303">腎動脈</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [b]<span id="a304">腎静脈</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [c]<span id="a305">輸尿管</span>
+                                </dt>
+                                <dd>
+                                    <span id="a306">ぼうこう</span>に向かって伸びている。
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        1つのネフロン
+                    </h4>
+                    <p>
+                        1つの腎臓中に, <span id="a320">100万</span>個の<em>ネフロン</em>がある。
+                    </p>
+                    <img src="./img/kidney2.svg" alt="ネフロン">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [1]<span id="a321">糸球体</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [2]<span id="a322">ボーマンのう</span>
+                                </dt>
+                                <dd>
+                                    [1], [2]を合わせて<span id="a323">腎小体</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [3]<span id="a324">腎う</span>へつながっている。
+                                </dt>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [a]<span id="a325">細尿管</span>
+                                </dt>
+                                <dd></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    [b]<span id="a326">集合管</span>
+                                </dt>
+                                <dd>
+                                    沢山のネフロンの[a]が合流して[b]になる。
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    尿生成の仕組み
+                </h3>
+                <img src="./img/kidney3.svg">
+                <section class="noclear">
+                    <h4>
+                        構造
+                    </h4>
+                    <ul>
+                        <li>
+                            [1]<span id="a330">糸球体</span>
+                        </li>
+                        <li>
+                            [2]<span id="a331">ボーマンのう</span>
+                        </li>
+                        <li>
+                            [3]<span id="a332">毛細血管</span>
+                        </li>
+                        <li>
+                            [4]<span id="a333">細尿管</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="noclear">
+                    <h4>
+                        仕組み
+                    </h4>
+                    <ol>
+                        <li>
+                            <p>
+                                [a]: [1] &rArr; [2] で, <span id="a340">血しょう</span>がろ過されて, <span id="a341">原尿</span>ができる。
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                [b]: 1. でろ過された物質の一部は[4]を通り, [b]で「再吸収」される
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                再吸収済みの液体は<span id="a342">腎う</span>に運ばれて, 最終的には<span id="a343">尿</span>となる
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="noclear">
+                    <h4>
+                        ろ過, 再吸収される物質
+                    </h4>
+                    <table class="alc">
+                        <tr>
+                            <th>
+
+                            </th>
+                            <th>
+                                ろ過  
+                            </th>
+                            <th>
+                                再吸収
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                タンパク質
+                            </td>
+                            <td>
+                                <span id="a352">&times;</span>
+                            </td>
+                            <td>
+                                <span id="a353">&times;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                グルコース
+                            </td>
+                            <td>
+                                <span id="a350">&cir;</span>
+                            </td>
+                            <td>
+                                <span id="a351">&cir;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                尿素
+                            </td>
+                            <td>
+                                <span id="a354">&cir;</span>
+                            </td>
+                            <td>
+                                <span id="a355">&times;</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        &rArr; 尿中の質量パーセント濃度が高い物質は<span id="a356">不要</span>な物質
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                塩類濃度調節
+            </h2>
+            <section>
+                <h3>
+                    細胞内外の濃度と, 水の移動の関係
+                </h3>
+                <table class="alc">
+                    <tr>
+                        <th>
+                            細胞内
+                        </th>
+                        <th>
+                            細胞外
+                        </th>
+                        <th>
+                            水の移動
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            濃
+                        </td>
+                        <td>
+                            薄
+                        </td>
+                        <td>
+                            細胞内 <span id="a400">&larr;</span> 細胞外
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            等
+                        </td>
+                        <td>
+                            等
+                        </td>
+                        <td>
+                            細胞内 <span id="a401">&rlarr;</span> 細胞外
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            薄
+                        </td>
+                        <td>
+                            濃
+                        </td>
+                        <td>
+                            細胞内 <span id="a402">&rarr;</span> 細胞外
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>
+                    魚類の濃度調節
+                </h3>
+                <section>
+                    <h4>
+                        海水性硬骨魚類
+                    </h4>
+                    <p>
+                        海水の濃度は, 体内濃度よりも<span id="a410">濃い</span>[薄い/濃い]。<br/>
+                        したがって水分は<span id="a411">出る</span>[出る/入る]。
+                    </p>
+                    <p>
+                        水分<span id="a412">不足</span>[過剰/不足]のため, 海水を<span id="a413">飲む</span>[飲む/飲まない]
+                    </p>
+                    <p>
+                        海水には塩類が含まれるのでえらの<span id="a414">塩類細胞</span>で, 塩類を排出する。
+                    </p>
+                    <p>
+                        尿で, <span id="a415">塩類</span>[塩類/水分]を排出する。<br/>
+                        尿濃度は, 体液と比べ<span id="a416">等濃度</span>[低濃度/等濃度/高濃度]。<br/>
+                        尿量は<span id="a417">少量</span>[少量/多量]
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        淡水性硬骨魚類
+                    </h4>
+                    <p>
+                        海水の濃度は, 体内濃度よりも<span id="a430">薄い</span>[薄い/濃い]。<br/>
+                        したがって水分は<span id="a431">入る</span>[出る/入る]。
+                    </p>
+                    <p>
+                        水分<span id="a433">過剰</span>[過剰/不足]のため, 海水を<span id="a433">飲まない</span>[飲む/飲まない]
+                    </p>
+                    <p>
+                        失われていく塩類は<span id="a434">えら</span>から取り込む。
+                    </p>
+                    <p>
+                        尿で, <span id="a435">水分</span>[塩類/水分]を排出する。<br/>
+                        尿濃度は, 体液と比べ<span id="a436">低濃度</span>[低濃度/等濃度/高濃度]。<br/>
+                        尿量は<span id="a437">多量</span>[少量/多量]
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        海水性軟骨魚類
+                    </h4>
+                    <p>
+                        <span id="a440">尿素</span>を体内にため込むことによって, 体液塩類濃度を海水とほぼ同じように保っている。
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    カニの濃度調節
+                </h3>
+                <p>
+                    カニは海水部分と淡水部分を行き来する。
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a450">ミドリガニ</span>
+                            </dt>
+                            <dd>
+                                河口付近に生息する
+                            </dd>
+                            <dd>
+                                海水に近い環境のときでも, 淡水が流入してきて塩類濃度が低い環境でも対応できる。
+                            </dd>
+                            <dd>
+                                &rArr; 外液濃度が低いとき, 体液の濃度調節
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a451">ケアシガニ</span>
+                            </dt>
+                            <dd>
+                                外洋に住む。
+                            </dd>
+                            <dd>
+                                体内濃度調節能力は発達していない
+                            </dd>
+                            <dd>
+                                &rArr; 外液と体液の塩類濃度の値が同じになる
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a452">モクズガニ</span>
+                            </dt>
+                            <dd>
+                                海でタマゴがふ化して, 生態になるにつれて川に移動し, 産卵時期に海に戻る。
+                            </dd>
+                            <dd>
+                                体内濃度調節能力が発達している。
+                            </dd>
+                            <dd>
+                                &rArr; 外液濃度が低いとき, 高いときは体液濃度調節を行って, 体内濃度を一定に保とうとする。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <p>
+                    共通して, 外液濃度は0.8 - 1.1 (相対値)の時は, どのカニにとっても生きるのに適している<br/>
+                    &rArr; 濃度調節せず。
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

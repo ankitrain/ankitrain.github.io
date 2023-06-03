@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>水産業|地理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            水産業
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                漁業の種類
+            </h2>
+            <section>
+                <h3>
+                    獲る漁業
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a1">沿岸</span>漁業
+                            </dt>
+                            <dd>
+                                日帰りで行う
+                            </dd>
+                            <dd>
+                                小型船・地引網など
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a2">沖合</span>漁業
+                            </dt>
+                            <dd>
+                                数日規模で行う
+                            </dd>
+                            <dd>
+                                主に日本のEEZ(<span id="a3">排他的経済水域</span>)で行われる
+                            </dd>
+                            <dd>
+                                中型船
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a4">遠洋</span>漁業
+                            </dt>
+                            <dd>
+                                長期間(50日～1年, 1年以上にわたることも)規模
+                            </dd>
+                            <dd>
+                                公海の範囲で行う
+                            </dd>
+                            <dd>
+                                大型船
+                            </dd>
+                            <dd>
+                                マグロの<span id="a5">はえ縄<span class="b">漁</span></span>や、カツオの<span id="a6">一本釣り</span>が有名
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a7">内水面</span>漁業
+                            </dt>
+                            <dd>
+                                河川や沼などで行われる漁業
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    育てる漁業
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a20">栽培漁業</span>
+                            </dt>
+                            <dd>
+                                人工ふ化 &rightarrow; 稚魚 &rightarrow; 放流 &rightarrow; (生育) &rightarrow; 捕獲
+                            </dd>
+                            <dd>
+                                稚魚の状態まで育てて放流し、自然の中で成長した成魚を再度獲る漁業
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a21">畜養</span>
+                            </dt>
+                            <dd>
+                                稚魚を捕獲 &rightarrow; 成魚 &rightarrow; 出荷
+                            </dd>
+                            <dd>
+                                稚魚を捕まえて育てて出荷する。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                完全養殖
+                            </dt>
+                            <dd>
+                                卵 &rightarrow; 稚魚 &rightarrow; 成魚 &rightarrow; 卵/出荷
+                            </dd>
+                            <dd>
+                                ふ化から成魚にし、卵を産ませる一連のプロセスをすべて行う
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                漁場の成立条件
+            </h2>
+            <ul>
+                <li>
+                    大陸棚, <span id="a50">バンク</span>(大陸棚中の少し高いところ) の発達
+                </li>
+                <li>
+                    潮目, <span id="a51">湧昇<span class="b">流</span></span>(海面への上向きの流れ)の発生
+                </li>
+                <li>
+                    市場の存在
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                主な漁場
+            </h2>
+            <section>
+                <h3>
+                    <span id="a100">北西太平洋</span>漁場
+                </h3>
+                <p>
+                    アジアの東端、日本の周囲の漁場
+                </p>
+                <section>
+                    <h4>
+                        主な出漁国
+                    </h4>
+                    <p>
+                        中国, ロシア, 韓国, 北朝鮮, 日本
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        環境
+                    </h4>
+                    <p>
+                        暖流: <span id="a101">黒潮</span>(<span id="a102">日本</span>海流), <span id="a103">対馬</span>海流
+                    </p>
+                    <p>
+                        寒流: <span id="a104">親潮</span>(<span id="a105">千島</span>海流), <span id="a106">リマン</span>海流
+                    </p>
+                    <p>
+                        広大な大陸棚とバンク
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        特色
+                    </h4>
+                    <p>
+                        漁獲高が世界一であり、世界の魚の1/4を占める
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    <span id="a120">北東太平洋</span>漁場
+                </h3>
+                <p>
+                    アメリカ西海岸の漁場
+                </p>
+                <section>
+                    <h4>
+                        主な出漁国
+                    </h4>
+                    <p>
+                        アメリカ, カナダ
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        環境
+                    </h4>
+                    <p>
+                        暖流: <span id="a121">北太平洋</span>海流
+                    </p>
+                    <p>
+                        寒流: <span id="a122">カルフォルニア</span>海流
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        特色
+                    </h4>
+                    <p>
+                        NYなどの大きな市場からは遠いため、19C末に<span id="a123">缶詰</span>工業が発達した。
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    <span id="a140">南東太平洋</span>漁場
+                </h3>
+                <p>
+                    南アメリカ西岸のペルー沖の漁場
+                </p>
+                <section>
+                    <h4>
+                        主な出漁国
+                    </h4>
+                    <p>
+                        ペルー, チリ
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        環境
+                    </h4>
+                    <p>
+                        寒流: <span id="a141">ペルー</span>海流
+                    </p>
+                    <p>
+                        その海流による<span id="a142">湧昇<span class="b">流</span></span>によって好漁場となっている。
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        特色
+                    </h4>
+                    <p>
+                        <span id="a143">アンチョビ</span>(かたくちいわし)漁が有名
+                    </p>
+                    <p>
+                        <span id="a144">エルニーニョ</span>現象(海水温上昇)によって、漁獲高が増減する。
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    <span id="a160">北西大西洋</span>漁場
+                </h3>
+                <p>
+                    アメリカ東海岸側の漁場
+                </p>
+                <section>
+                    <h4>
+                        主な出漁国
+                    </h4>
+                    <p>
+                        アメリカ, カナダ
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        環境
+                    </h4>
+                    <p>
+                        暖流: <span id="a161">メキシコ湾</span>流
+                    </p>
+                    <p>
+                        寒流: <span id="a162">ラブラドル</span>海流
+                    </p>
+                    <p>
+                        <span id="a163">グランド</span>バンク, <span id="a164">ジョージ</span>バンク, <span id="a165">サンピエール</span>バンク
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        特色
+                    </h4>
+                    <p>
+                        15C末に<span id="a166">フランス</span>の漁民が開発<br/>
+                        <span id="a167">サンピエール</span>島, <span id="a168">ミクロン</span>島 (仏領)
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    <span id="a180">北東大西洋</span>漁場
+                </h3>
+                <p>
+                    イギリスの近く、西ヨーロッパ沿岸
+                </p>
+                <section>
+                    <h4>
+                        主な出漁国
+                    </h4>
+                    <p>
+                        イギリス, ノルウェー, アイスランド, ロシア, デンマーク, スペイン
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        環境
+                    </h4>
+                    <p>
+                        暖流: <span id="a181">北大西洋</span>海流 (このおかげでヨーロッパはCfb)
+                    </p>
+                    <p>
+                        寒流: <span id="a182">東グリーンランド</span>海流
+                    </p>
+                    <p>
+                        <span id="a183">ドッガー</span>バンク, <span id="a184">グレードワイッシャー</span>バンク, <span id="a185">フェロー</span>バンク
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        特色
+                    </h4>
+                    <p>
+                        トロール漁
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                近年の漁業
+            </h2>
+            <p>
+                漁獲高, 輸出量ともに<span id="a200">中国</span>がトップ。<br/>
+                東南アジアの国々も漁獲高が高い。
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

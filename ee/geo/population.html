@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>人口|地理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <style>
+        table.pyramid {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        table.pyramid td {
+            width: 33%;
+
+        }
+
+        table.pyramid img {
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            min-width: none;
+        }
+    </style>
+    
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>
+            人口
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>    <main>
+        <section>
+            <h2>
+                人口分布, 人口増加
+            </h2>
+            <ul>
+                <li>
+
+                    <dl>
+                        <dt>
+                            居住地域(<span id="a1">エクメーネ</span>)
+                        </dt>
+                        <dd>
+                            人間が日常的に居住している場所。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+
+                    <dl>
+                        <dt>
+                            非居住地域(<span id="a2">アネクメーネ</span>)
+                        </dt>
+                        <dd>
+                            人間が居住していない地域。<br />
+                            南極北極や砂漠など。
+                            あるいは標高の高すぎる山とか。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a3">可容人口</span>
+                        </dt>
+                        <dd>
+                            地球が養える最大限の人口のこと。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            人口論 By <span id="a4">マルサス</span>
+                        </dt>
+                        <dd>
+                            人口は等比数列的に増加するのに対し、食料は等差数列的に増加するため、人口過剰と食糧不足が起き、社会に貧困と悪徳を生むので人口抑制が必要という考え方。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a14">合計特殊出生率</span>
+                        </dt>
+                        <dd>
+                            1人の女性が一生の間に産む子供の数。
+                        </dd>
+                        <dd>
+                            各国で静止人口となるそれを<span id="a15">人口置換水準</span>という。先進国では一般的には約2.1
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <section>
+                <h3>
+                    国全体の人口ピラミッド
+                </h3>
+                <table class="pyramid">
+                    <tr>
+                        <td>
+                            <span id="a5">ピラミッド</span>型<br />
+                            富士山型
+                        </td>
+                        <td>
+                            <span id="a6">釣り鐘</span>型<br />
+                            ベル型
+                        </td>
+                        <td>
+                            <span id="a7">つぼ</span>型
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/py1.svg" alt="ピラミッド型">
+                        </td>
+                        <td>
+                            <img src="img/py2.svg" alt="釣り鐘型">
+                        </td>
+                        <td>
+                            <img src="img/py3.svg" alt="つぼ型">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            主に発展途上国で見られる。
+                        </td>
+                        <td>
+                            主に先進国で見られる。
+                        </td>
+                        <td>
+                            先進国の中でも少子化が進んだところで見られる。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            多産多死型
+                        </td>
+                        <td>
+                            <span id="a8">少産少死</span>型
+                        </td>
+                        <td>
+                            少産少死型
+                        </td>
+                    </tr>
+                </table>
+                <small>画像をpowerpointで作ったのでいびつになっています許して。</small>
+            </section>
+            <section>
+                <h3>
+                    地域ごとの人口ピラミッド
+                </h3>
+                <table class="pyramid">
+                    <tr>
+                        <td>
+                            <span id="a9">都市</span>型<br />
+                            <span id="a11">星</span>型
+                        </td>
+                        <td>
+                            <span id="a12">ひょうたん</span>型
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/py4.svg" alt="都市型">
+                        </td>
+                        <td>
+                            <img src="img/py5.svg" alt="農村型">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            主に<span id="a13">都市</span>[都市/農村]で見られる。
+                        </td>
+                        <td>
+                            主に<span id="a10">農村</span>[都市/農村]で見られる。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            生産年齢人口が流入してこのようになる。
+                        </td>
+                        <td>
+                            生産年齢人口が流出してこのようになる。
+                        </td>
+                    </tr>
+                </table>
+                <small>画像をpowerpointで作ったのでいびつになっています許して。</small>
+            </section>
+        </section>
+        <section>
+            <h2>
+                日本の現状
+            </h2>
+            <p>
+                現在日本は少産少死で人口減少中。
+            </p>
+            <img src="img/Population_pyramid_of_Japan.svg" alt="日本の人口ピラミッド">
+            <small>画像出典:<a
+                    href="https://upload.wikimedia.org/wikipedia/commons/a/a6/Population_pyramid_of_Japan.svg">wikimedia</a></small>
+            <section>
+                <h3>
+                    日本の年齢別人口の特異な点
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                第一次ベビーブーム
+                            </dt>
+                            <dd>
+                                終戦後すぐ。
+                                人がすごく多く生まれた。<br />
+                                今の75歳前後
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a16">ひのえうま/丙午</span>
+                            </dt>
+                            <dd>
+                                江戸時代の事件から起こった迷信のせいで、出生数が少なくなる。
+                            </dd>
+                            <dd>
+                                次は西暦<span id="a17">2026</span>年
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                第二次ベビーブーム
+                            </dt>
+                            <dd>
+                                第一次ベビーブームの子がたくさん生まれた。<br />
+                                今の50歳前後。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+
+            </section>
+            <section>
+                <h3>
+                    過疎過密問題
+                </h3>
+                <p>
+                    1960年の高度経済成長で、<span id="a18">向都離村</span>(四字熟語)の傾向が大きくなった。
+                    &DoubleRightArrow; 人口の不均衡分布
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                ドーナツ化現象
+                            </dt>
+                            <dd>
+                                <p>
+                                    都市から郊外へ人が移っていってしまう現象。
+                                </p>
+                                <p>
+                                    都市の空洞化が起こり、悪い時では、昼間活気があふれる都心がゴーストタウン化する。
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                スプロール現象
+                            </dt>
+                            <dd>
+                                <p>
+                                    都市計画がしっかり策定されないために、都市が無秩序に拡大してしまう現象のこと。
+                                </p>
+                                <p>
+                                    田園地帯破壊、自動車増加などにより大気汚染、インフラ料金の上昇などにとどまらない弊害が生まれる。
+                                </p>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a19">U</span>ターン現象
+                            </dt>
+
+                            <dd>
+                                地方(農村)で生まれた人が、都心に一度は出てきたものの、地元に戻る現象。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a20">J</span>ターン現象
+                            </dt>
+                            <dd>
+                                地方で生まれた人が、都心に出て、地元とは別の地方(農村)に行くこと。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a21">I</span>ターン現象
+                            </dt>
+                            <dd>
+                                都心で生まれた人が、地方(農村)に行くこと。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                人口移動
+            </h2>
+            <section>
+                <h3>
+                    経済的理由
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                欧州&rightarrow;中南米
+                            </dt>
+                            <dd>
+                                ラテン系の人たちの新大陸入植
+                            </dd>
+                            <dd>
+                                cf. アメリカンドリーム, タウンシップ制
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                日系移民
+                            </dt>
+                            <dd>
+                                明治元年: <span id="a22">ハワイ</span><br/>
+                                明治41年: <span id="a23">ブラジル</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a24">華僑</span>
+                            </dt>
+                            <dd>
+                                中国<span id="a25">南</span>部&rightarrow;世界(主に東南アジア)
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a26">ゴールドラッシュ</span>
+                            </dt>
+                            <dd>
+                                オーストラリア, アメリカでの金山発見による人口集中
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a27">西漸</span>運動
+                            </dt>
+                            <dd>
+                                アメリカ開拓のために、アメリカ東部からアメリカ西部へと、西へ西へと移動する。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        出稼ぎ
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    政治的理由(強制移動含む)
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a28">奴隷</span>貿易
+                            </dt>
+                            <dd>
+                                アフリカ&rightarrow;アメリカ大陸<br/>
+                                農業, 開拓のため
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                オーストラリアへの入植
+                            </dt>
+                            <dd>
+                                イギリスの罪人に対する<span id="a29">流</span>刑として。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a30">シベリア</span>開拓
+                            </dt>
+                            <dd>
+                                開拓のために、ロシアの罪人をロシア西部からロシア東部へ
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a31">屯田</span>兵
+                            </dt>
+                            <dd>
+                                {東北, 北陸}&rightarrow;北海道<br/>
+                                北海道の開発と警備のため
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    宗教的理由
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                プロテスタントによるアメリカ移住
+                            </dt>
+                            <dd>
+                                英国教会の信仰に反対し、弾圧を逃れるために、そして信仰の自由を求めて<span id="a32">メイフラワー</span>号に入植した。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                イスラエル建国運動/<span id="a34">シオニズム</span>運動
+                            </dt>
+                            <dd>
+                                世界各地から、<span id="a35">パレスチナ</span>が集まっている
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

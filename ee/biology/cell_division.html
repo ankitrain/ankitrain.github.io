@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>細胞分裂と遺伝子|生物基礎 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            細胞分裂と遺伝子
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                細胞分裂
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a1">体細胞分裂</span>
+                        </dt>
+                        <dd>
+                            身体を作る細胞が分裂する細胞分裂。
+                        </dd>
+                        <dd>
+                            染色体やDNA量は変化<span id="a2">しない</span>[する/しない]
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a3">減数分裂</span>
+                        </dt>
+                        <dd>
+                            生殖細胞を作るための細胞分裂
+                        </dd>
+                        <dd>
+                            染色体やDNA量は変化<span id="a4">する</span>[する/しない]
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <p>
+                分裂前の細胞&DoubleRightArrow;<span id="a5">母細胞</span><br />
+                分裂後の細胞&DoubleRightArrow;<span id="a6">娘細胞</span>
+            </p>
+        </section>
+        <section>
+            <h2>
+                細胞周期
+            </h2>
+            <p>
+                分裂が終わってから次の分裂が終わるまでの過程
+            </p>
+            <section>
+                <h3>
+                    間期
+                </h3>
+                <p>
+                    分裂の準備を行う時期。大きく3つの時期がある
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                G<sub>0</sub>期 / 休止期
+                            </dt>
+                            <dd>
+                                分裂を行わない時期。
+                            </dd>
+                            <dd>
+                                筋肉細胞、神経細胞に存在。
+                                筋肉等が損傷したときにG<sub>0</sub>期から抜けて細胞分裂を再開する。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                G<sub>1</sub>期 / <span id="a7">DNA合成準備期</span>
+                            </dt>
+                            <dd>
+                                DNAの複製の準備が行われる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                S期 / <span id="a8">DNA合成期</span>
+                            </dt>
+                            <dd>
+                                DNAの複製が行われる。
+                            </dd>
+                            <dd>
+                                染色体数が倍になる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                G<sub>2</sub>期 / <span id="a9">分裂準備期</span>
+                            </dt>
+                            <dd>
+                                細胞の成長、酵素の活性化など、分裂の準備が行われる。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    分裂期
+                </h3>
+                <p>
+                    細胞周期のうち、細胞分裂を行う時期
+                </p>
+                <p>
+                    細胞周期の中で短い
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                前期
+                            </dt>
+                            <dd>
+                                核膜が消失
+                            </dd>
+                            <dd>
+                                染色体の凝集(集まって太くなる)
+                            </dd>
+                            <dd>
+                                染色体が2つくっついて動原体にまとまっている。
+                            </dd>
+                            <dd>
+                                紡錘糸が現れる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                中期
+                            </dt>
+                            <dd>
+                                染色体が<span id="a13">赤道</span>面に並ぶ。
+                            </dd>
+                            <dd>
+                                <span id="a14">紡錘体</span>が、のびて、各染色体の動原体。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+
+                        <dl>
+                            <dt>
+                                後期
+                            </dt>
+                            <dd>
+                                染色体の動原体にくっついた<span id="a15">紡錘体</span>が各染色体を引っ張って、両極に引っ張られる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                終期
+                            </dt>
+                            <dd>
+                                細胞が仕切られていく
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt>
+                                        動物細胞
+                                    </dt>
+                                    <dd>
+                                        外側から<em>くびれが生じ</em>細胞質が仕切られる。
+                                    </dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt>
+                                        植物細胞
+                                    </dt>
+                                    <dd>
+                                        <span id="a16">細胞板</span>によって、細胞質が仕切られる。
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+
+
+
+            </section>
+            <section>
+                <h3>
+                    細胞周期の長さ推定
+                </h3>
+                <p>
+                    どの細胞がどれくらい観察できたかによって、それぞれの時期がどれくらい長いかを推定できる。
+                </p>
+                <p>
+                    [ある時期の細胞周期の時間の割合] = [その時期の細胞数] / [観察された全細胞数]
+                </p>
+                <article>
+                    <h3>
+                        練習
+                    </h3>
+                    <p>
+                        Q. 以下のように観察された場合、分裂期の時間は何時間か。(細胞周期は20時間, すべて同調することなく細胞分裂しているものとする)
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                分裂過程の分類
+                            </td>
+                            <td>
+                                間期
+                            </td>
+                            <td>
+                                前期
+                            </td>
+                            <td>
+                                中期
+                            </td>
+                            <td>
+                                後期
+                            </td>
+                            <td>
+                                終期
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                視野中の細胞数
+                            </td>
+                            <td>
+                                150
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                7
+                            </td>
+                            <td>
+                                21
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        Ans. <span id="a50">5</span>時間
+                    </p>
+                </article>
+            </section>
+        </section>
+        <section>
+            <h2>
+                DNAの複製
+            </h2>
+            <p>
+                2本のヌクレオチド鎖が<span id="a10">塩基</span>でわかれる。
+            </p>
+            <p>
+                <span id="a11">DNAポリメラーゼ</span>により、新しいヌクレオチドが結合する。<br />
+                鎖の半分は元のヌクレオチド、もう半分は新しいヌクレオチドで構成される。&DoubleRightArrow;<span id="a12">半保存的複製</span>
+            </p>
+        </section>
+        <!--16まで使用-->
+        <section>
+            <h2>
+                DNAと遺伝子とゲノム
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a17">遺伝子</span>
+                        </dt>
+                        <dd>
+                            タンパク質を合成するための情報、塩基配列のまとまり。
+                        </dd>
+                        <dd>
+                            ヒトの場合は約<span id="a18">20,000</span>個存在。
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a19">ゲノム</span>
+                        </dt>
+                        <dd>
+                            ヒトを作るための情報1セット。
+                        </dd>
+                        <dd>
+                            ヒトの場合は約<span id="a20">20億</span>塩基対存在する。<br />
+                            また、ヒトの場合は<span id="a21">23</span>本存在する。
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <p>
+                人1人の1ゲノムは約<span id="a22">1</span>mある。
+                体細胞の核に含まれるDNAは全長で、約<span id="a23">2</span>mになる。
+            </p>
+        </section>
+        <section>
+            <h2>
+                染色体の構成を示す方法
+            </h2>
+
+            <dl>
+                <dt>
+                    <span id="a28">核相</span>
+                </dt>
+                <dd>
+                    <p>
+                        細胞における染色体の構成を表したもの。
+                    </p>
+                </dd>
+                <dd>
+                    <dl>
+                        <dt>
+                            <span id="a24">複相</span>(2n)
+                        </dt>
+                        <dd>
+                            父親から1組、母親から1組の染色体をもつ細胞を示す。
+                        </dd>
+                        <dd>
+                            <span id="a25">体細胞</span>[体細胞/生殖細胞]など。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <span id="a26">単相</span>(n)
+                        </dt>
+                        <dd>
+                            1組の染色体しかもっていない細胞
+                        </dd>
+                        <dd>
+                            <span id="a27">生殖細胞</span>[体細胞/生殖細胞]など。
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+            <article>
+                <h3>
+                    練習
+                </h3>
+                <table>
+                    <tr>
+                        <th>
+
+                        </th>
+                        <th>
+                            核相
+                        </th>
+                        <th>
+                            ゲノム
+                        </th>
+                        <th>
+                            染色体
+                        </th>
+                        <th>
+                            1ゲノム当たりの染色体数
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            2n=4
+                        </td>
+                        <td>
+                            <span id="a29">複相</span>
+                        </td>
+                        <td>
+                            <span id="a30">2</span>組
+                        </td>
+                        <td>
+                            <span id="a31">4</span>本
+                        </td>
+                        <td>
+                            <span id="a32">2</span>本/組
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2n=6
+                        </td>
+                        <td>
+                            <span id="a33">複相</span>
+                        </td>
+                        <td>
+                            <span id="a34">2</span>組
+                        </td>
+                        <td>
+                            <span id="a35">6</span>本
+                        </td>
+                        <td>
+                            <span id="a36">3</span>本/組
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            n=3
+                        </td>
+                        <td>
+                            <span id="a37">単相</span>
+                        </td>
+                        <td>
+                            <span id="a38">1</span>組
+                        </td>
+                        <td>
+                            <span id="a39">3</span>本
+                        </td>
+                        <td>
+                            <span id="a40">3</span>本/組
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3n=9
+                        </td>
+                        <td>
+                            ---
+                        </td>
+                        <td>
+                            <span id="a41">3</span>組
+                        </td>
+                        <td>
+                            <span id="a42">9</span>本
+                        </td>
+                        <td>
+                            <span id="a43">3</span>本/組
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <section>
+            <h2>
+                性決定
+            </h2>
+            <p>
+                常染色体とは別に、生物は<span id="a44">性染色体</span>を持っている。<br />
+                その染色体によって生物の性が決定する。
+            </p>
+            <section>
+                <h3>
+                    言葉
+                </h3>
+                <dl>
+                    <dt>
+                        <span id="a45">ヘテロ</span>
+                    </dt>
+                    <dd>
+                        違う染色体をもつということ。
+                    </dd>
+                </dl>
+            </section>
+            <section>
+                <h3>
+                    性決定の様子
+                </h3>
+                <dl>
+                    <dt>
+                        XY型
+                    </dt>
+                    <dd>
+                        <img src="img/xy.svg" alt="XY型の図">
+                        <p>
+                            <span id="a46">オス</span>がヘテロ接合型
+                        </p>
+                        <p>
+                            オスはXとYの性染色体を持つ。
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        XO型
+                    </dt>
+                    <dd>
+                        <img src="img/xo.svg" alt="XO型の図">
+                        <p>
+                            <span id="a47">オス</span>がヘテロ接合型
+                        </p>
+                        <p>
+                            オスは1つだけX性染色体を持つ。
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        ZW型
+                    </dt>
+                    <dd>
+                        <img src="img/zw.svg" alt="ZW型の図">
+                        <p>
+                            <span id="a48">メス</span>がヘテロ接合型
+                        </p>
+                        <p>
+                            メスはZとWの性染色体を持つ。
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        ZO型
+                    </dt>
+                    <dd>
+                        <img src="img/zo.svg" alt="ZO型の図">
+                        <p>
+                            <span id="a49">メス</span>がヘテロ接合型
+                        </p>
+                        <p>
+                            メスは1つだけZ染色体を持つ。
+                        </p>
+                    </dd>
+                </dl>
+            </section>
+        </section>
+        <section>
+            <h2>
+                全能性と分化
+            </h2>
+            <section>
+                <h3>
+                    用語の確認
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a51">全能性</span>
+                            </dt>
+                            <dd>
+                                1つの成体を構成する、<em>すべての細胞を作り出す能力</em>のこと。
+                            </dd>
+                            <dd>
+                                主に<span id="a52">未受精卵, 受精卵</span>などが持つとされる。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a53">分化</span>
+                            </dt>
+                            <dd>
+                                細胞が特定の形や働きを持つように変化すること。変化すると元には戻らない。
+                            </dd>
+                            <dd>
+                                e.g.) 受精卵が分裂して、水晶体専用の細胞と皮膚細胞と膵臓の細胞と筋肉細胞になる。 etc...
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a54">パフ</span>
+                            </dt>
+                            <dd>
+                                DNAの発現する部分をRNAに転写するために、DNAがほどけて広がって見えるところ。
+                            </dd>
+                            <dd>
+                                つまり観察しやすいところ。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a55">テロメア</span>
+                            </dt>
+                            <dd>
+                                染色体末端部に存在するTTAGGGが数千回繰り返されている構造。
+                            </dd>
+                            <dd>
+                                分裂のたびに短くなり、ある一定のところまで短くなると分裂ができなくなる。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    関連実験
+                </h3>
+                <p>
+                    英 <span id="a56">ガードン</span>がアフリカツメガエルの核移植実験を行った。
+                </p>
+                <p>
+                    普通の成体の紫外線で<span id="a57">核</span>を不活性化された未受精卵に、白色の「アルビノ」の成体の核を入れる実験。
+                </p>
+            </section>
+            <section>
+                <h3>
+                    いろんな細胞
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a58">iPS</span>細胞
+                            </dt>
+                            <dd>
+                                山中伸弥らの発明による
+                            </dd>
+                            <dd>
+                                体細胞の遺伝子を細胞に組み込むことで細胞を初期化する。
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a59">ES</span>細胞
+
+                            </dt>
+                            <dd>
+                                受精卵が細胞分裂した「胚」を取り出して培養。
+                            </dd>
+                            <dd>
+                                将来成体になる胚を壊すので倫理的問題あり。
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
