@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>熱力学|物理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            熱力学 物理
+        </h1>
+        <p>
+            それぞれの用語の意味は調べてください。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <p>
+            このページの利用に起因するいかなる損害も免責とします。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+            <div>
+                このページは数式表示のため, KaTeXを利用しています。読み込み遅延がある可能性があります。
+            </div>
+            <div>
+                表示バグが生じたら<a href="./physics_mechanics.html">旧版</a>を参照。
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                圧力
+            </h2>
+            <section>
+                <h3>
+                    圧力の定義
+                </h3>
+                <p>
+                    \( p= \)<span id="a1">$$\frac{F}{S}$$</span> [Pa] 
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                理想気体
+            </h2>
+            <section>
+                <h3>
+                    ボイルの法則
+                </h3>
+                <p>
+                    温度質量が変化しない時, <br/>
+                    <span id="a5">体積</span>は<span id="a6">圧力</span>に反比例する
+                </p>
+                <p>
+                    <span id="a7">$$V\propto\frac{1}{p}$$</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    シャルルの法則
+                </h3>
+                <p>
+                    圧力質量が変化しない時, <br/>
+                    <span id="a10">体積</span>は<span id="a11">絶対温度</span>に比例する
+                </p>
+                <p>
+                    <span id="a12">$$V\propto T$$</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    ボイル&middot;シャルルの法則
+                </h3>
+                <p>
+                    一定質量の気体において, <br/>
+                    <span id="a15">体積</span>は, <span id="a16">圧力</span>に反比例し<span id="a17">絶対温度</span>に比例する
+                </p>
+                <p>
+                    <span id="a18">$$V\propto\frac{T}{p}$$</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    気体状態方程式
+                </h3>
+                <p>
+                    <span id="a20"> \( pV=nRT \) </span>
+                </p>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( p \)[Pa]: 気体の圧力 
+                        </li>
+                        <li>
+                            \( V \)[m<sup>3</sup>]: 気体の体積 
+                        </li>
+                        <li>
+                            \( n \)[mol]: 気体の物質量 
+                        </li>
+                        <li>
+                            \( T \)[K]: 気体の絶対温度 
+                        </li>
+                        <li>
+                            \( R \)[(Pa&middot;m<sup>3</sup>/(mol&middot;K)] 
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+        <section>
+            <h2>
+                気体分子の運動
+            </h2>
+            <section>
+                <h3>
+                    気体の圧力
+                </h3>
+                <p>
+                    気体分子が衝突により, 容器の壁に及ぼす圧力 \( p \) は, 
+                </p>
+                <div>
+                    <span id="a100">
+                        $$p=\frac{Nm\bar{v^2}}{3V}=\frac{1}{3}\rho \bar{v^2}$$
+                    </span>
+                </div>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( p \)[Pa]: 気体の圧力 
+                        </li>
+                        <li>
+                            \( N \): 分子の数 
+                        </li>
+                        <li>
+                            \( m \)[kg]: 分子の質量 
+                        </li>
+                        <li>
+                            \( \bar{v^2} \)[m<sup>2</sup>/s<sup>2</sup>]: 速さの2乗平均 
+                        </li>
+                        <li>
+                            \( \rho \)[kg/m<sup>3</sup>]: 気体密度 
+                        </li>
+                        <li>
+                            \( V \)[m<sup>3</sup>]: 容器の体積 
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        導出
+                    </summary><p>
+                        容器は1辺を \( L \)[m] とした立方体とする<br/>
+                        \( V=L^3 \) <br/>
+                        その立方体の面の1つを壁Aとし, \( x \)軸に垂直とする 
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                質量 \( m \)[kg] の物体が, 壁Aに垂直な成分 \( v_x \)[m/s] で壁Aにぶつかると, 壁Bに与える力積 \( f\Delta t \) の大きさは, <span id="a105">\( 2mv_x \) </span>である。  
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                分子は, \( \Delta t= \)<span id="a106">\(2L/v\)</span>[s]に一度, 壁A衝突する。 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                1., 2.より1回の衝突で物体が壁に与える平均の力 \( f \)[N] は, 
+                            </p>
+                            <div>
+                                \( f= \)<span id="a107">$$\frac{m{v_x}^2}{L}$$</span> 
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                \( N \)個の分子が壁Aにぶつかるので, 壁Aに与えられる合計の力は, 物体の速さの壁Aに垂直な成分の2乗平均を \(\bar{{v_x}^2} \) として,  
+                            </p>
+                            <di>
+                                \( F= \)<span id="a108">$$\frac{Nm\bar{{v_x}^2}}{L}$$</span> 
+                            </di>
+                        </li>
+                        <li>
+                            <p>
+                                よって, 壁Aが受ける圧力は,  
+                            </p>
+                            <div>
+                                \(\displaystyle p_x=\frac{F}{L^2}= \)<span id="a109">$$\frac{Nm\bar{{v_x}^2}}{L^3}=\frac{Nm\bar{{v_x}^2}}{V}$$</span> 
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                分子の熱運動はどの向きも均等なので, <br/>
+                                \( \bar{{v_x}^2}=\bar{{v_y}^2}=\bar{{v_z}^2} \) となり, \( \bar{v^2}=3\bar{{v_x}^2} \) 
+                            </p>
+                            <p>
+                                また, どの壁も受ける平均の力の合計は等しい
+                            </p>
+                            <p>
+                                よって式が導かれる
+                            </p>
+                        </li>
+                    </ol>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    気体分子の平均運動エネルギー
+                </h3>
+                <p>
+                    気体の種類によらず, 絶対温度 \( T \) に比例する 
+                </p>
+                <p>
+                    <span id="a120">$$\frac{1}{2}m\bar{v^2}=\frac{3}{2}\cdot\frac{R}{N_\mathrm{A}}T=\frac{3}{2}kT$$</span>
+                </p>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( N_\mathrm{A} \): アボガドロ定数
+                        </li>
+                        <li>
+                            \( m \)[kg]: 分子の質量 
+                        </li>
+                        <li>
+                            \( \bar{v^2} \)[m<sup>2</sup>/s<sup>2</sup>]: 速さの2乗平均 
+                        </li>
+                        <li>
+                            \( T \)[K]: 絶対温度
+                        </li>
+                        <li>
+                            \( k \)[J/K]: <span id="a121">ボルツマン<span class="b">定数</span></span> ( \( k=R/N_\mathrm{A} \) )
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+        <section>
+            <h2>
+                熱力学
+            </h2>
+            <article>
+                <h3>
+                    熱力学第1法則
+                </h3>
+                <p>
+                    気体の内部エネルギーの変化は, 外部からの<span id="a210">熱量 \( Q \) </span>や, <span id="a211">仕事 \( W \) </span>が与える
+                </p>
+                <p>
+                    \( \Delta U= \) <span id="a212">\( Q+W_\mathrm{in} \) </span>  
+                </p>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( \Delta U \)[J] : 気体の内部エネルギーの変化 
+                        </li>
+                        <li>
+                            \( W_\mathrm{in} \)[J] : 外部から<em>される</em>仕事
+                        </li>
+                        <li>
+                            \( Q \)[J] : 外部からの熱量 
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>
+                        \( \Delta U, W_\mathrm{in}, Q \)の正負 
+                    </summary>
+                    <table class="alc">
+                        <tr>
+                            <td>
+                                気体が<em>吸熱</em>
+                            </td>
+                            <td>
+                                <span id="a213">\(Q\gt 0\)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                気体が<em>発熱</em>
+                            </td>
+                            <td>
+                                <span id="a214">\(Q\lt 0\)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                気体が<em>収縮</em>
+                            </td>
+                            <td>
+                                <span id="a215">\(W_\mathrm{in}\gt 0\)</span>
+                            </td>
+                        </tr>             
+                        <tr>
+                            <td>
+                                気体が<em>膨張</em>
+                            </td>
+                            <td>
+                                <span id="a216">\(W_\mathrm{in}\lt 0\)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                温度<em>上昇</em>
+                            </td>
+                            <td>
+                                <span id="a217">\(\Delta U\gt 0\)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                温度<em>下降</em>
+                            </td>
+                            <td>
+                                <span id="a218">\(\Delta U\lt 0\)</span>
+                            </td>
+                        </tr>
+                    </table>
+                </details>
+            </article>
+            <article>
+                <h3>
+                    熱力学第2法則
+                </h3>
+                <ol>
+                    <li>
+                        <p>
+                            熱は自然には, 温度の<span id="a230">高い</span>方から温度の<span id="a231">低い</span>方へ移動する
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            熱をすべて仕事に変える熱機関は存在しない
+                        </p>
+                    </li>
+                </ol>
+            </article>
+            <section>
+                <h3>
+                    仕事
+                </h3>
+                <p>
+                    圧力 \( p \)[Pa]のもと, 気体の体積が \( \Delta V \)[m<sup>3</sup>]変化したときの仕事は  
+                </p>
+                <p>
+                    \( W= \) <span id="a240">\(-p \Delta V\)</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    熱効率
+                </h3>
+                <p>
+                    高温の物体から \( Q_1 \)[J] をもらい, そのうちの \( W^\prime \)[J] を外部にする仕事に変え, 残りの熱量 \( Q_2 \)[J] を低音の物体に捨てる熱機関の熱効率 \( e \) は,     
+                </p>
+                <p>
+                    \( e= \)<span id="a245">$$\frac{W^\prime}{Q_1}=\frac{Q_1-Q_2}{Q_1}$$</span> 
+                </p>
+                <p>
+                    また, 熱力学第2法則より, つねに<span id="a246">\( e\lt 1 \) </span>が成立する
+                </p>
+            </section>
+            <section>
+                <h3>
+                    単原子分子理想気体の内部エネルギー
+                </h3>
+                <p>
+                    気体分子の<span id="a250">運動エネルギー</span>の総和
+                </p>
+                <p>
+                    内部エネルギーは<span id="a251">気体の分子数</span>と<span id="a252">絶対温度</span>に比例する
+                </p>
+                <section>
+                    <h4>
+                        内部エネルギー \( U \) 
+                    </h4>
+                    <p>
+                        <span id="a253">
+                            $$U=\frac{3}{2}nRT=\frac{3}{2}pV$$
+                        </span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        内部エネルギー \( \Delta U \) 
+                    </h4>
+                    <p>
+                        <span id="a254">
+                            $$\Delta U=\frac{3}{2}nR\Delta T$$
+                        </span>
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    モル比熱
+                </h3>
+                <p>
+                    以下<em>単原子分子理想気体</em>の場合である
+                </p>
+                <section>
+                    <h4>
+                        モル比熱 \( C \) 
+                    </h4>
+                    <p>
+                        物質 1mol の温度を 1K 上げるのに必要な熱量<br/>
+                        単位は<span id="a270">J/(mol&middot;K)</span>
+                    </p>
+                    <p>
+                        \( Q= \) <span id="a271">\( nC\Delta T \) </span> より,<br/>
+                        \( C= \) <span id="a272">$$\frac{Q}{n\Delta T}$$</span> 
+                    </p>
+                    <article>
+                        <dl>
+                            <dt>
+                                cf. 比熱
+                            </dt>
+                            <dd>
+                                物質 1g の温度を 1K 上げるのに必要な熱量
+                            </dd>
+                            <dd>
+                                単位は<span id="a275">J/(g&middot;K)</span>
+                            </dd>
+                            <dd>
+                                \( Q=mc\Delta T \) 
+                            </dd>
+                        </dl>
+                    </article>
+                </section>
+                <section>
+                    <h4>
+                        定積モル比熱 \( C_V \) 
+                    </h4>
+                    <p>
+                        体積一定なので, \( Q= \)<span id="a280">$$ \Delta U=\frac{3}{2}R\Delta T $$ </span>であり, 
+                    </p>
+                    <p>
+                        \( C_V= \)<span id="a281">$$\frac{\Delta U}{n\Delta T}=\frac{3}{2}R$$</span> 
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        定圧モル比熱 \( C_p \) 
+                    </h4>
+                    <p>
+                        圧力一定なので \( W=-p\Delta V \)となり, \( Q= \)<span id="a285">\(\Delta U + p\Delta V\)</span>であり, 
+                    </p>
+                    <p>
+                        \( C_p= \)<span id="a286">$$\frac{\Delta U}{n\Delta T}+\frac{p\Delta V}{n\Delta T}=C_V+R=\frac{5}{2}R$$</span> 
+                    </p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

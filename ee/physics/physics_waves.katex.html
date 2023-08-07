@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>波動|物理 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">-->
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>-->
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <!--<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>-->
+    <link rel="stylesheet" href="../../katex/katex.min.css">
+    <script defer src="../../katex/katex.min.js"></script>
+    <script defer src="../../katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            波動 物理
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+            <div>
+                このページは数式表示のため, KaTeXを利用しています。読み込み遅延がある可能性があります。
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                波
+            </h2>
+            <article>
+                <h3>
+                    波の基本式
+                </h3>
+                <p>
+                    <span id="a1">
+                        $$v=\frac{\lambda}{T}=f\lambda$$
+                    </span>
+                </p>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( v \)[m/s]: 波の速さ
+                        </li>
+                        <li>
+                            \( \lambda \)[m]: 波長 
+                        </li>
+                        <li>
+                            \( T \)[s]: 周期 
+                        </li>
+                        <li>
+                            \( f \)[Hz]: 振動数 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <section>
+                <h3>
+                    正弦波
+                </h3>                <p>
+                    <span id="a2">
+                        $$y=A\sin\left\{2\pi\left(\frac{t}{T}\mp\frac{x}{\lambda}\right)+\theta_0\right\}$$
+                    </span>
+                </p>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( y \)[m]: 時刻\( t \)[s], 位置\( x \) の 変位 
+                        </li>
+                        <li>
+                            \( A \)[m]: 振幅
+                        </li>
+                        <li>
+                            \( \lambda \)[m]: 波長 
+                        </li>
+                        <li>
+                            \( T \)[s]: 周期 
+                        </li>
+                        <li>
+                            \( \theta_0 \)[rad]: 初期位相 
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    波の干渉
+                </h3>
+                <p>
+                    2つの波が重なり合って強め合ったり弱めあったりする
+                </p>
+                <table class="alc">
+                    <tr>
+                        <td colspan="2">
+                            波が同位相である
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            強めあう条件
+                        </td>
+                        <td>
+                            弱めあう条件
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <span id="a10">
+                                    $$|\ell_1-\ell_2|=2m\cdot\frac{\lambda}{2} $$
+                                </span>
+                            </div>
+                            <div>
+                                <small>
+                                    \( m=0, 1, 2, \cdots \) 
+                                </small>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span id="a11">
+                                    $$|\ell_1-\ell_2|=(2m+1)\cdot\frac{\lambda}{2} $$
+                                </span>
+                            </div>
+                            <div>
+                                <small>
+                                    \( m=0, 1, 2, \cdots \) 
+                                </small>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            弱めあう条件
+                        </td>
+                        <td>
+                            強め合う条件
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            波が逆位相である
+                        </td>
+                    </tr>
+                </table>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <p>
+                        波源S<sub>1</sub>, S<sub>2</sub>から波が出ていて, 観測点でそれを聞いているとき,
+                    </p>
+                    <ul>
+                        <li>
+                            \( \ell_1 \)[m]: 波源S<sub>1</sub>から観測点までの距離 
+                        </li>
+                        <li>
+                            \( \ell_2 \)[m]: 波源S<sub>2</sub>から観測点までの距離 
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    屈折
+                </h3>
+                <p>
+                    媒質1 (入射角 \( i \), 速さ \( v_1 \), 波長 \( \lambda_1 \) ) から, 媒質2 ( 屈折角 \( r \), 速さ \( v_2 \), 波長 \( \lambda_2 \) )へ波が屈折していったとき 
+                </p>
+                <p>
+                    <span id="a20">
+                        $$n_{12}=\frac{\sin i}{\sin r}=\frac{v_1}{v_2}=\frac{\lambda_1}{\lambda_2}$$
+                    </span>
+                </p>
+                <p>
+                    \( n_{12} \): 媒質1に対する媒質2の相対屈折率 
+                </p>
+                <p>
+                    ※ 振動数は変化しない
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                音
+            </h2>
+            <section>
+                <h3>
+                    音速
+                </h3>
+                <p>
+                    \( t \) ℃のとき,  
+                </p>
+                <p>
+                    \( V= \)<span id="a29"> \( 331.5 + 0.6t \)  </span> 
+                </p>
+            </section>
+            <section>
+                <h3>
+                    ドップラー効果
+                </h3>
+                <p>
+                    音源S, 観測者Oが, \( x \)軸上でOが正のほうにいるとする. 
+                </p>
+                <p>
+                    音の速さ \( V \), Sの発する音 \( f \)[Hz], Oが観測する音 \( f^\prime \)[Hz], SOの速度をそれぞれ \( v_\mathrm{s}, v_\mathrm{o} \)として,     
+                </p>
+                <section>
+                    <h4>
+                        O静止, S運動 パターン
+                    </h4>
+                    <p>
+                        \( f^\prime= \)<span id="a30">$$\frac{V}{V-v_\mathrm{s}}f$$</span> 
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        S静止, O運動 パターン
+                    </h4>
+                    <p>
+                        \( f^\prime= \)<span id="a31">$$\frac{V-v_\mathrm{o}}{V}f$$</span> 
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        O, S運動 パターン
+                    </h4>
+                    <p>
+                        \( f^\prime= \)<span id="a32">$$\frac{V-v_\mathrm{o}}{V-v_\mathrm{s}}f$$</span> 
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                光
+            </h2>
+            <section>
+                <h3>
+                    レンズの公式
+                </h3>
+                <p>
+                    写像公式
+                </p>
+                <p>
+                    <span id="a40">
+                        $$\frac{1}{a} + \frac{1}{b} = \frac{1}{f}$$
+                    </span>
+                </p>
+                <p>
+                    倍率
+                </p>
+                <p>
+                    \( m= \) 
+                    <span id="a41">
+                        $$\left|\frac{b}{a}\right|$$
+                    </span>
+                </p>
+                <table class="alc">
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            凸レンズ
+                        </td>
+                        <td>
+                            凹レンズ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            焦点距離 \( f \) 
+                        </td>
+                        <td colspan="2">
+                            <span id="a42">正</span> 
+                        </td>
+                        <td>
+                            <span id="a43">負</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            物体との距離 \( a \) 
+                        </td>
+                        <td colspan="2">
+                            正
+                        </td>
+                        <td rowspan="2">
+                            正
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            \( a \gt f \) 
+                        </td>
+                        <td>
+                            \( a \lt f \) 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            像との距離 \( b \) 
+                        </td>
+                        <td>
+                            <span id="a44">正</span>
+                        </td>
+                        <td>
+                            <span id="a45">負</span>
+                        </td>
+                        <td>
+                            <span id="a46">負</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            像
+                        </td>
+                        <td>
+                            <span id="a47">倒立実像</span> 
+                        </td>
+                        <td>
+                            <span id="a48">正立虚像</span>
+                        </td>
+                        <td>
+                            <span id="a49">正立虚像</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            数式表示エンジン: <a href="https://katex.org/" target="_blank">KaTeX</a>
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

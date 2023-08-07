@@ -1008,6 +1008,157 @@
                             $$U=-G\frac{Mm}{r}$$
                         </span>
                     </p>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( U \) [J]: 万有引力の位置エネルギー
+                            </li>
+                            <li>
+                                \( m \) , \( M \) [kg]: それぞれの物体の質量
+                            </li>
+                            <li>
+                                \( r \) [m]: 2つの物体の距離
+                            </li>
+                            <li>
+                                \( G \) [N&middot;m<sup>2</sup>/kg<sup>2</sup>]: 万有引力定数
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>
+                            導出
+                        </summary>                    
+                        <section>
+                            <h4>
+                                方法1
+                            </h4>             
+                            <ol>
+                                <li>
+                                    <p>
+                                        今回求める位置エネルギーは, 「<em>保存力である万有引力</em>が求める位置 \( r \)[m] から基準までする仕事」と等価
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                         仕事は, 仕事する力と, 移動距離の積分で求められる
+                                    </p>
+                                    <div>
+                                        <span id="a331">
+                                            $$U=\int_r^\infty G\frac{Mm}{r^2}\mathrm{d}r \cos 180\degree$$
+                                        </span>
+                                    </div>
+                                    <p>
+                                        \( r \) から基準までの向きは, 万有引力がはたらく向きと逆向きのため, \( \cos 180\degree \) を乗じている
+                                    </p>
+                                    <small>
+                                        厳密な表現ではないことをお許しください
+                                    </small>
+                                </li>
+                                <li>
+                                    <p>
+                                        2. を解いて, 求められる
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
+                        <section>
+                            <h4>
+                                方法2
+                            </h4>
+                            <ol>
+                                <li>
+                                    <p>
+                                        今回求める位置エネルギーは, 「基準から求める位置 \( r \)[m] まで, 外力がゆっくり一定の速さでする仕事」と等価
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        ゆっくり一定の速さで基準から求める位置まで物体を移動させるには, 常に位置 \( r \)[m]において万有引力と逆向きに<span id="a332">$$G\frac{Mm}{r^2}$$</span>[N]の力を与えることになる
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        仕事は, 与えている力と, 移動距離の積分で求められる
+                                    </p>
+                                    <div>
+                                        <span id="a333">
+                                            $$U=\int_\infty^r G\frac{Mm}{r^2}\mathrm{d}r$$
+                                        </span>
+                                    </div>
+                                    <small>
+                                        厳密な表現ではないことをお許しください
+                                    </small>
+                                </li>
+                                <li>
+                                    <p>
+                                        3. を解いて, 求められる
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
+                    </details>
+                </section>
+                <section>
+                    <h3>
+                        第1宇宙速度
+                    </h3>
+                    <p>
+                        地球の地表近くを円運動するための速さ
+                    </p>
+                    <p>
+                        <span id="a340">
+                            $$v=\sqrt{\frac{GM}{R}}$$
+                        </span>
+                    </p>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( v \) [m/s]: 第1宇宙速度
+                            </li>
+                            <li>
+                                 \( M \) [kg]: 地球の質量
+                            </li>
+                            <li>
+                                \( R \) [m]: 地球の半径
+                            </li>
+                            <li>
+                                \( G \) [N&middot;m<sup>2</sup>/kg<sup>2</sup>]: 万有引力定数
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>
+                            導出
+                        </summary>
+                        <ol>
+                            <li>
+                                <p>
+                                    質量 \( m \)[kg] の物体は, 地球から受ける万有引力を向心力として等速円運動する 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    等速円運動の運動方程式は
+                                </p>
+                                <div>
+                                    <span id="a341">
+                                        $$m\frac{v^2}{R} = G\frac{Mm}{R^2}$$
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    これを解いて, \( v\gt 0 \) で導かれる
+                                </p>
+                            </li>
+                        </ol>
+                    </details>
                 </section>
             </section>
         </main>
