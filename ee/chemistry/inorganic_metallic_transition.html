@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>遷移金属|無機化学 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            遷移金属
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Fe: 鉄
+            </h2>
+            <section>
+                <h3>
+                    製法
+                </h3>
+                <p>
+                    鉄の酸化物を還元しまくる
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            <span id="a10">赤鉄鉱</span>(主: <span id="a11">Fe<sub>2</span>O<sub>3</sub>, 酸化数<span
+                                id="a12">+3</span>)にCOをまぜて還元する
+                        </p>
+                        <p>
+                            &rArr; CO<sub>2</sub>と<span id="a13">磁鉄鉱</span>(<span
+                                id="a14">Fe<sub>3</sub>O<sub>4</sub></span>, 酸化数<span id="a15">+2, +3, +3</span>)ができる
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            1. の生成物にさらにCOを混ぜて還元する
+                        </p>
+                        <p>
+                            &rArr; CO<sub>2</sub>と<span id="a16">FeO</span>(酸化数<span id="a17">+2</span>)ができる.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            2. の生成物にさらにCOを混ぜて還元する
+                        </p>
+                        <p>
+                            &rArr; CO<sub>2</sub>と<span id="a18">銑鉄</span>(Cを4%含むFe), <span
+                                id="a19">スラブ</span>(不純物の塊)ができる
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span id="a20">銑鉄</span>中のCを<span id="a21">O<sub>2</sub></span>と反応させて<span
+                                id="a22">CO<sub>2</sub></span>にする.
+                        </p>
+                        <p>
+                            &rArr; 純度99%以上の<span id="a23">鋼</span>ができる
+                        </p>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>
+                    単体
+                </h3>
+                <ul>
+                    <li>
+                        <span id="a40">酸</span>と反応して<span id="a41">H<sub>2</sub>&uarr;</span>を生成
+                    </li>
+                    <li>
+                        <span id="a42">濃H<sub>2</sub>SO<sub>4</sub>aq</span>や<span
+                            id="a43">濃HNO<sub>3</sub>aq</span>と反応して<span id="a44">不動態</span>を形成する.
+                    </li>
+                    <li>
+                        Fe, Cr, Niの合金である<span id="a45">ステンレス鋼</span>たるものが存在する.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    めっき
+                </h3>
+                <p>
+                    鉄の表面に何かを塗ったもの
+                </p>
+                <section>
+                    <h4>
+                        トタン
+                    </h4>
+                    <p>
+                        Fe表面に<span id="a60">Zn</span>を塗っている.
+                    </p>
+                    <p>
+                        表面はFeよりもイオン化傾向が<span id="a61">高く</span>[高く/低く]なり, 表面が先に腐食され, 内側のFeの腐食を防ぐことができる.
+                    </p>
+                    <p>
+                        利用例: 屋根
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        ブリキ
+                    </h4>
+                    <p>
+                        Fe表面に<span id="a65">Sn</span>を塗っている.
+                    </p>
+                    <p>
+                        表面はFeよりもイオン化傾向が<span id="a66">低く</span>[高く/低く]なり, 内側のFeが先に腐食され, 表面をきれいに保つことができる.
+                    </p>
+                    <p>
+                        利用例: おもちゃ
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    イオン
+                </h3>
+                <p>
+                    一般にFe<sup>2+</sup>を含む液体は<span id="a70">淡緑</span>色, Fe<sup>3+</sup>を含む液体は<span
+                        id="a71">黄褐</span>色をしている.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    沈殿
+                </h3>
+                <section>
+                    <h4>
+                        OH<sup>-</sup>
+                    </h4>
+                    <p>
+                        Fe(OH)<sub>2</sub>は, <span id="a75">緑白</span>色
+                    </p>
+                    <p>
+                        Fe(OH)<sub>3</sub>は, <span id="a76">赤褐</span>色
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        Fe<sup>2+</sup>の他の沈殿
+                    </h4>
+                    <p>
+                        [Fe(CN)<sub>6</sub>]<sup>4-</sup>とまぜまぜした生成物は<span id="a80">青白</span>色沈殿
+                    </p>
+                    <p>
+                        [Fe(CN)<sub>6</sub>]<sup>3-</sup>とまぜまぜした生成物は<span id="a81">濃青</span>色沈殿 (生成物を<span
+                            id="a82">ターンブルブルー</span>という)
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        Fe<sup>3+</sup>の他の沈殿
+                    </h4>
+                    <p>
+                        [Fe(CN)<sub>+</sub>]<sup>4-</sup>とまぜまぜした生成物は<span id="a90">濃青</span>色沈殿 (生成物を<span
+                            id="a91">紺青</span>という)
+                    </p>
+                    <p>
+                        SCN<sup>-</sup>(<span id="a92">チオシアン酸</span>イオン)とまぜまぜした生成物は<span id="a93">血赤</span>色水溶液となる.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                Cu: 銅
+            </h2>
+            <section>
+                <h3>
+                    製法
+                </h3>
+                <table class="noborder alc">
+                    <tr>
+                        <td colspan="2">
+                            <span id="a100">黄銅鉱</span>(<span id=a101>CuFeS<sub>2</sub></span>)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &darr;
+                            還元
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span id="a102">Cu<sub>2</sub>S</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &darr; 還元
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="a103">粗銅</span> (純度99%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &darr; <span id="a104">電解精錬</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="a105">純銅</span> (純度 99.99%)
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>
+                    単体
+                </h3>
+                <section>
+                    <h4>
+                        合金
+                    </h4>
+                    <table>
+                        <tr>
+                            <th>
+                                名前
+                            </th>
+                            <th>
+                                金属構成
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a120">黄銅</span>, <span id="a121">真鍮</span>, <span id="a122">ブラス</span>
+                            </td>
+                            <td>
+                                <span id="a123">Cu + Zn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a124">青銅</span>, <span id="a125">ブロンズ</span>
+                            </td>
+                            <td>
+                                <span id="a126">Cu + Sn</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a127">白銅</span>
+                            </td>
+                            <td>
+                                <span id="a128">Cu + Ni</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h4>
+                        色
+                    </h4>
+                    <p>
+                        固体は<span id="a130">赤</span>色.
+                    </p>
+                    <p>
+                        空気中で放置すると<span id="a131">緑青</span>とよばれる さび を生じる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        HNO<sub>3</sub>との反応
+                    </h4>
+                    <p>
+                        希HNO<sub>3</sub>と反応したときと, 濃HNO<sub>3</sub>と反応したときで, できるものが違う.
+                    </p>
+                    <dl>
+                        <dt>
+                            希HNO<sub>3</sub>との反応パターン
+                        </dt>
+                        <dd>
+                            <div class="chemfmsm">
+                                <span id="a142"> 3Cu + 8HNO<sub>3</sub>(希) &rarr; 3Cu(NO<sub>3</sub>)<sub>2</sub> +
+                                    4H<sub>2</sub>O + 2NO</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            濃HNO<sub>3</sub>との反応パターン
+                        </dt>
+                        <dd>
+                            <div class="chemfmsm">
+                                <span id="a143">
+                                    Cu + 4HNO<sub>3</sub>(濃) &rarr; Cu(NO<sub>3</sub>)<sub>2</sub> + 2H<sub>2</sub>O +
+                                    2NO<sub>2</sub>
+                                </span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <p>
+                        係数の語呂: <span id="a144">鯖刺しに 石五つ</span>
+                    </p>
+                    <details>
+                        <summary>
+                            cf. 酸化還元 変化前と変化後
+                        </summary>
+                        <table class="noborder">
+                            <tr>
+                                <td>
+                                    Cu
+                                </td>
+                                <td>
+                                    &rarr;
+                                </td>
+                                <td>
+                                    <span id="a150">Cu<sup>2+</sup></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    濃HNO<sub>3</sub>
+                                </td>
+                                <td>
+                                    &rarr;
+                                </td>
+                                <td>
+                                    <span id="a151">NO<sub>2</sub></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    希HNO<sub>3</sub>
+                                </td>
+                                <td>
+                                    &rarr;
+                                </td>
+                                <td>
+                                    <span id="a152">NO</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    Cuの酸化物
+                </h3>
+                <p>
+                    Cuを何℃で熱するかによって, 発生するCuの酸化物が異なる.
+                </p>
+                <ul>
+                    <li>
+                        <span id="a160">1000</span>℃以上 &rArr; <span id="a161">CuO</span> (<span id="a162">黒</span>色)
+                    </li>
+                    <li>
+                        <psan id="a163">1000</psan>℃以下 &rArr; <span id="a164">Cu<sub>2</sub>O</span> (<span
+                            id="a165">赤</span>色)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    硫酸塩
+                </h3>
+                <table class="noborder">
+                    <tr>
+                        <td colspan="2" class="alc">
+                            <span id="a170">CuSO<sub>4</sub>&middot;5H<sub>2</sub>O</span> (<span id="a171">青</span>色)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="alr">
+                            熱&darr;
+                        </td>
+                        <td class="all">
+                            &uarr;水
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="alc">
+                            <span id="a172">CuSO<sub>4</sub>&middot;H<sub>2</sub>O</span> (<span id="a173">淡青</span>色)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="alr">
+                            熱&darr;
+                        </td>
+                        <td class="all">
+                            &uarr;水
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="alc">
+                            <span id="a174">CuSO<sub>4</sub></span> (<span id="a175">白</span>色)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="alr">
+                            熱&darr;
+                        </td>
+                        <td class="all">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="alc">
+                            <span id="a176">CuO</span> + <span id="a177">SO<sub>2</sub>&uarr;</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>
+                    錯イオン
+                </h3>
+                <p>
+                    Cu<sup>2+</sup>は過剰な<span id="a180">NH<sub>3</sub></span>と反応して<span id="a181">[Cu(NH<sub>3</sub><sub>4</sub>)]<sup>2+</sup></span>イオン(<span id="a182">深青</span>色)
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                Ag: 銀
+            </h2>
+            <section>
+                <h3>
+                    製法
+                </h3>
+                <ul>
+                    <li>
+                        <p>
+                            <span id="a200">輝銀鉱</span>から取り出す.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span id="a201">銅</span>の<em>電解精錬</em>から発生した<span id="a202">陽極泥</span>から取り出す.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    単体
+                </h3>
+                <ul>
+                    <li>
+                        <p>
+                            電気と熱の<span id="a210">伝導性</span>がとっても高い (金属内1位)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span id="a211">展性&middot;延性</span>がとっても高い (Auに次いで2位)
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    沈殿
+                </h3>
+                <section>
+                    <h4>
+                        酸化物
+                    </h4>
+                    <p>
+                        Ag<sub>2</sub>Oは<span id="a220">褐</span>色沈殿である.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        ハロゲン化銀
+                    </h4>
+                    <p>
+
+                    </p>
+                    <table class="alc">
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                沈殿の色<br/>
+                                <small>
+                                    沈殿しない場合は &Cross;
+                                </small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                AgF
+                            </td>
+                            <td>
+                                <span id="a231">&Cross;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                AgCl
+                            </td>
+                            <td>
+                                <span id="a232">白</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                AgBr
+                            </td>
+                            <td>
+                                <span id="a233">淡黄</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                AgI
+                            </td>
+                            <td>
+                                <span id="a234">黄</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        <span id="a235">AgCl</span>と<span id="a236">AgBr</span>は NH<sub>3</sub> を反応させると<span id="a237">[Ag(NH<sub>3</sub>)<sub>2</sub>]<sup>+</sup></span>イオンを生じる. (水溶)<br/>
+                        しかし, <span id="a238">AgI</span>は NH<sub>3</sub> を反応させても沈殿のままである.
+                    </p>
+                    <p>
+                        AgF以外の3つはCN<sup>-</sup>(<span id="a241">シアノ酸</span>イオン)と反応して<span id="a242">[Ag(CN)<sub>2</sub>]<sup>-</sup></span>イオンを生じる.
+                    </p>
+                    <p>
+                        AgF以外の3つはS<sub>2</sub>O<sub>3</sub><sup>2-</sup>(<span id="a243">チオ硫酸</span>イオン)と反応して<span id="a244">[Ag(S<sub>2</sub>O<sub>3</sub>)<sub>2</sub>]<sup>3-</sup></span>イオンを生じる.
+                    </p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
