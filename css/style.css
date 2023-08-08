@@ -728,3 +728,9 @@ table.alc * {
 .alc{
     text-align: center;
 }
+.alr{
+    text-align: right;
+}
+.all{
+    text-align: left;
+}
