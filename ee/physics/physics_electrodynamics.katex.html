@@ -93,7 +93,7 @@
                 </p>
                 <div id="a6">
                     $$
-                        F=k_0\frac{q_1 q_2}{r^2}
+                        F=k\frac{q_1 q_2}{r^2}
                     $$
                 </div>
                 <details>
@@ -111,11 +111,39 @@
                             \( r \) [m]: 点電荷同士の距離
                         </li>
                         <li>
-                            \( k_0 \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数。<br/>
+                            \( k \) [N&middot;m<sup>2</sup>/C<sup>2</sup>]: クーロンの法則の比例定数。<br/>
                             真空中では, \( k_0 =9.0 \times 10^9 \) 
                         </li>
                     </ul>
                 </details>
+            </section>
+            <section>
+                <h3>
+                    誘電率
+                </h3>
+                <p>
+                    \( k \) と同じように, 点電荷の存在する空間を示している. 単位は<span id="a8">F/m</span>
+                </p>
+                <div>
+                    \( \epsilon \) = <span id="a9">$$\frac{1}{4\pi k}$$</span>
+                </div>
+                <p>
+                    真空の誘電率は, 
+                </p>
+                <div>
+                    \( \epsilon_0 =\) <span id="a10">$$\frac{1}{4\pi k_0} = 8.85 \times 10^{-12}$$</span>
+                </div>
+            </section>
+            <section>
+                <h3>
+                    電気力線とガウスの法則
+                </h3>
+                <p>
+                    \( Q \) [C]の電荷から出る電気力戦の本数 \( N \) は, 
+                </p>
+                <div>
+                    \( N= \) <span id="a11">$$4\pi kQ = \frac{Q}{\epsilon}$$</span> [本]
+                </div>
             </section>
             <section>
                 <h3>
@@ -125,6 +153,9 @@
                     荷電粒子が作る空間の"ゆがみ"。<br/>
                     別の接触した荷電粒子が力を受ける。<br/>
                     空間をゆがめている"本人"は力を受けない。
+                </p>
+                <p>
+                    単位面積当たりを通過する<span id="a12">電気力線の本数</span>とも定義される
                 </p>
                 <section>
                     <h4>
@@ -144,7 +175,7 @@
                         点電荷が作る電場
                     </h4>
                     <p>
-                        点電荷 \( Q \) [C]から \( r \) [m] 離れたところでの点電荷 \( Q \) [C]が作る電場の大きさ \( E \) は, 
+                        点電荷 \( Q \) [C]から \( r \) [m] 離れたところでの点電荷 \( Q \) [C]が作る電場の大きさ \( E \) は, 真空中で,
                     </p>
                     <div id="a15">
                         $$
@@ -328,14 +359,302 @@
                 <h3>
                     平行板コンデンサー 電気容量
                 </h3>
+                <p>
+                    極板面積 \( S \) , 極板間距離 \( d \) において, 
+                </p>
+                    <p>
+                        \( C = \)<span id="a70">$$\frac{1}{4\pi k}\cdot\frac{S}{d} = \epsilon \frac{S}{d}$$</span> 
+                    </p> 
+                    <details>
+                        <summary>
+                            導出
+                        </summary>
+                        <ol>
+                            <li>
+                                極板の間の電場は, <span id="a71">ガウスの法則</span>と, 単位面積当たりの電気力線の本数が電場であることより, <br/>
+                                \( \displaystyle E = \)<span id="a72">$$\frac{4 \pi kQ}{S}=\frac{Q}{\epsilon S} $$</span>  
+                            </li>
+                            <li>
+                                極板間電圧は \( V= Ed \) より, <br/>
+                                \( V= \)<span id="a73">$$\frac{4\pi kQ}{S}d = \frac{Q}{\epsilon S}d$$</span> 
+                            </li>
+                            <li>
+                                \( Q=CV \) より, 導かれる. 
+                            </li>
+                        </ol>
+                    </details>
+            </section>
+            <section>
+                <h3>
+                    コンデンサーの静電エネルギー
+                </h3>
+                <p>
+                    \( U= \)  <span id="a80">$$\frac{1}{2}QV = \frac{1}{2}CV^2=\frac{Q^2}{2C}$$</span>
+                </p>
+                <details>
+                    <summary>
+                        導出
+                    </summary>
+                    <ol>
+                        <li>
+                            定義より \(U =  \)<span id="a81">$$QV=\int_0^Q VdQ$$</span> 
+                        </li>
+                        <li>
+                            電位差は, \( V= \) <span id="a82">$$\frac{Q}{C}$$</span>
+                        </li>
+                        <li>
+                            よって, 積分式に投げて, \( U \)  が求められる.
+                        </li>
+                    </ol>
+                </details>
+            </section>
+        </section>
+        <section>
+            <h2>
+                直流回路
+            </h2>
+            <section>
+                <h3>
+                    電流
+                </h3>
+                <p>
+                    単位時間あたりに断面を通過した<span id="a100">電気量</span>
+                </p>
+                <div>
+                    \( I= \) <span id="a101">$$\frac{Q}{t}$$</span>
+                </div>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( I \) [A]: 電流
+                        </li>
+                        <li>
+                            \( Q \) [C]: とある断面を通過した電気量
+                        </li>
+                        <li>
+                            \( t \) [s]: 通過した時間
+                        </li>
+                    </ul>
+                </details>
+                <p>
+                    粒子間の衝突を無視すれば, 
+                </p>
+                <div>
+                    \( I= \) <span id="a102">$$envS$$</span>
+                </div>
+                <details>
+                    <summary>
+                        変数リスト
+                    </summary>
+                    <ul>
+                        <li>
+                            \( e \) [C]: 電子の電気量の大きさ
+                        </li>
+                        <li>
+                            \( n \) [/m<sup>3</sup>]: 単位体積当たりの電子の数 (電子密度)
+                        </li>
+                        <li>
+                            \( v \) [m/s]: 電子の移動する速さ
+                        </li>
+                        <li>
+                            \( S \) [m<sup>2</sup>]: 導線の断面積
+                        </li>
+                    </ul>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    オームの法則
+                </h3>
+                <p>
+                    \( R \) [&Omega;] の抵抗に \( I \) [A] の電流を流すと <span id="a105">\( RI \) </span> [V] の <span id="a106">電圧降下(電位降下)</span>が生じる
+                </p>
+            </section>
+            <section>
+                <h3>
+                    抵抗
+                </h3>
                 <section>
                     <h4>
-                        真空
+                        抵抗の大きさ
                     </h4>
                     <p>
-                        \( C_0 = \)<span id="a60">$$\frac{1}{4\pi k_0}\cdot\frac{S}{d} = \epsilon_0 \frac{S}{d}$$</span> 
-                    </p> 
+                        \( R= \) <span id="a110">$$\rho\frac{\ell}{S} $$</span>
+                    </p>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( R \) [&Omega;]: 導体の抵抗
+                            </li>
+                            <li>
+                                \( \rho \) [<span id="a111">&Omega;&middot;m</span>]: 抵抗率
+                            </li>
+                            <li>
+                                \( \ell \) [m]: 導体の長さ
+                            </li>
+                            <li>
+                                \( S \) [m<sup>2</sup>]: 導体の断面積
+                            </li>
+                        </ul>
+                    </details>
                 </section>
+                <section>
+                    <h4>
+                        熱のせいで抵抗率が上がっていく
+                    </h4>
+                    <p>
+                        \( t \) ℃の時の抵抗率は, 
+                    </p>
+                    <p>
+                        \( \rho= \) <span id="a115">$$\rho_0 (1+\alpha t)$$</span>
+                    </p>
+                    <details>
+                        <summary>
+                            変数リスト
+                        </summary>
+                        <ul>
+                            <li>
+                                \( \rho_0 \) [&Omega;&middot;m]: 0℃の時の抵抗率
+                            </li>
+                            <li>
+                                \( \alpha \) [/K]: 抵抗率の<span id="a116">温度係数</span>
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    仕事と電力
+                </h3>
+                <section>
+                    <h4>
+                        ジュール熱
+                    </h4>
+                    <p>
+                        抵抗で発生する熱量 \( Q \) [J]
+                    </p>
+                    <div>
+                        \( Q= \) <span id="a120">$$IVt$$</span>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    キルヒホッフの法則
+                </h3>
+                <p>
+                    交流でも成り立つ
+                </p>
+                <section>
+                    <h4>
+                        第1法則
+                    </h4>
+                    <p>
+                        任意の分岐点で<span id="a140">流れ込む電流の総和</span>は, <span id="a141">流れ出る電流の総和</span>と等しい
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        第2法則
+                    </h4>
+                    <p>
+                        任意の閉回路で<span id="a142">起電力の総和</span>は, <span id="a143">抵抗による電圧降下の総和</span>と等しい
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                半導体
+            </h2>
+            <p>
+                導体と不導体の中間の抵抗率を示す
+            </p>
+            <p>
+                温度が高くなると抵抗率は<span id="a200">小さくなる</span>
+            </p>
+            <section>
+                <h3>
+                    真性半導体
+                </h3>
+                <p>
+                    単体の半導体
+                </p>
+                <p>
+                    <span id="a201">Si</span>の結晶や<span id="a202">Ge</span>の結晶
+                </p>
+            </section>
+            <section>
+                <h3>
+                    不純物半導体
+                </h3>
+                <p>
+                    真性半導体に微量の不純物を混ぜる
+                </p>
+                <table>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            混ぜるもの
+                        </td>
+                        <td>
+                            電流の担い手
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>n型半導体</td>
+                        <td>
+                            <span id="a205">15族元素</span>
+                        </td>
+                        <td>
+                            <span id="a206">自由電子</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            p型半導体
+                        </td>
+                        <td>
+                            <span id="a207">13族元素</span>
+                        </td>
+                        <td>
+                            <span id="a208">ホール(正孔)</span>
+                        </td>
+                    </tr>
+                </table>
+                <details>
+                    <summary>
+                        どうでもいい話
+                    </summary>
+                    <p>
+                        p は positive の略, n は negative の略.
+                    </p>
+                    <p>
+                        p型は, 14族元素により電子が1少ない (プラス = positive) 元素を増やしているね<br/>
+                        n型は, 14族元素により電子が1多い (マイナス = negative) 元素を増やしているね<br/>
+                        とすると覚えやすいか?
+                    </p>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    ダイオード
+                </h3>
+                <p>
+                    p型とn型を接合した素子
+                </p>
+                <p>
+                    整流作用を持つ
+                </p>
             </section>
         </section>
     </main>

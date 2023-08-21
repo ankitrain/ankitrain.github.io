@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>軍縮|国際政治 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            軍縮
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                核 - 非核運動
+            </h2>
+            <section>
+                <h3>
+                    核の種類
+                </h3>
+                <section>
+                    <h4>
+                        戦術核
+                    </h4>
+                    <p>
+                        射程距離: <span id="a100">500km</span> 以下
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        戦域核 (<span id="a101">中距離核</span>)
+                    </h4>
+                    <p>
+                        射程距離: <span id="a102">500km</span> - <span id="a103">5,500km</span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        戦略核
+                    </h4>
+                    <p>
+                        射程距離: <span id="a104">5,500km</span>以上
+                    </p>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    大陸間弾道弾 (<span id="a105">ICBM</span>)
+                                </dt>
+                                <dd>
+                                    相手の首都への利用(攻撃)を考える
+                                </dd>
+                                <dd>
+                                    命中精度は高いが, 破壊されやすい
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    潜水艦発射弾道弾 (<span id="a106">SLBM</span>)
+                                </dt>
+                                <dd>
+                                    潜水艦から発射する弾道弾
+                                </dd>
+                                <dd>
+                                    命中精度は劣るが, 補足しにくい
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    戦略爆撃機
+                                </dt>
+                                <dd>
+                                    命中精度が劣り, 撃墜もされやすい
+                                </dd>
+                                <dd>
+                                    呼び戻すというのが可能であるため, 常時警戒態勢に活用する
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <h3>
+                    反核運動
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a110">ストックホルム&middot;アピール</span> (1950)
+                            </dt>
+                            <dd>
+                                平和用語世界大会での声明
+                            </dd>
+                            <dd>
+                                米ソの核軍拡競争で緊張状態が高まる中発表された
+                            </dd>
+                            <dd>
+                                核兵器の絶対禁止と厳重な国際管理を説いた
+                            </dd>
+                            <dd>
+                                最初に核兵器を利用した政府を<span id="a111">戦争犯罪人</span>と規定
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a115">ラッセル&middot;アインシュタイン宣言</span> (1955)
+                            </dt>
+                            <dd>
+                                哲学者<span id="a116">ラッセル</span>, 科学者<span id="a117">アインシュタイン</span>を中心に, 11人の科学者によって発表された
+                            </dd>
+                            <dd>
+                                日本の<span id="a118">湯川秀樹</span>を署名した
+                            </dd>
+                            <dd>
+                                科学者が核廃絶と科学技術の平和利用を訴えた宣言
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                核 - 多国間条約
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a1">部分的核実験禁止条約</span> (<span id="a2">NTBT</span>) (1963) <small>[重要]</small>
+                        </dt>
+                        <dd>
+                            大気圏, 宇宙空間, 水中における核実験を禁止する
+                        </dd>
+                        <dd>
+                            <span id="a3">地下</span>での核実験は認められている
+                        </dd>
+                        <dd>
+                            仏中は, 米英ソの核における優位性を容認するものだとして加盟しなかったが, それらの国も地上での核実験は行わなくなった
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a10">核兵器拡散防止条約</span> (<span id="a11">NPT</span>) (1970発効) <small>[重要]</small>
+                        </dt>
+                        <dd>
+                            "1967年1月1日以前に核兵器その他の核爆発装置を製造しかつ爆発させた国"(<span id="a12">米英仏中ソ</span>)を「<span
+                                id="a13">核兵器国</span>」と定め, それ以外の国への核兵器の拡散を禁止する条約
+                        </dd>
+                        <dd>
+                            加盟する非核保有国は, <span id="a14">国際原子力機関</span>(<span id="a15">IAEA</span>)の査察を受ける
+                        </dd>
+                        <dd>
+                            核を保有するインド, パキスタン, イスラエル, 南スーダンは未締約
+                        </dd>
+                        <dd>
+                            <span id="a16">北朝鮮</span>は2003に脱退
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a20">包括的核実験禁止条約</span> (<span id="a26">CTBT</span>) (未発効) <small>[重要]</small>
+                        </dt>
+                        <dd>
+                            地下を含む<em>あらゆる空間</em>においての核爆発を伴う核実験を禁止する
+                        </dd>
+                        <dd>
+                            発効には研究や発電用の原子炉があるすべての国の批准が必要であり, まだ発効できていない
+                        </dd>
+                        <dd>
+                            未署名: <span id="a21">印</span>, <span id="a22">北朝鮮</span>, <span id="a23">パキスタン</span>
+                        </dd>
+                        <dd>
+                            未批准: <span id="a24">米</span>, <span id="a25">中</span> etc.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            核兵器禁止条約 (<span id="a40">2021</span>年発効)
+                        </dt>
+                        <dd>
+                            <em>核兵器</em>を包括的にに禁止する条約
+                        </dd>
+                        <dd>
+                            平和利用のための核兵器利用は禁止していない
+                        </dd>
+                        <dd>
+                            核保有国と, 米の<span id="a41">核の傘</span>に守られている <em>日</em>独韓 などは署名していない
+                        </dd>
+                        <dd>
+                            時事(?): <span id="a42">核兵器廃絶国際キャンペーン</span>(<span id="a43">ICAN</span>)は, 条約の推進に当たり貢献が大きいとされ,
+                            2017年に<em>ノーベル平和賞</em>を受賞している
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a50">拡散に対する安全保障構想</span> (<span id="a51">PSI</span>) (2003発足)
+                        </dt>
+                        <dd>
+                            米主導で発足した, 核兵器を含めた大量破壊兵器, ミサイルなどの拡散を阻止するための枠組み
+                        </dd>
+                        <dd>
+                            中印, パキスタンは未参加
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <section>
+                <h3>
+                    IAEA
+                </h3>
+                <p>
+                    <span id="a70">核兵器拡散防止条約/NPT</span>の発効を受けて発足. 国連下の組織.
+                </p>
+                <p>
+                    <em>原子力の平和利用の促進</em>, <em>原子力が軍事転用されていないことを兼任するための保障措置の実施</em>が主な任務
+                </p>
+                <p>
+                    IAEAの査察を拒否できたり, 加盟国以外には査察できなかったり, 加盟国は報告した施設以外にはいかなる疑いがあっても査察に行けなかったりと課題だらけである
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                核 - 米露(ソ) 二国間協定
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a200">SALT I</span> (<span id="a201">第1次戦略兵器制限条約</span>) (1972)
+                        </dt>
+                        <dd>
+                            ICBMやSLBMなどの数量制限 (5年間)
+                        </dd>
+                        <dd>
+                            &rArr; <span id="a202">多弾頭ミサイル</span>(<span id="a203">MIRV</span>)の開発を促進させてしまう
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a205">ABM(弾道弾迎撃ミサイル)制限条約</span> (1972)
+                        </dt>
+                        <dd>
+                            弾道弾迎撃ミサイルシステムの開発と配備を制限
+                        </dd>
+                        <dd>
+                            &rArr; <span id="a206">米</span>が一方的に脱退(2002)
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a210">SALT II</span> (<span id="a211">第2次戦略兵器制限条約</span>) (1979)
+                        </dt>
+                        <dd>
+                            ICBMやSLBMなどの数量制限 (米ソ同量)
+                        </dd>
+                        <dd>
+                            &rArr; <span id="a212">ソ アフガニスタン侵攻</span>を受けて<span id="a213">米</span>批准拒否
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a215">INF(中距離核戦力)全廃条約</span> (1987)
+                        </dt>
+                        <dd>
+                            <span id="a216">中距離核ミサイル</span>の全廃
+                        </dd>
+                        <dd>
+                            &rArr; <span id="a217">米</span>破棄を表明(2018) &rArr; 失効
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a220">START I</span> (<span id="a221">第1次戦略核兵器削減条約</span>) (1991)
+                        </dt>
+                        <dd>
+                            配備する<span id="a222">戦略核弾頭数</span>を7年間に<span id="a223">6,000</span>発に制限
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a225">START II</span> (<span id="a226">第2次戦略核兵器削減条約</span>) (1993)
+                        </dt>
+                        <dd>
+                            配備する<span id="a227">戦略核弾頭数</span>を2003までに<span id="a228">3,000</span>発に制限
+                        </dd>
+                        <dd>
+                            &rArr; <em>未発効のまま死文化</em>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a230">モスクワ条約</span> (<span id=a231>戦略攻撃能力削減条約</span>) (2002)
+                        </dt>
+                        <dd>
+                            配備する<span id="a232">戦略核弾頭数</span>を2012までに<span id="a233">1,700</span>発に制限
+                        </dd>
+                        <dd>
+                            &rArr; <span id="a234">新START</span>発効により失効
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a240">新START</span> (2010)
+                        </dt>
+                        <dd>
+                            7年以内に米ロともに<span id="a241">戦略核弾頭</span>の<em>配備数</em>を<span id="a242">1,550</span>に削減
+                        </dd>
+                        <dd>
+                            核弾頭の運搬手段を<span id="a243">800</span>に制限
+                        </dd>
+                        <dd>
+                            未配備の核弾頭は廃棄義務なし
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                核 - イランとアメリカと他の国
+            </h2>
+            <p>
+                イランがこっそり核開発をしていることがばれる<br/>
+                &rArr; <span id="a280">国連</span>は制裁発動 + <span id="a281">米</span>や<span id="a282">EU</span>はイラン産の石油の輸入を停止<br/>
+                &rArr; 2013に<span id="a283">米英仏独中露</span>とイランで(イランの核開発制限と制裁停止に関する)合意が結ばれる<br/>
+                &rArr; 2018に<span id="a284">米</span>(<span id="a285">トランプ</span>大統領)が離脱を表明<br/>
+                &rArr; イランは合意を不履行すると発表
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
