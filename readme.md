@@ -52,6 +52,6 @@
 ## 8. `katex`フォルダ
 KaTeX(数式ライブラリ, cf. [KaTeX](https://katex.org/))のスクリプトを格納しているフォルダ
 
-# リリースノート
+# 更新履歴
 
-詳細は[releasenote.md](./releasenote.md)を参照のこと。
+詳細は[更新履歴](./releasenote.md)を参照のこと。

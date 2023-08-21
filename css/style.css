@@ -307,9 +307,13 @@ th {
 table.noborder,
 table.noborder tr,
 table.noborder td,
-table.noborder th {
+table.noborder th,
+tr.noborder,
+td.noborder,
+th.noborder {
     border: none;
 }
+
 
 section {
     clear: both;
@@ -733,4 +737,7 @@ table.alc * {
 }
 .all{
     text-align: left;
+}
+.small{
+    font-size: 0.7em;
 }
