@@ -55,3 +55,14 @@ KaTeX(数式ライブラリ, cf. [KaTeX](https://katex.org/))のスクリプト�
 # 更新履歴
 
 詳細は[更新履歴](./releasenote.md)を参照のこと。
+
+# お借りしたモノ
+
+## UI アイコン
+Microsoft Fluent UI System Icons ([GitHub](https://github.com/microsoft/fluentui-system-icons))
+
+## 数式表示ライブラリ
+[KaTeX](https://katex.org/)
+
+## 数式フォント
+STIX Two Text ([Google Fonts](https://fonts.google.com/specimen/STIX+Two+Text))

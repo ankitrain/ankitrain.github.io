@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>使い方 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="./js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="./ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            使い方
+        </h1>
+        <p>
+            初めて使う人たちは, 一応, 「<a href="terms.html">初めて使う人たちへ</a>」に目を通しておいてください。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="./index.html" class="bt bt_home">トップへ</a>
+                
+                <span class="bt bt_lightdark" onclick="DandL()">
+                    テーマ
+                </span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                赤文字の表示非表示
+            </h2>
+            <section>
+                <h3>
+                    1つ1つの赤文字
+                </h3>
+                <p>
+                    赤文字で下線が引かれているものは, 暗記もので赤シートで隠すように, 文字を隠すことができます.<br/>
+                    赤文字部分をタップすれば, その部分の表示非表示が切り替えられます.<br/>
+                    この<span id="a1">赤文字部分</span>で試してみてください.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    一斉表示/非表示
+                </h3>
+                <p>
+                    <span id="a2">ページ上すべて</span>の赤文字の表示非表示を一斉に切り替えたい場合は, 
+                    ページ上部の<span id="a3">全表示</span>, <span id="a4">非表示</span>ボタンが利用できます.<br/>
+                    試しに押してみてください.
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                テーマ
+            </h2>
+            <p>
+                このサイトではダークテーマ, ライトテーマが切り替えできます.<br/>
+                ブラウザの標準設定に従って, 初期表示テーマが異なります.
+            </p>
+            <p>
+                ページ上部の「テーマ」ボタンをタップすれば, テーマを変えることができます.<br/>
+                ダークテーマのほうが電池消費が抑えられるらしいです.<br/>
+                テーマの設定は保存できません. ページを読み込むたびに設定が元に戻ります. 
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -11,13 +11,18 @@ body.light-theme {
     --t_colored_back: #F19EC2;    
     
     --t_colored_border: #08A51C;
-    --t_colored_back: #0ADF25;
+    --t_colored_back: #4adf5e;
 
 
     --t_font_notshown: #fff0;
     --t_foothead_back: var(--t_colored_back);
     --t_btbar: var(--t_colored_border);
-    --t_back: white;
+    --t_back: #f3f3f3;
+
+    --t_bt_back: #fbfbfb;
+    --t_bt_back_s: #f6f6f6;
+    --t_bt_border: #cccccc;
+
     --linkcolor: blue;
 }
 
@@ -32,11 +37,16 @@ body.dark-theme {
     --t_colored_back: #E4007F;
     --t_colored_border: #FA8D94;
     --t_colored_back: #259200;
-    --t_colored_border: #38D500;
+    --t_colored_border: #4adf5e;
     --t_font_notshown: #fff0;
     --t_foothead_back: #2f2f2f;
     --t_btbar: #222222;
     --t_back: #171717;
+    
+    --t_bt_back: #2d2d2d;
+    --t_bt_back_s: #323232;
+    --t_bt_border: #333333;
+
     --linkcolor: yellow;
     background-color: #171717;
 }
@@ -63,6 +73,10 @@ footer {
     background-color: var(--t_foothead_back);
     clear: both;
     transition: background 0.2s;
+}
+
+body.light-theme .btbar{
+    background: var(--t_back);
 }
 
 /*
@@ -377,10 +391,12 @@ article>* {
     border-radius: 6px;
     vertical-align: middle;
 
-    background-color: var(--t_colored_back);
 
-    background: var(--t_colored_back);
-    margin: 0.2em 0.2em;
+    background: var(--t_bt_back);
+    margin: 0.5em 0.5em;
+
+    border: 1px solid var(--t_bt_border);
+
 
 }
 
@@ -395,39 +411,30 @@ a.bt:any-link {
 
 .bt:hover,
 a.bt:any-link:hover {
-    background: #d1e8ff;
-}
-
-body.dark-theme .bt:hover,
-body.dark-theme a.bt:any-link:hover {
-    background: var(--t_colored_border);
+    background: var(--t_bt_back_s);
 }
 
 .bt:active,
 a.bt:any-link:active {
-    background: #d1e8ff;
+    background: var(--t_bt_back_s);
 }
 
-body.dark-theme .bt:hover,
-body.dark-theme a.bt:any-link:hover {
-    background: var(--t_colored_border);
-}
 
 @media (hover: none) {
 
     .bt:hover,
     a.bt:any-link:hover {
-        background: var(--t_colored_back);
+        background: var(--t_bt_back);
     }
 
     body.dark-theme .bt:hover,
     body.dark-theme a.bt:any-link:hover {
-        background: var(--t_colored_back);
+        background: var(--t_bt_back_s);
     }
 
     .bt:active,
     a.bt:any-link:active {
-        background: #d1e8ff;
+        background: var(--t_bt_back_s);
     }
 }
 
@@ -564,6 +571,48 @@ body.dark-theme .bt_forward::before {
     background-image: url("../img/dark/forward.svg");
 }
 
+/*terms*/
+.bt_docq::before {
+    display: inline-block;
+    content: "";
+    height: 2.0em;
+    width: 2.0em;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    vertical-align: middle;
+    content-visibility: auto;
+    background-image: url("../img/light/docquestion.svg");
+}
+
+body.light-theme .bt_docq::before {
+    background-image: url("../img/light/docquestion.svg");
+}
+
+body.dark-theme .bt_docq::before {
+    background-image: url("../img/dark/docquestion.svg");
+}
+
+@media screen and (max-width: 145mm) {
+    .bt_eject, .bt_home, .bt_lightdark, .bt_visibility, .bt_visibilityoff, .bt_docq{
+        width: 4.0em;
+        height: 3.0em;
+        font-size: 0.7em;
+        position: relative;
+        padding: 0.7em;
+        padding-top: 4em;
+        padding-bottom: 0em;
+        margin: 1em;
+        text-align: center;
+    }
+    .bt_eject::before, .bt_home::before, .bt_lightdark::before, .bt_visibility::before, .bt_visibilityoff::before, .bt_docq::before{
+        position: absolute;
+        width: 3.0em;
+        height: 3.0em;
+        top:0.2em;
+
+    }
+}
 
 .clear {
     clear: both;
