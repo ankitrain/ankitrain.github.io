@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>コロイド|理論化学 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            コロイド
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+
+
+                <h2>
+                    溶液
+                </h2>
+                <section>
+                    <h3>
+                        真の溶液
+                    </h3>
+                    <p>
+                        物質を溶かしている物質を<em>溶媒</em>といい、解けている物質を<em>溶質</em>という。
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        コロイド溶液
+                    </h3>
+                    <p>
+                        コロイド粒子を分散している物質を<span id="a1">分散媒</span>といい、分散しているコロイドを<span id="a2">分散質</span>という。
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        流動性
+                    </h3>
+                    <table class="noborder" style="text-align: center;">
+                        <tr>
+                            <td style="width: 5em;"></td>
+                            <td>
+                                冷却
+                            </td>
+                            <td style="width: 5em;"></td>
+                            <td>
+                                乾燥
+                            </td>
+                            <td style="width: 7em;"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a3">ゾル</span>
+                            </td>
+                            <td>
+                                &RightArrowLeftArrow;
+                            </td>
+                            <td>
+                                <span id="a4">ゲル</span>
+                            </td>
+                            <td>
+                                &rightarrow;
+                            </td>
+                            <td>
+                                <span id="a5">キセロゲル</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&uparrow;</td>
+                            <td>
+                                加熱
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>&downarrow;</td>
+                        </tr>
+                        <tr>
+                            <td>&uparrow;</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>&downarrow;</td>
+                        </tr>
+                        <tr>
+                            <td>&UpperLeftArrow;</td>
+                            <td>&leftarrow;</td>
+                            <td>&leftarrow;</td>
+                            <td>&leftarrow;</td>
+                            <td>&swarr;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                熱水で熱する
+                            </td>
+                        </tr>
+                    </table>
+                    <small>
+                        うまい図の作り方がわかりませんでした。ごめんね&hearts;
+                    </small>
+                </section>
+        </section>
+        <section>
+            <h2>
+                コロイド粒子
+            </h2>
+            <section>
+                <h3>
+                    大きさ
+                </h3>
+                <dl>
+                    <dt>
+                        分子やイオン
+                    </dt>
+                    <dd>
+                        <span id="a10">10<sup>-9</sup></span> m 以下
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        コロイド粒子
+                    </dt>
+                    <dd>
+                        <span id="a11">10<sup>-9</sup></span> m ～ <span id="a12">10<sup>-7</sup></span> m
+                    </dd>
+                </dl>
+            </section>
+            <section>
+                <h3>
+                    種類
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <span id="a13">分子</span>コロイド
+                        </dl>
+                        <dd>
+                            高分子化合物など、分子1つが大きくそれ自身がコロイドになる例
+                        </dd>
+                        <dd>
+                            e.g.) でんぷん, タンパク質
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>
+                            <span id="a14">分散</span>コロイド
+                        </dl>
+                        <dd>
+                            同じ分子がたくさん集まってコロイド粒子の大きさになって分散する例
+                        </dd>
+                        <dd>
+                            e.g.) 硫黄, 金, 泥, Fe(OH)<sub>3</sub>
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>
+                            <span id="a15">会合</span>コロイド / <span id="a16">ミセル</span>コロイド
+                        </dl>
+                        <dd>
+                            疎水基と親水基を持つような粒子がたくさん集まって「<span id="a17">ミセル</span>」という集合体を作り、それがコロイドになる例
+                        </dd>
+                        <dd>
+                            e.g.) せっけん
+                        </dd>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                コロイドの製法
+            </h2>
+            <ol>
+                <li>
+                    <p>
+                        <span id="a100">沸騰水</span> に <span id="a101">FeCl<sub>3</sub></span>aq (<span id="a102">黄褐</span>色)をくわえると、 <span id="a103">Fe(OH)<sub>3</sub></span>のコロイド溶液が得られる
+                    </p>
+                    <p>
+                        反応式は以下の通り 
+                    </p>
+                    <div style="text-align: center;">
+                        <span id="a104">FeCl<sub>3</sub> + 3H<sub>2</sub>O &rightarrow; Fe(OH)<sub>3</sub> + 3HCl</span>
+                    </div>
+                </li>
+                <li>
+                    <p>
+                        <span id="a105">透析</span>する。 (純度が高まる)
+                    </p>
+                    <p>
+                        コロイド溶液を半透膜につつんで蒸留水に浸すことで、半透膜内の溶液の純度が上がる。<br/>
+                        (イオンなどが半透膜を通ってお外に出るから)
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>
+                コロイド溶液の特性
+            </h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a200">チンダル</span>現象
+                        </dt>
+                        <dd>
+                            コロイド溶液に横から強い光を当てるとその光の通路が明るく見える。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a201">ブラウン</span>運動
+                        </dt>
+                        <dd>
+                            コロイド溶液中では、コロイド粒子は揺れ動きながら<em>不規則な運動</em>をする。
+                        </dd>
+                        <dd>
+                            熱運動を行う<span id="a202">分散媒</span>粒子がコロイド粒子とぶつかることに起因する。
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a203">電気泳動</span>
+                        </dt>
+                        <dd>
+                            コロイド溶液はU字管に入れ、電圧をかけることで、<em>陰極や陽極にひきつけられる</em>。
+                        </dd>
+                        <dd>
+                            e.g.)<br/>
+                            正電荷(<span id="a208">陰極</span>に引かれる): <span id="a204">Fe(OH)<sub>3</sub></span>, <span id="a205">Al(OH)<sub>3</sub></span><br/>
+                            負電荷(<span id="a209">陽極</span>に引かれる): <span id="a206">粘土</span>, <span id="a207">硫黄</span>
+                        </dd>
+                        <dd>
+                            一般にコロイド粒子は正or負の電荷をもっている
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            疎水コロイドと<span id="a210">凝析</span>
+                        </dt>
+                        <dd>
+                            疎水コロイド溶液に<span id="a211">少量</span>[少量/多量]の電解質を加えると沈殿が生まれるという現象
+                        </dd>
+                        <dd>
+                            コロイドと<span id="a213">逆</span>[同/逆]符号の持つイオンの価数が<span id="a214">大きい</span>[大きい/小さい]ほど、凝析効果は大きい。
+                        </dd>
+                        <dd>
+                            <ol>
+                                <li>
+                                    同電荷のコロイド同士が反発し、分散媒中に分散している
+                                </li>
+                                <li>
+                                    電解質を入れることによって、イオンがコロイドの反発を弱める
+                                </li>
+                                <li>
+                                    コロイドが<span id="a212">ファンデルワールス</span>力で集まってくる
+                                </li>
+                            </ol>
+                            という仕組み
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            親水コロイドと<span id="a250">塩析</span>
+                        </dt>
+                        <dd>
+                            親水コロイド溶液に<span id="a251">多量</span>[少量/多量]の電解質を加えると沈殿が生まれるという現象
+                        </dd>
+                        <dd>
+                            <ol>
+                                <li>
+                                    水分子は親水コロイドにくっついて水和状態
+                                </li>
+                                <li>
+                                    電解質を加えると、イオンは親水コロイドの水和水を奪って水和する
+                                </li>
+                                <li>
+                                    水和水を奪われた親水コロイド粒子は沈殿する
+                                </li>
+                            </ol>
+                            というしくみ
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <span id="a270">保護</span>コロイド
+                        </dt>
+                        <dd>
+                            疎水コロイドに親水コロイド加えると、疎水コロイドは<span id="a271">凝析</span>しにくくなる。
+                        </dd>
+                        <dd>
+                            疎水コロイドが親水コロイドに取り囲まれるため
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
