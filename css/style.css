@@ -1,7 +1,7 @@
 body,
 body.light-theme {
     --t_font: black;
-    --t_font_red: rgb(255, 0, 0);
+    --t_font_red: rgb(233, 0, 0);
 
     --t_colored_border: #3060c0;
     --t_colored_back: #90c0f0;
@@ -15,10 +15,11 @@ body.light-theme {
 
 
     --t_font_notshown: #fff0;
+    --t_back: #fafafa;
+    
     --t_foothead_back: var(--t_colored_back);
-    --t_btbar: var(--t_colored_border);
-    --t_back: #f3f3f3;
 
+    --t_btbar: #f3f3f3;
     --t_bt_back: #fbfbfb;
     --t_bt_back_s: #f6f6f6;
     --t_bt_border: #cccccc;
@@ -73,10 +74,6 @@ footer {
     background-color: var(--t_foothead_back);
     clear: both;
     transition: background 0.2s;
-}
-
-body.light-theme .btbar{
-    background: var(--t_back);
 }
 
 /*
@@ -218,6 +215,10 @@ header {
     padding: 2em 0 0 0;
 }
 
+body.light-theme header{
+    background: linear-gradient(180deg, var(--t_foothead_back), var(--t_btbar) 50%);
+}
+
 header>* {
     max-width: 960px;
     margin: 1em auto;
@@ -240,6 +241,11 @@ footer {
     background-color: var(--t_foothead_back);
     margin: 0;
     padding: 0 0 2em 0;
+}
+
+body.light-theme footer{
+    
+    background: linear-gradient(0deg, var(--t_foothead_back), var(--t_btbar) 50%);
 }
 
 footer * {
@@ -293,7 +299,7 @@ details>summary {
 }
 
 details[open]>summary {
-    background-color: var(--t_foothead_back);
+    background-color: var(--t_btbar);
 }
 
 details>summary::before {
@@ -309,6 +315,7 @@ details>summary::before {
 details[open]>summary::before {
     transform: rotate(90deg);
 }
+
 
 table,
 tr,
@@ -610,7 +617,10 @@ body.dark-theme .bt_docq::before {
         width: 3.0em;
         height: 3.0em;
         top:0.2em;
-
+        left: 50%;
+        transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
     }
 }
 
