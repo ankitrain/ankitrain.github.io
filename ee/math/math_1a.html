@@ -204,6 +204,120 @@
                 </p>
             </section>
         </section>
+        <section>
+            <h2>
+                統計
+            </h2>
+            <p>
+                \( N \) 個のデータ \( x_1, x_2, \cdots x_N \) の平均を \( \bar{x} \) とする. 
+            </p>
+            <section>
+                <h3>
+                    分散
+                </h3>
+                <p>
+                    \( s^2= \) <span id="a150">$$\frac{1}{N}\{(x_1-\bar{x})^2+(x_2-\bar{x})^2+ \cdots+(x_N-\bar{x})^2 \}$$</span>
+                </p>
+                <details>
+                    <summary>
+                        &Sigma; を用いた表現
+                    </summary>
+                    <p>
+                        \( s^2 = \) <span id="a151">$$\frac{1}{N}\sum_{i=1}^N (x_i-\bar{x})^2 $$</span>
+                    </p>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    標準偏差
+                </h3>
+                <p>
+                    \( s=\sqrt{(\text{分散})} \) 
+                </p>
+            </section>
+            <section>
+                <h3>
+                    共分散
+                </h3>
+                <p>
+                    \( s_{xy}= \) <span id="a155">$$\frac{1}{N}\{(x_1-\bar{x})(y_1-\bar{y_1})+ \cdots+(x_N-\bar{x})(y_N-\bar{y_1})\}$$</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    相関係数
+                </h3>
+                <p>
+                    \( r= \) <span id="a156">$$\frac{s_{xy}}{s_x s_y}$$</span>
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                場合の数と確率
+            </h2>
+            <section>
+                <h3>
+                    集合の要素の個数
+                </h3>
+                <ul>
+                    <li>
+                        \( n(A\cup B)= \) <span id="a180">$$n(A) + n(B) - n(A \cap B)$$</span>
+                    </li>
+                </ul>
+
+            </section>
+            <section>
+                <h3>
+                    和の法則
+                </h3>
+                <p>
+                    \( A \) , \( B \) が同時におこらないとき, \( A \) , \( B \)  がそれぞれ \( p \) , \( q \) 通り発生すると \( A \) \( B \) がともに起こる場合の数は <span id="a185">\( p+q \) </span>. 
+                </p>
+            </section>
+            <section>
+                <h3>
+                    積の法則
+                </h3>
+                <p>
+                    \( A \) が \( p\) 通り発生し, そのおのおので \( B \) が \( q \) 通り発生するとき, \( A \) \( B \) がともに起こる場合の数は <span id="a186">\( pq \) </span> .
+                </p>
+            </section>
+            <section>
+                <h3>
+                    順列
+                </h3>
+                <p>
+                    異なる \( n \) 個から \( r \) 個をとって並べる方法は
+                </p>
+                <p>
+                    \( {}_n\mathrm{P}_r=\) <span id="a187">$$n(n-1)\cdots(n-r+1) = \frac{n!}{(n-r)!}$$</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    組み合わせ
+                </h3>
+                <p>
+                    異なる \( n \) 個から \( r \) 個を取り出す組み合わせは
+                </p>
+                <p>
+                    \( {}_n\mathrm{C}_r=\) <span id="a188">$$\frac{{}_n\mathrm{P}_r}{r!}$$</span>
+                </p>
+                <p>
+                    \( {}_n\mathrm{C}_1=\) <span id="a189">$$n$$</span>
+                </p>
+                <p>
+                    \( {}_n\mathrm{C}_0={}_n\mathrm{C}_n=\) <span id="a190">$$1$$</span>
+                </p>
+                <p>
+                    \( {}_n\mathrm{C}_{n-r}=\) <span id="a191">$${}_n\mathrm{C}_r$$</span>
+                </p>
+                <p>
+                    \( {}_{n-1}\mathrm{C}_{r-1}+{}_{n-1}\mathrm{C}_{r}=\) <span id="a192">$${}_n\mathrm{C}_r$$</span>
+                </p>
+            </section>
+        </section>
     </main>
     <footer>
         <div class="btbar">
