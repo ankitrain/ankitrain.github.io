@@ -2,13 +2,19 @@ text="";
 isdarktheme=true;
 
 function Set(num){
-    if(document.getElementById("a"+num).style.color=="var(--t_font_red)")
-    {
-        document.getElementById("a"+num).style.color="var(--t_font_notshown)";
-    }
-    else
-    {
-        document.getElementById("a"+num).style.color="var(--t_font_red)";
+    try{
+
+        if(document.getElementById("a"+num).style.color=="var(--t_font_red)")
+        {
+            document.getElementById("a"+num).style.color="var(--t_font_notshown)";
+        }
+        else
+        {
+            document.getElementById("a"+num).style.color="var(--t_font_red)";
+        }
+
+    }catch(e){
+
     }
 }
 
