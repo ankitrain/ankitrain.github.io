@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description" content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>芳香族化合物|有機化学 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/math.css">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            芳香族化合物
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h2>
+                本ページ上の, 化学式表現方法について
+            </h2>
+            <p>
+                私は思ったわけです.
+                教科書にあるような, ベンゼンとその他の置換基がくっついたような書き方を, Webサイト上では再現できないなと.
+            </p>
+            <p>
+                ということで, 一置換体は, <span class="chemfmsm">&#9004; &#9473; R</span>のように表現し, 二置換体などは, 画像をどっかから持ってきます.
+            </p>
+            <p>
+                使いづらいとは思いますが, ご理解願います.
+            </p>
+        </article>
+        <section>
+            <h2>
+                ベンゼン - benzene
+            </h2>
+            <section>
+                <h3>
+                    概要
+                </h3>
+                <ul>
+                    <li>
+                        化学式は <span id="a1">C<sub>6</sub>H<sub>6</sub></span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    性質
+                </h3>
+                <ul>
+                    <li>
+                        特有のにおいを持つ <span id="a2">無<span class="b">色</span>液<span class="b">体</span> </span>.
+                    </li>
+                    <li>
+                        水溶性は <span id="a3">ない</span>
+                    </li>
+                    <Li>
+                        空気中では多量の <span id="a4">すす</span> を出しながら燃焼. (Hに対するCが足りず, <span id="a5">不完全燃焼</span>が起こりやすいため)
+                    </Li>
+                    <li>
+                        化学的に<em>安定</em>. 酸塩基, 還元剤酸化剤などとほとんど反応しない.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    置換基の位置
+                </h3>
+                <p>
+                    置換基 <span class="chemfmsm">X</span> と結合している炭素原子を基準として, 隣の位置を <span id="a30"><var>o</var>位
+                        (オルト位)</span>, さらにその隣の位置(<span class="chemfmsm">X</span>から1つ飛ばし)を <span id="a31"><var>m</var>位
+                        (メタ位)</span>, さらに隣(<span class="chemfmsm">X</span>の反対側)を <span id="a32"><var>p</var>位
+                        (パラ位)</span> と呼ぶ.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    いろいろな芳香族炭化水素
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">&#9004; &#9473; CH<sub>3</sub></span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a40">トルエン</span>, (<span id="a41">メチルベンゼン</span>)
+                            </dd>
+                            <dd>
+                                有毒な <span id="a42">液体</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">&#9004; &#9473; CH<sub>2</sub> &#9473; CH<sub>3</sub></span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a45">エチルベンゼン</span>
+                            </dd>
+                            <dd>
+                                無色液体.
+                            </dd>
+                            <dd>
+                                <span id="a46">スチレン</span>の原料として使われる.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">C<sub>6</sub>H<sub>4</sub>(CH<sub>3</sub>)<sub>2</sub></span>
+                            </dt>
+                            <dd>
+                                <div>
+                                    名前と構造 &darr;
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img class="bw" src="img/Ortho-Xylol_-_ortho-xylene_2.svg.png">
+                                        </td>
+                                        <td>
+                                            <img class="bw" src="img/Meta-Xylol_-_meta-xylene_2.svg.png">
+                                        </td>
+                                        <td>
+                                            <img class="bw" src="img/Para-Xylol_-_para-xylene.svg.png">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="a50"><var>o</var>-キシレン</span><br />
+                                            <small>1, 2-ジメチルベンゼン</small>
+                                        </td>
+                                        <td>
+                                            <span id="a51"><var>m</var>-キシレン</span><br />
+                                            <small>1, 3-ジメチルベンゼン</small>
+                                        </td>
+                                        <td>
+                                            <span id="a52"><var>p</var>-キシレン</span><br />
+                                            <small>1, 4-ジメチルベンゼン</small>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">&#9004; &#9473; CH &#9552; CH<sub>2</sub></span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a55">スチレン</span>
+                            </dd>
+                            <dd>
+                                無色の液体
+                            </dd>
+                            <dd>
+                                合成樹脂などの原料
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <img class="mini" src="img/naphthalene_tel.jpeg">
+                            <dt>
+                                <span class="chemfmsm">C<sub>10</sub>H<sub>8</sub></span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a60">ナフタレン</span>
+                            </dd>
+                            <dd>
+                                無色の <span id="a61">固体</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    ベンゼンの置換反応
+                </h3>
+                <section>
+                    <h4>
+                        ハロゲン化
+                    </h4>
+                    <p>
+                        <em>ベンゼン</em>に <span id="a70">鉄粉</span>(厳密には <span id="a71">FeCl<sub>3</sub></span>)を触媒として,
+                        <span class="chemfmsm">Cl<sub>2</sub></span> を作用させると, <span id="a72">クロロベンゼン</span>(<span
+                            id="a73">&#9004; &#9473 Cl</span>) ができる.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004; + Cl<sub>2</sub> &rarr; <span id="a74">&#9004; &#9473; Cl + HCl</span>
+                    </p>
+                    <p>
+                        なお, 子の生成物は水に <span id="a75">難溶</span>
+                    </p>
+                    <p>
+                        さらに, <span class="chemfmsm">Cl<sub>2</sub></span> を反応させると, <span
+                            id="a80"><var>p</var>-ジクロロベンゼン</span> ができる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        スルホン化
+                    </h4>
+                    <p>
+                        <em>ベンゼン</em>に <span id="a90">濃硫酸</span> を加えて加熱すると, <span id="a91">ベンゼンスルホン酸</span>(<span
+                            id="a92">&#9004; &#9473; SO<sub>3</sub>H</span>) を生じる.
+                    </p>
+                    <p>
+                        この物質は, 無色固体で, 水に <span id="a93">可溶</span>, 液性は <span id="a94">強い酸性</span> を示す.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004; + HO &#9473; SO<sub>3</sub>H &rarr; <span id="a95">&#9004; &#9473; SO<sub>3</sub>H +
+                            H<sub>2</sub>O</span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        ニトロ化
+                    </h4>
+                    <p>
+                        <em>ベンゼン</em>に <span id="a100">濃硝酸</span>と<span id="a101">濃硫酸</span>の混合物(<span
+                            id="a102">混酸</span>)を加えて加熱すると <span id="a103">ニトロベンゼン</span>(<span id="a104">&#9004; &#9473;
+                            NO<sub>2</sub></span>)ができる.
+                    </p>
+                    <p>
+                        この物質は <span id="a105">淡黄<span class="b">色</span>液<span class="b">体</span></span>で, 水に<span
+                            id="a106">難溶</span>である.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004; + HO &#9473; NO<sub>2</sub> &rarr; <span id="a107">&#9004; &#9473; NO<sub>2</sub> +
+                            H<sub>2</sub>O</span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        トルエンのニトロ化
+                    </h4>
+                    <p>
+                        トルエン(<span id="a110">&#9004; &#9473; CH<sub>3</sub></span>)は, <span id="a111"><var>o</var>,
+                            <var>p</var> <span class="b">指向性</span></span>があり, <span id="a112">混酸</span>を反応させると, <span
+                            id="a113"><var>o</var>-ニトロトルエン</span>と<span id="a114"><var>p</var>-ニトロトルエン</span>ができる.
+                    </p>
+                    <p>
+                        さらにニトロ化を進めると, <span id="a115">2, 4, 6-トリニトロトルエン</span>(<span
+                            id="a116">C<sub>6</sub>H<sub>2</sub>CH<sub>3</sub>(NO<sub>2</sub>)<sub>3</sub></span>)(通称:
+                        <span id="a117">TNT</span>)が生成される.
+                    </p>
+                    <p>
+                        この物質は, <span id="a118">淡黄<span class="b">色</span></span>の<span id="a119">針状</span>結晶であり, <span
+                            id="a120">爆薬</span>として用いられる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        アルキル化
+                    </h4>
+                    <p>
+                        ベンゼンに, <span id="a125">AlCl<sub>3</sub></span>を触媒として, <span
+                            id="a126">C<sub>2</sub>H<sub>5</sub>Cl</span>を反応させると <span id="a127">エチルベンゼン</span>(<span
+                            id="a128">&#9004; &#9473; C<sub>2</sub>H<sub>5</sub></span>)が発生する.
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    ベンゼンの付加反応
+                </h3>
+                <section>
+                    <h4>
+                        水素
+                    </h4>
+                    <p>
+                        <span id="a130">Pt</span>や<span id="a131">Ni</span>を触媒として, <span
+                            class="chemfmsm">H<sub>2</sub></span>を反応させると, <span id="a132">シクロヘキサン</span>(<span
+                            id="a133">C<sub>6</sub>H<sub>12</sub></span>)が発生する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        塩素
+                    </h4>
+                    <p>
+                        <span id="a135">紫外線</span>照射によって, ベンゼンに塩素が付加して, <span
+                            id="a136">1,2,3,4,5,6-ヘキサクロロシクロヘキサン</span>(<span
+                            id="a137">C<sub>6</sub>H<sub>6</sub>Cl<sub>6</sub></span>)を生じる.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                フェノール類 - phenols
+            </h2>
+            <p>
+                ベンゼン環炭素原子に <span class="chemfmsm">&#9473; OH</span> が<em>直接</em>結合した化合物たち
+            </p>
+            <section>
+                <h3>
+                    フェノール類の性質
+                </h3>
+                <ul>
+                    <li>
+                        水溶性が <span id="a150">ある</span>.
+                    </li>
+                    <li>
+                        <span id="a151">弱酸<span class="b">性</span></span>を示す.
+                    </li>
+                    <li>
+                        <span id="a152">塩化鉄(III)</span>水溶液を加えると, <span id="a153">青紫</span>色や<span
+                            id="a154">赤紫</span>色に呈色する.<br />
+                        &rArr; 検出反応に使われる.
+                    </li>
+                    <li>
+                        <span id="a155">アルコール</span>と似た性質を示す.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    いろいろなフェノール類
+                </h3>
+                <ul>
+                    <li>
+                        <img class="mini" src="./img/phenol.png" alt="フェノール">
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">&#9004; &#9473; OH</span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a160">フェノール</span>
+                            </dd>
+                            <dd>
+                                詳細は後述
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">C<sub>6</sub>H<sub>4</sub>(OH)CH<sub>3</sub></span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a161">クレゾール</span>
+                            </dd>
+                            <dd>
+                                メチル基と, ヒドロキシ基を持っている.
+                            </dd>
+                            <dd>
+                                <span id="a162">消毒液</span>として用いられている.
+                            </dd>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="./img/o_cresol.png" alt="o-クレゾール">
+                                        </td>
+                                        <td>
+                                            <img src="./img/m_cresol.png" alt="m-クレゾール">
+                                        </td>
+                                        <td>
+                                            <img src="./img/p_cresol.png" alt="p-クレゾール">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span id="a163"><var>o</var>-クレゾール</span>
+                                        </td>
+                                        <td>
+                                            <span id="a164"><var>m</var>-クレゾール</span>
+                                        </td>
+                                        <td>
+                                            <span id="a165"><var>p</var>-クレゾール</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img class="mini" src="./img/naohthol.png" alt="1-ナフトール">
+                        <dl>
+                            <dt>
+                                <span class="chemfmsm">C<sub>10</sub>H<sub>7</sub>OH</span>
+                            </dt>
+                            <dd>
+                                名前: <span id="a170">ナフトール</span>
+                                <br />(右図は <span id="a171">1-ナフトール</span>)
+                            </dd>
+                            <dd>
+                                <span id="a172">染料</span>として用いられている.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    フェノール類の反応
+                </h3>
+                <section>
+                    <h4>
+                        酸としての フェノール類の反応
+                    </h4>
+                    <p>
+                        フェノール類はわずかに電離して水素イオンを生じて弱酸性を示す.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004; &#9473; OH &rlarr; &#9004; &#9473; O<sup>-</sup> + H<sup>+</sup>
+                    </p>
+                    <p>
+                        塩基である, <span id="a180">水酸化ナトリウム</span>によって中和されて, <span id="a181">ナトリウムフェノキシド</span>(<span
+                            id="a182">&#9004; &#9473; ONa</span>) を生じる.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004; &#9473; OH + NaOH &rarr; <span id="a183">&#9004; &#9473; ONa</span> + H<sub>2</sub>O
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        ナトリウムフェノキシドの 弱酸の遊離
+                    </h4>
+                    <p>
+                        フェノール類より強い酸である, <span id="a184">塩酸</span>, <span id="a185">硫酸</span>, <span
+                            id="a186">カルボン酸</span>(酢酸など), <span id="a187">炭酸</span>などを通じると, <em>フェノール</em>を生じる.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004;&#9473;ONa + CO<sub>2</sub> + H<sub>2</sub>O &rarr; <span id="a190">&#9004;&#9473;OH +
+                            NaHCO<sub>3</sub></span>
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004;&#9473;ONa + HCl &rarr; <span id="a191">&#9004;&#9473;OH + NaCl</span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        フェノールとナトリウムの反応
+                    </h4>
+                    <p>
+                        アルコールと似た反応
+                    </p>
+                    <p class="chemfmsm">
+                        2 &#9004;&#9473;OH + 2Na &rarr; <span id="a200">2 &#9004;&#9473;ONa + H<sub>2</sub></span>
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        フェノール類のアセチル化
+                    </h4>
+                    <p>
+                        フェノール類のOH基と反応して <span id="a204">エステル</span>を形成しやすい
+                    </p>
+                    <p>
+                        特にフェノールにおいては,
+                        <span id="a205">無水酢酸</span>(<span
+                            id="a206">(CH<sub>3</sub>CO)<sub>2</sub>O</span>)を作用させることが多い.<br />
+                        この場合, フェノールは, <em>アセチル化</em>して, <span id="a207">酢酸フェニル</span>(<span
+                            id="a208">&#9004;&#9473;OCOCH<sub>3</sub></span>) と 酢酸 を生じる.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004;&#9473;O&#9473;H + O(CO&#9473;CH<sub>3</sub>)<sub>2</sub> &rarr; <span
+                            id="a209">&#9004;&#9473;OCOCH<sub>3</sub> + CH<sub>3</sub>COOH</span>
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    &#9004;&#9473;OH の水素原子の置換反応
+                </h3>
+                <p>
+                    ここでは「フェノール類」ではなく, 「フェノール」に起こる反応を見る.
+                </p>
+                <section>
+                    <h4>
+                        臭素化
+                    </h4>
+                    <p>
+                        フェノールの水溶液に, <span id="a220">臭素</span>水を加えると, 直ちに <span id="a221">2, 4, 6-トリブロモフェノール</span>を生じる.
+                        <br />
+                        この物質は <span id="a222"> 白 <span class="b">色沈殿</span></span> として析出する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        ニトロ化
+                    </h4>
+                    <p>
+                        フェノールの水溶液に, <span id="a225">濃硝酸</span>と<span id="a226">濃硫酸</span>を加えると, <span id="a227">2, 4,
+                            6-トリニトロフェノール</span>(別名: <span id="a228">ピクリン酸</span>) ができる.<br />
+                        生成物には, 爆発性がある.
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    製法
+                </h3>
+                <section>
+                    <h4>
+                        クメン法
+                    </h4>
+                    <ol>
+                        <li>
+                            <p>
+
+                                <em>ベンゼン</em> に <span id="a230">プロペン</span> を反応させる.
+                            </p>
+                            <p>結果, <span id="a231">クメン</span>(<span
+                                    id="a232">C<sub>6</sub>H<sub>5</sub>&#9473;CH(CH<sub>3</sub>)<sub>2</sub></span>)
+                                ができる.
+
+
+                            </p>
+                            <P class="chemfmsm">
+                                &#9004; + <span id="a233">CH<sub>3</sub>CH&#9552;CH<sub>2</sub></span>
+                                &rarr;
+                                <span id="a234">&#9004;&#9473;CH(CH<sub>3</sub>)<sub>2</sub></span>
+
+                            </P>
+                            <details>
+                                <summary>
+                                    生成物の構造式
+                                </summary>
+                                <img class="bw" src="./img/cumene.png" alt="クメン">
+
+                            </details>
+                        </li>
+                        <li>
+                            <p>
+                                1. でできた <span id="a235">クメン</span>を酸化する.
+                            </p>
+                            <p>
+                                <span id="a236">クメンヒドロペルオキシド</span>(<span
+                                    id="a237">C<sub>6</sub>H<sub>5</sub>&#9473;C(CH<sub>3</sub>)<sub>2</sub>OOH</span>)ができる.
+                            </p>
+                            <details>
+                                <summary>
+                                    生成物の構造式
+                                </summary>
+                                <img class="bw" src="./img/chp.png" alt="クメンヒドロペルオキシド">
+                            </details>
+                        </li>
+                        <li>
+                            <p>
+                                2. の生成物に <span id="a240">H<sub>2</sub>SO<sub>4</sub></span>を通じる.
+                            </p>
+                            <p>
+                                主生成物として, <span id="a241">フェノール</span>(<span
+                                    id="a242">&#9004;&#9473;OH</span>)が生じる.<br />
+                                副生成物として, <span id="a243">アセトン</span>(<span
+                                    id="a244">CH<sub>3</sub>&#9473;CO&#9473;CH<sub>3</sub></span>)が生じる.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h4>
+                        アルカリ融解による製法
+                    </h4>
+                    <ol>
+                        <li>
+                            <p>
+                                <span id="a250">ベンゼンスルホン酸</span>(<span id="a251">&#9004;&#9473;SO<sub>3</sub>H</span>)を,
+                                <span id="a252">NaOH</span>で<em>中和</em>する.
+                            </p>
+                            <p class="chemfmsm">
+                                <span id="a253">&#9004;&#9473;SO<sub>3</sub>H + NaOH <span class="b">&rarr;</span>
+                                    &#9004;&#9473;SO<sub>3</sub>Na + H<sub>2</sub>O</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                1. の生成物に <span id="a255">NaOH</span> を加えて, "<span id="a256">アルカリ融解</span>" する.
+                            </p>
+                            <p>
+                                <span id="a257">ナトリウムフェノキシド</span>(<span id="a258">&#9004;&#9473;ONa</span>) が生成する.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                フェノールよりも強い酸を用いて, 2.の生成物をフェノールにする. (<span id="a260">弱酸の遊離</span>)
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h4>
+                        クロロベンゼンルート
+                    </h4>
+                    <ol>
+                        <li>
+                            <p>
+                                <span id="a270">クロロベンゼン</span>(<span id="a271">&#9004;&#9473;Cl</span>) に, <span
+                                    id="a272">高温&middot;高圧</span>の条件下で, <span id="a273">NaOHaq</span>を通じる.
+                            </p>
+                            <p>
+                                <span id="a274">ナトリウムフェノキシド</span>(<span id="a275">&#9004;&#9473;ONa</span>)が生じる.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                フェノールよりも強い酸を用いて, 2.の生成物をフェノールにする. (<span id="a277">弱酸の遊離</span>)
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                芳香族カルボン酸 - aromatc carboxylic acid
+            </h2>
+            <section>
+                <h3>
+                    芳香族カルボン酸の性質
+                </h3>
+                <ul>
+                    <Li>
+                        水に溶けにくいけど水に溶ける.
+                    </Li>
+                    <li>
+                        <span id="a300">弱酸<span class="b">性</span></span>を示す. (フェノールより, <span id="a301">強い</span>)
+                    </li>
+                    <li>
+                        <span class="chemfmsm">NaHCO<sub>3</sub>aq</span>に, <span
+                            id="a302">CO<sub>2</sub></span>を生じながら溶ける.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    安息香酸 - benzoic acid
+                </h3>
+                <img src="./img/zenzoic_acid.png" alt="安息香酸" class="mini bw">
+                <p>
+                    ベンゼンに COOH基が1つくっついている.
+                </p>
+                <section>
+                    <h4>
+                        製法
+                    </h4>
+                    <p>
+                        <span id="a310">トルエン</span>(<span id="a311">&#9004;&#9473;CH<sub>3</sub></span>) を <span
+                            id="a312">KMnO<sub>4</sub></span> で酸化する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        派生(?)
+                    </h4>
+                    <p>
+                        エタノール(<span class="chemfmsm">C<sub>2</sub>H<sub>5</sub>OH</span>)を反応させると, <span
+                            id="a314">安息香酸エチル</span>(<span
+                            id="a313">&#9004;&#9473;COO&#9473;C<sub>2</sub>H<sub>5</sub></span>)ができる. (<span
+                            id="a315">エステル<span class="b">化</span></span>)
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    フタル酸 - phthalic acid
+                </h3>
+                <p>
+                    ベンゼンに COOH基 が2つくっついている
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/phthalic_acid_o.png" alt="フタル酸">
+                        </td>
+                        <td>
+                            <img src="./img/phthalic_acid_m.png" alt="イソフタル酸">
+                        </td>
+                        <td>
+                            <img src="./img/phthalic_acid_p.png" alt="テレフタル酸">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="a320">フタル酸</span>
+                        </td>
+                        <td>
+                            <span id="a321">イソフタル酸</span>
+                        </td>
+                        <td>
+                            <span id="a322">テレフタル酸</span>
+                        </td>
+                    </tr>
+                </table>
+                <section>
+                    <h4>
+                        無水フタル酸
+                    </h4>
+                    <p>
+                        フタル酸を加熱すると, 分子内脱水され, <em>無水フタル酸</em>ができる.
+                    </p>
+                    <details>
+                        <summary>
+                            構造式
+                        </summary>
+                        <div>
+                            <img src="./img/phthalic_anhydride.png" alt="無水フタル酸" class="big">
+                        </div>
+
+                    </details>
+                </section>
+                <section>
+                    <h4>
+                        製法
+                    </h4>
+                    <p>
+                        <span id="a325"><var>o</var>-キシレン</span> を <span id="a326">KMnO<sub>4</sub></span>で酸化すると,
+                        <em>フタル酸</em>ができる.
+                    </p>
+                    <p>
+                        <span id="a327"><var>m</var>-キシレン</span> を <span id="a328">KMnO<sub>4</sub></span>で参加すると,
+                        <em>イソフタル酸</em>ができる.
+                    </p>
+                    <p>
+                        <span id="a329"><var>p</var>-キシレン</span> を <span id="a330">KMnO<sub>4</sub></span>で酸化すると,
+                        <em>テレフタル酸</em>ができる.
+                    </p>
+                    <p>
+                        <span id="a331">ナフタレン</span> を, <span id="a332">V<sub>2</sub>O<sub>5</sub></span>を触媒として, 酸化すると,
+                        <span id="a333">無水フタル酸</span>ができる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        PET
+                    </h4>
+                    <p>
+                        <span id="a335">テレフタル酸</span>を, <span id="a336">エチレングリコール</span>(<span
+                            id="a337">HO&#9473;CH<sub>2</sub>CH<sub>2</sub>&#9473;OH</span>)と縮合重合すると, ポリマーである <span
+                            id="a338">ポリエチレンテレフタレート</span>(略記: <span id="a339">PET</span>)ができる.
+                    </p>
+                    <details>
+                        <summary>
+                            構造式
+                        </summary>
+                        <img src="./img/1920px-PET_Structural_Formula_V1.tel.png" class="bw big">
+                        <small>
+                            Wikipediaから引っ張ってきた画像.
+                        </small>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    サリチル酸 - salicylic acid
+                </h3>
+                <p>
+                    OH基とCOOH基を1つずつもつ脂肪族カルボン酸.
+                </p>
+                <section>
+                    <h4>
+                        サリチル酸 - salicylic acid
+                    </h4>
+                    <img class="mini" src="./img/salicylic_acid.png" alt="サリチル酸">
+
+                    <p>
+                        <span id="a350">フェノール</span>としての性質と, <span id="a351">カルボン酸</span>としての性質両方を示す.
+                    </p>
+                    <p>
+                        FeCl<sub>3</sub>aqを通じると <span id="a352">赤紫</span>色 に呈色する.<br />
+                        NaHCO<sub>3</sub>aqに溶解<span id="a353"> する </span>.
+                    </p>
+                    <p>
+                        医薬品の原料として用いる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        アセチルサリチル酸 - acetylsalicylic acid
+                    </h4>
+                    <img class="mini" src="./img/acetylsalicylic_acid.png" alt="アセチルサリチル酸">
+                    <p>
+                        別名: <span id="a360">アスピリン</span>
+                    </p>
+                    <p>
+                        <em>サリチル酸</em> を, <span id="a361">無水酢酸</span>でアセチル化することで, できる.<br />
+                        (この反応では <span id="a362">酢酸</span> もできる.)
+                    </p>
+                    <p>
+                        FeCl<sub>3</sub>で赤紫色に呈色<span id="a363">しない</span>. <br />
+                        NaHCO<sub>3</sub>aqに溶解<span id="a364">する</span>.
+                    </p>
+                    <p>
+                        日常では, <span id="a365">解熱鎮痛薬</span>に用いられている.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        サリチル酸メチル - methyl salicylate
+                    </h4>
+                    <img class="mini" src="./img/salicylic_acid_mecyl.png" alt="サリチル酸メチル">
+                    <p>
+                        <em>サリチル酸</em>と, <span id="a370">メタノール</span>の脱水縮合した, <span id="a371">エステル</span>である. <br />
+                        &rArr; 特有の, <span id="a372">芳香臭</span>
+                    </p>
+                    <p>
+                        FeCl<sub>3</sub>で赤紫色に呈色<span id="a373">する</span>. <br />
+                        NaHCO<sub>3</sub>aqに溶解<span id="a374">しない</span>.
+                    </p>
+                    <p>
+                        日常では, <span id="a375">消炎鎮痛用湿布薬</span>に用いられている.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                芳香族ニトロ化合物 - Aromatic Nitro Compounds
+            </h2>
+            <p>
+                ベンゼンに NO<sub>2</sub>基がくっついている分子たち.
+            </p>
+            <section>
+                <h3>
+                    ニトロベンゼン - Nitrobenzene
+                </h3>
+                <img src="./img/nitrobenzene.png" alt="ニトロベンゼン" class="mini">
+                <p>
+                    ベンゼンに NO<sub>2</sub>基が <span id="a380">1</span>つくっついている.
+                </p>
+                <p>
+                    <span id="a381">淡黄</span>色の有毒な <span id="a382">液<span class="b">体</span></span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    2, 4, 6-トリニトロトルエン
+                </h3>
+                <img src="./img/tnt.png" alt="トリニトロトルエン" class="mini">
+                <p>
+                    別名: <span id="a385">TNT</span>
+                </p>
+                <p>
+                    爆発性がある.
+                </p>
+            </section>
+            <section>
+                <h3>
+                    2, 4, 6-トリニトロフェノール
+                </h3>
+                <img src="./img/picric_acid.png" alt="ピクリン酸" class="mini">
+                <p>
+                    別名: <span id="a390">ピクリン酸</span>
+                </p>
+                <p>
+                    爆発性がある.
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                芳香族アミン - Aromatic amines
+            </h2>
+            <p>
+                アミン &middot;&middot;&middot; <span id="a400">アンモニア</span> の水素原子を <span id="a401">炭化水素基</span> に置き換えたもの.
+            </p>
+            <p>
+                <span id="a402">弱塩基 <span class="b">性</span></span>を示す.
+            </p>
+            <section>
+                <h3>
+                    アニリン - aniline
+                </h3>
+                <p>
+                    ベンゼンに, NH<sub>2</sub>基が1つくっついている.
+                </p>
+                <p>
+                    水に <span id="a405">難溶</span>. <span id="a406">弱塩基 <span class="b">性</span></span>を示す.
+                </p>
+                <section>
+                    <h4>
+                        製法
+                    </h4>
+                    <p>
+                        実験室では, <span id="a407">ニトロベンゼン</span>を <span id="a408">濃塩酸</span>と<span id="a409">Sn <span
+                                class="b">or</span> Fe</span>で還元し, <span id="a410">アニリン塩酸塩</span>(<span
+                            id="a411">&#9004;&#9473;NH<sub>3</sub>Cl</span>)を生成し, <span
+                            id="a412">NaOHaq</span>を加えて(<span id="a413">弱塩基の遊離</span>反応) <em>アニリン</em>を生成する.
+                    </p>
+                    <p>
+                        以下 ニトロベンゼンからアニリン塩酸塩ができる化学反応式
+                    </p>
+                    <p class="chemfmsm">
+                        <span id="a414">2&#9004;&#9473;NO<sub>2</sub> + 3Sn + 14HCl <span class="b">&rarr;</span>
+                            2&#9004;&#9473;NH<sub>3</sub>Cl + 3SnCl<sub>4</sub> + 4H<sub>2</sub>O</span>
+                    </p>
+                    <p>
+                        工業的には, <span id="a415">ニトロベンゼン</span>を, <span id="a416">Pt</span>や<span
+                            id="a417">Ni</span>を触媒として, <span id="a418">水素</span>を還元して生成する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        反応 (中和と弱塩基の遊離)
+                    </h4>
+                    <P>
+                        アニリンを, HClで中和すると, <span id="a820">アニリン塩酸塩</span>(<span
+                            id="a821">&#9004;&#9473;NH<sub>3</sub>Cl</span>)ができる. <br />
+                        この物質は, 水に <span id="a822">可溶</span>.
+                    </P>
+                    <p>
+                        この物質は, <span id="a823">NaOH</span>aq を加えると, <span id="a824">アニリン</span>が遊離する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        反応 (呈色反応)
+                    </h4>
+                    <p>
+                        アニリンに <span id="a830">さらし粉</span>水溶液を加えると<span id="a831">酸化</span>され, <span
+                            id="a832">赤紫</span>色を呈する.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        反応 with 二クロム酸カリウム
+                    </h4>
+                    <p>
+                        <span id="a835">硫酸酸性</span>条件下で, <span
+                            id="a836">K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub></span>を加えると, 酸化され, <span
+                            id="a837">アニリンブラック</span>と呼ばれる物質に変化する.
+                    </p>
+                    <p>
+                        この物質は水に<span id="a838">難溶</span>で, <span id="a839">黒色染料</span>として用いられている.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        反応 (アセチル化)
+                    </h4>
+                    <p>
+                        <em>アニリン</em>に <span id="a850">無水酢酸</span>を加えると, <em>アセチル化</em>がおこり, <span
+                            id="a853">アセトアニリド</span>(<span id="a854">&#9004;&#9473;NHCOCH<sub>3</sub></span>)ができる.
+                    </p>
+                    <p class="chemfmsm">
+                        &#9004;&#9473;NH<sub>2</sub> + <span id="a851">O(COCH<sub>3</sub>)<sub>2</sub> <span
+                                class="b">&rarr;</span> &#9004;&#9473;NHCOCH<sub>3</sub> + CH<sub>3</sub>COOH</span>
+                    </p>
+                    <p>
+                        <em>アニリン</em>に <span id="a852">酢酸</span>と<span id="a853">熱</span>を加えても<em>アセチル化</em>がおこる.
+                    </p>
+                    <p>
+                        生成物にある, <span class="chemfmsm">&#9473;CO&#9473;NH&#9473;</span>を<span id="a855">アミド<span
+                                class="b">結合</span></span>という. <br />
+                        これらは, <span id="a856">酸, 塩基</span>の存在下で, <em>加水分解</em>される.
+                    </p>
+                    <p>
+
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                アゾ化合物 - azo
+            </h2>
+            <p>
+                <span class="chemfmsm">&#9473;N&#9552;N&#9473;</span>を <em>アゾ基</em>といい, それを含む化合物を<em>アゾ化合物</em>という.
+            </p>
+            <section>
+                <h3>
+                    ジアゾ
+                </h3>
+                <p>
+                    <span class="chemfmsm">&#9473;N<sup>+</sup>&#8801;N</span> の構造を持つジアゾニウム円を生じる反応のこと.
+
+                </p>
+                <p>
+                    アニリン を 塩酸 に溶かして氷で冷却したうえで, <span id="a870">亜硝酸ナトリウム</span>(<span
+                        id="a871">NaNO<sub>2</sub></span>)の水溶液を加えると, <span id="a872">塩化ベンゼンジアゾニウム</span>(<span
+                        id="a873">C<sub>6</sub>H<sub>5</sub>N<sub>2</sub>Cl</span>)を生じる.
+                </p>
+                <p class="chemfmsm">
+                    &#9004;&#9473;NH<sub>2</sub> + 2HCl + <span id="a874">NaNO<sub>2</sub></span>
+                    &rarr;
+                    <span id="a875">&#9004;&#9473;N<sup>+</sup>&#8801;NCl<sup>-</sup> + NaCl + 2H<sub>2</sub>O</span>
+
+                </p>
+                <details>
+                    <summary>
+                        FYI: 冷却しながらやらないと
+                    </summary>
+                    <p>
+                        <em>塩化ベンゼンジアゾニウム</em>は, 低温状態では安定に存在するが, 水温が高くなると水と反応して, <span id="a876">フェノール</span>と
+                        <span id="a877">窒素</span>を生じてしまう.
+
+                    </p>
+                </details>
+            </section>
+            <section>
+                <h3>
+                    カップリング反応
+                </h3>
+                <p>
+                    <span id="a880">ジアゾニウム塩</span>から, <span id="a881">アゾ化合物</span>(<span
+                        class="chemfmsm">&#9473;N&#9552;N&#9473;</span>基を持つ化合物)を作る反応
+                </p>
+                <p>
+                    <span id="a882">塩化ベンゼンジアゾニウム</span>(<span id="a883">&#9004;&#9473;N<sub>2</sub>Cl</span>)の水溶液に<span
+                        id="a884">フェノール</span>を混ぜた<span id="a885">水酸化ナトリウム水溶液</span>を加えて, <span id="a886">橙<span
+                            class="b">色</span></span>の<span id="a887"><var>p</var>-ヒドロキシアゾベンゼン</span>を生じる反応が有名.
+                </p>
+                <p class="chemfmsm">
+                    <span id="a888">&#9004;&#9473;N<sub>2</sub>Cl + &#9004;&#9473;ONa <span class="b">&rarr;</span>
+                        &#9004;&#9473;N&#9552;N&#9473;&#9004;&#9473;OH + NaCl</span>
+                </p>
+            </section>
+        </section>
+        <article>
+            <h2>
+                参考情報
+            </h2>
+            <section>
+                <h3>
+                    酸の強さ
+                </h3>
+                <p>
+                    上から順に弱くなっていく.
+                </p>
+                <ul>
+                    <li>
+                        <span id="a890">塩酸, 硫酸, スルホン酸</span>
+                    </li>
+                    <li>
+                        <span id="a891">カルボン酸</span>
+                    </li>
+                    <li>
+                        <span id="a892">炭酸</span>
+                    </li>
+                    <li>
+                        <span id="a893">フェノール類</span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    塩基の強さ
+                </h3>
+                <p>
+                    上から順に弱くなっていく.
+                </p>
+                <ul>
+                    <li>
+                        <span id="a895">水酸化ナトリウム</span>
+                    </li>
+                    <li>
+                        <span id="a896">アンモニア</span>
+                    </li>
+                    <li>
+                        <span id="a897">アニリン</span>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
