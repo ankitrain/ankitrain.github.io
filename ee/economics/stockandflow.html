@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>国民経済と物価|国内経済 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            国民経済 と 物価
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                2種類の指標
+            </h2>
+            <section>
+                <h3>
+                    ストック
+                </h3>
+                <p>
+                    ある時点での<em>蓄積</em>
+                </p>
+                <p>
+                    e.g.) 国富
+                </p>
+            </section>
+            <section>
+                <h3>
+                    フロー
+                </h3>
+                <p>
+                    ある期間で行われた経済活動の大きさ.
+                </p>
+                <p>
+                    e.g.) GDP, 個人の年収
+                </p>
+            </section>
+        </section>
+        <section>
+            <h2>
+                国民所得 - フロー
+            </h2>
+            <section>
+                <h3>
+                    GDP
+                </h3>
+                <p>
+                    <span id="a1">国内総生産</span>という.
+                </p>
+                <p>
+                    一定期間に<em>国内で</em>生産された財サービスの <span id="a2">付加価値</span>の合計.
+                </p>
+                <p>
+                    原材料費など, <span id="a3">中間生産物</span>の額は2重計算を防ぐため引く.
+                </p>
+                <p class="chemfmsm">
+                    GDP = <span id="a4">国内の総生産額</span> - <span id="a5">中間生産物</span>
+                </p>
+                <p>
+                    ※ 国外の日本人が生産した分は含まない
+                </p>
+            </section>
+            <section>
+                <h3>
+                    GNP
+                </h3>
+                <p>
+                    <span id="a10">国民総生産</span>という.
+                </p>
+                <p>
+                    一定期間に<em>国民が</em>生産した財サービスの付加価値.
+                </p>
+                <p>
+                    主体が違うだけであとはGDPと同じ.
+                </p>
+                <p class="chemfmsm">
+                    GNP = GDP + <span id="a11">海外からの純所得</span>
+                </p>
+                <p>
+                    <span id="a12">GNI</span>(<span id="a13">国民総所得</span>)も名目値(物価の変動を調整しない値)は同じになる
+                </p>
+            </section>
+            <section>
+                <h3>
+                    NNP
+                </h3>
+                <p>
+                    <span id="a14">国民純生産</span> という.
+                </p>
+                <p>
+                    <span id="a15">減価償却費</span>(<span id="a16">固定資本減耗</span>)を<span id="a17">GNP</span>から引いて, より正確な付加価値の合計を求めるために使う.
+                </p>
+                <p class="chemfmsm">
+                    NNP = GNP - <span id="a18">減価償却費</span>
+                </p>
+            </section>
+            <section>
+                <h3>
+                    NI
+                </h3>
+                <p>
+                    <span id="a20">国民所得</span> という.
+                </p>
+                <p>
+                    市場で取引されている金額ではなく, より正確な価値を知るために, <sub>[a]</sub><span id="a21">間接税</span>(主に<span id=a22>消費税</span>)や<sub>[b]</sub><span id="a23">補助金</span>の値を考慮する.
+                </p>
+                <p>
+                    [a]の分だけ市場価格は高くなり, [b]の分だけ安く売ることができると考えると, 
+                </p>
+                <p class="chemfmsm">
+                    NI = NNP + <span id="a24">補助金</span> - <span id="a25">間接税</span>
+                </p>
+            </section>
+            <article>
+                <h3>
+                    GDP と GNP
+                </h3>
+                <p>
+                    アメリカで所得を得た日本人<br/>
+                    &middot;&middot;&middot; 日本の<span id="a30">GNI</span>に含まれるが, <span id="a31">GDP</span>には含まれない.
+                </p>
+                <p>
+                    日本で所得を得たアメリカ人<br/>
+                    &middot;&middot;&middot; 日本の<span id="a32">GDP</span>に含まれるが, <span id="a33">GNI</span>には含まれない.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>
+                経済成長
+            </h2>
+            <section>
+                <h3>
+                    名目値と実質値
+                </h3>
+                <section>
+                    <h4>
+                        名目GDP
+                    </h4>
+                    <p>
+                        物価の変動を考慮しないで計算した数値
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        実質GDP
+                    </h4>
+                    <p>
+                        物価変動分を取り除いた数値
+                    </p>
+                    <p>
+                        名目GDP に <span id="a40">GDPデフレーター</span> をかけて得られる.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        経済成長率
+                    </h4>
+                    <p>
+                        前年からのGDPの変化量を <span id="a41">前年のGDP</span> で割る.
+                    </p>
+                    <p>
+                        以下, %を単位とする場合, 
+                    </p>
+                    <p class="chemfmsm">
+                        経済成長率 = (<span id="a42">ある年のGDP</span> - <span id="a43">前年GDP</span>) / <span id="a44">前年GDP</span> &times; 100
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                物価 
+            </h2>
+            <section>
+                <h3>
+                    物価指数
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a100">消費者物価指数</span>
+                            </dt>
+                            <dd>
+                                ある年の消費者物価(消費者が購入する商品の物価)を100としたときの 消費者物価の比率.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a101">企業物価指数</span>
+                            </dt>
+                            <dd>
+                                ある年の企業物価(企業間取引の商品の物価)を100としたときの 企業物価の比率.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    インフレーション
+                </h3>
+                <section>
+                    <h4>
+                        原因による分類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a102">デマンド&middot;プル&middot;インフレ</span>
+                                </dt>
+                                <dd>
+                                    所得増加や減税などで需要が増えて生じるインフレ
+                                </dd>
+                                <dd>
+                                    &rArr; <span id="a103">消費者</span>都合
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a104">コスト&middot;プッシュ&middot;インフレ</span>
+                                </dt>
+                                <dd>
+                                    賃金や原材料費上昇により, 価格が高騰するインフレ
+                                </dd>
+                                <dd>
+                                    &rArr; <span id="a105">生産者</span>都合
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        スピードによる分類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a110">クリーピング&middot;インフレ</span>
+                                </dt>
+                                <dd>
+                                    年率 2, 3%の緩やかなインフレ
+                                </dd>
+                                <dd>
+                                    理想的
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a111">ギャロッピング&middot;インフレ</span>
+                                </dt>
+                                <dd>
+                                    年率10%程度の駆け足なインフレ
+                                </dd>
+                                <dd>
+                                    石油危機時だなどに起こった
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a112">ハイパー&middot;インフレ</span>
+                                </dt>
+                                <dd>
+                                    年率数千%の地獄のようなインフレ
+                                </dd>
+                                <dd>
+                                    1日で価格が数十倍になる世界
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        スタグフレーション
+                    </h4>
+                    <p>
+                        インフレと不況が合体した状態
+                    </p>
+                </section>
+            </section>
+            
+        </section>
+        <section>
+            <h2>
+                景気
+            </h2>
+            <section>
+                <h3>
+                    景気循環の波
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a150">キチン <span class="b">の波</span></span>
+                            </dt>
+                            <dd>
+                                周期は <span id="a151">40か月</span>
+                            </dd>
+                            <dd>
+                                <span id="a152">在庫投資</span>の増減が原因
+                            </dd>
+                            <dd>
+                                <span id="a153">在庫循環</span>とも呼ばれる波
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a155">ジュグラ <span class="b">の波</span></span>
+                            </dt>
+                            <dd>
+                                周期は <span id="a156">7-10年</span>
+                            </dd>
+                            <dd>
+                                <span id="a157">設備投資</span>の変動が原因
+                            </dd>
+                            <dd>
+                                <span id="a158">主循環</span>とも呼ばれる波
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a160">クズネッツ <span class="b">の波</span></span>
+                            </dt>
+                            <dd>
+                                周期は <span id="a161">15-25年</span>
+                            </dd>
+                            <dd>
+                                <span id="a162">住宅建設需要</span>と<span id="a163">人口増加</span>が原因
+                            </dd>
+                            <dd>
+                                <span id="a164">建築循環</span>とも呼ばれる波.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a165">コンドラチェフ <span class="b">の波</span></span>
+                            </dt>
+                            <dd>
+                                周期は <span id="a166">50-60年</span>
+                            </dd>
+                            <dd>
+                                <span id="a167">技術革新</span>や<span id="a168">大規模開発</span>が原因.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

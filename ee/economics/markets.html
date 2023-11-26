@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>市場|国内経済 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            市場
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>
+                需要 と 供給
+            </h2>
+            <section>
+                <h3>
+                    需要曲線
+                </h3>
+                <p>
+                    一般的に, 価格が上がれば需要が <span id="a1">下がる</span>.
+                </p>
+                <section>
+                    <h4>
+                        需要曲線シフト
+                    </h4>
+                    <p>
+                        消費者の所得増加, 商品の流行で曲線は <span id="a2">右</span> にシフト.
+                    </p>
+                    <p>
+                        商品が人気なくしたとき, 所得の減少で, <span id="a3">左</span> にシフト.
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    供給曲線
+                </h3>
+                <p>
+                    一般的に, 価格が上がれば供給は <span id="a5">上がる</span>.
+                </p>
+                <section>
+                    <h4>
+                        供給曲線シフト
+                    </h4>
+                    <p>
+                        技術革新などで生産コストが下がるとき, 曲線は <span id="a6">右</span> にシフト.
+                    </p>
+                    <p>
+                        原材料費の低下, 農作物の豊作で, <span id="a7">右</span> にシフト.
+                    </p>
+                    <p>
+                        商品に課税されたとき, 従業員の賃金増加で, <span id="a8">左</span> にシフト.
+                    </p>
+                    <p>
+                        生産拠点が災害等で破壊されたとき, <span id="a9">左</span>にシフト.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                市場
+            </h2>
+            <section>
+                <h3>
+                    市場の形態
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a10">独占市場</span>
+                            </dt>
+                            <dd>
+                                売り手が供給量をコントロールして価格を支配可能.
+                            </dd>
+                            <dd>
+                                1企業のみ.
+                            </dd>
+                            <dd>
+                                e.g.) 水道
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a11">寡占市場</span>
+                            </dt>
+                            <dd>
+                                主要企業がプライスリーダーとなり, 価格が下がりにくくなる.
+                            </dd>
+                            <dd>
+                                小数企業のみ
+                            </dd>
+                            <dd>
+                                e.g.) 携帯電話, ビール
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a12">独占的競争</span>
+                            </dt>
+                            <dd>
+                                商品の差別化が行われているので, 売り手はある程度の価格支配力を持つ.
+                            </dd>
+                            <dd>
+                                企業数は多数
+                            </dd>
+                            <dd>
+                                e.g.) レストラン, 書籍
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a13">完全競争市場</span>
+                            </dt>
+                            <dd>
+                                売り手と買い手が多数存在. 価格支配力もない. 取引される商品の品質が均一. 
+                            </dd>
+                            <dd>
+                                このような市場はほとんど存在しない.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    市場の失敗
+                </h3>
+                <section>
+                    <h4>
+                        種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a20">不完全競争</span>
+                                </dt>
+                                <dd>
+                                    独占 や 寡占 など. 価格が高くなってしまう.
+                                </dd>
+                                <dd>
+                                    <span id="a21">独立禁止法</span>を定めるなどして対策している.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a22">公共財</span>
+                                </dt>
+                                <dd>
+                                    多数の人が同時に利用できる(<span id="a23">非競合性</span>)と, 特定の人の利用を排除できないという性質(<span id="a24">非排除性</span>)を持つ財やサービス
+                                </dd>
+                                <dd>
+                                    政府が税金などを使ってうまいことやっている.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a25">外部性</span>
+                                </dt>
+                                <dd>
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>
+                                                    <span id="a26">外部経済</span>
+                                                </dt>
+                                                <dd>
+                                                    人々の行動が市場での取引を通さずに, 他の経済主体に良い影響を与えてしまう.
+                                                </dd>
+                                                <dd>
+                                                    供給が <span id="a27">過少</span> に.
+                                                </dd>
+                                                <dd>
+                                                    <span id="a28">補助金</span>など支給して対策.
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>
+                                                    <span id="a31">外部不経済</span>
+                                                </dt>
+                                                <dd>
+                                                    人々の行動が市場での取引を通さずに, 他の経済主体にわるい影響を与えてしまう.
+                                                </dd>
+                                                <dd>
+                                                    供給が <span id="a29">過剰</span> に.
+                                                </dd>
+                                                <dd>
+                                                    <span id="a30">直接規制</span>などで対策.
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    情報の <span id="a32">非対称性</span>
+                                </dt>
+                                <dd>
+                                    商品に関する情報量について, 売り手と買い手の間に格差があること.
+                                </dd>
+                                <dd>
+                                    情報公開の義務化などで対策.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                </section>
+                <section>
+                    <h4>
+                        独占の種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a40">カルテル</span>
+                                </dt>
+                                <dd>
+                                    同一産業内の複数企業が生産量や価格について協定を結ぶ.
+                                </dd>
+                                <dd>
+                                    独禁法では <span id="a41">禁止</span>[禁止/許可]
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a42">トラスト</span>
+                                </dt>
+                                <dd>
+                                    同一産業内の複数企業が, 合併して大きな企業になる.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a43">コルツェルン</span>
+                                </dt>
+                                <dd>
+                                    持株会社が中心となり, いろんな産業分野の企業を傘下に収めて支配する.
+                                </dd>
+                                <dd>
+                                    戦前の財閥がいい例.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        価格の種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a45">独占価格</span>
+                                </dt>
+                                <dd>
+                                    独占市場においての価格
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a46">寡占価格</span>
+                                </dt>
+                                <dd>
+                                    寡占市場における価格
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a47">管理価格</span>
+                                </dt>
+                                <dd>
+                                    有力企業が <span id="a48">価格先導者</span>(<span id="a49">プライス&middot;リーダー</span>)として設定した価格.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a50">統制価格</span>
+                                </dt>
+                                <dd>
+                                    政策実現のために政府が価格の決定改定に直接関与して決めたもの.
+                                </dd>
+                                <dd>
+                                    例えば公共料金
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                会社
+            </h2>
+            <section>
+                <h3>
+                    合併と統合
+                </h3>
+                <dl>
+                    <dt>
+                        <span id="a100">M&amp;A</span>
+                    </dt>
+                    <dd>
+                        "合併と買収" を意味する横文字.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <span id="a101">合併</span>
+                    </dt>
+                    <dd>
+                        複数の企業が1つの企業になる. 
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <span id="a102">統合</span>
+                    </dt>
+                    <dd>
+                        複数の企業が, 1つの持株会社の傘下に入る.<br/>
+                        企業自体はそれぞれ存在したまま.
+                    </dd>
+                </dl>
+            </section>
+            <section>
+                <h3>
+                    社会的責任
+                </h3>
+                <dl>
+                    <dt>
+                        企業の社会的責任 (<span id="a105">CSR</span>)
+                    </dt>
+                    <dd>
+                        企業は利潤の追求だけではなく, 社会に貢献していく必要がある.
+                    </dd>
+                    <dd>
+                        企業は従業員や取引先以外にもさまざまな利害関係者(<span id="a106">ステークホルダー</span>)と関係があるから, それらと積極的に対話して, 社会の責任に答えていく必要がある.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <span id="a107">コンプライアンス</span>
+                    </dt>
+                    <dd>
+                        企業が法律やルールを守るという当たり前のこと.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <span id="a108">コーポレートガバナンス</span>
+                    </dt>
+                    <dd>
+                        企業経営を管理, 監督する仕組みのこと.
+                    </dd>
+                </dl>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
