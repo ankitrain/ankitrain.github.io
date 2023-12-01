@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!--文字セットの指定/文字化け防止-->
+    <meta charset="UTF-8">
+    <!--IEで正しい表示がされるための記述. IE人口が減っているから不要-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--スマホでも文字が大きく見えるようにする工夫-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--サイトの説明 LINEとかの本文紹介の場所で一役買う-->
+    <meta name="description"
+        content="">
+    <!--ページタイトル ブラウザ上部とかに表示される-->
+    <title>財政と金融|国内経済 - Anki Train</title>
+
+    <!--CSS読み込み-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--JavaScriptの読み込み-->
+    <script src="../../js/app2.js"></script>
+    <!--アイコンを表示させる-->
+    <link rel="icon" type="image/png" href="../../ico/icon.png">
+    <!--Googleなどの検索結果に乗らないようにする工夫-->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <!-- Googleのアクセス数解析用タグ-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTCCVVD0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJTCCVVD0F');
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>
+            財政と金融
+        </h1>
+        <p>
+            これを利用することによって生じるいかなる損害も免責とさせていただきます。
+        </p>
+        <p>
+            それぞれの赤文字をタップ/クリックすることで表示非表示を切り替えられます。
+        </p>
+        <div class="btbar">
+            <div>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                <span onclick="DandL()" class="bt bt_lightdark">テーマ</span>
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--ここに記入-->
+        <section>
+            <h2>
+                財政
+            </h2>
+            <section>
+                <h3>
+                    財政の機能
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a1">資源配分機能</span>
+                            </dt>
+                            <dd>
+                                公共財, 公共サービスなど, 利益追求を目的とする民間の経済活動になじまないものを,
+                                主に <span id="a2">税金</span> を原資に供給する.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a3">所得再配分機能</span>
+                            </dt>
+                            <dd>
+                                高所得者と低所得者の貧富の差を是正.
+                            </dd>
+                            <dd>
+                                主に <span id="a4">累進課税</span> 制度を用いて行う.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a5">景気調整機能</span>
+                            </dt>
+                            <dd>
+                                教皇や失業を回避し, 持続的な経済成長を実現することが政府に求められる.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    日本の国家財政
+                </h3>
+                <section>
+                    <h4>
+                        歳入
+                    </h4>
+                    <p>
+                        税をだれがどのように負担するかは, すべて法律によってきめられている. (<span id="a10">租税法律主義</span>)
+                    </p>
+                    <p>
+                        日本の国税の3本柱は <span id="a11">所得税</span>, <span id="a12">法人税</span>, <span id="a13">消費税</span>である.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>
+                                内容
+                            </th>
+                            <th>
+                                割合 (%)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a15">租税</span>と印紙収入
+                            </td>
+                            <td class="alr">
+                                <span id="a16">60.6</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="a17">公債金</span>
+                            </td>
+                            <td class="alr">
+                                <span id="a18">34.3</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                その他
+                            </td>
+                            <td class="alr">
+                                5.1
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <small>2022年の歳入</small>
+                    </div>
+                </section>
+                <section>
+                    <h4>
+                        歳出
+                    </h4>
+                    <p>
+                        歳出のうち, <span id="a30">国債費</span>, <span id="a31">地方交付税交付金</span>は <span id="a32">義務的経費</span> と呼ばれ, 一定の支出が精度的に義務付けられている.
+                    </p>
+                    <p>
+                        そのため, 一般会計からそれらを除いた, <sub>(i)</sub><span id="a33">一般歳出</span>だけを, 国が自由に使用できる.
+                    </p>
+                    <p>
+                        近年は, 国債費増加によって, (i)の割合が小さくなっていて, <span id="a34">財政の硬直化</span>が進んでいる.
+                    </p>
+                    <table>
+                        <tr>
+                            <th>
+
+                            </th>
+                            <th>
+                                内容
+                            </th>
+                            <th>
+                                割合 (%)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">
+                                <span id="a41">一般会計</span>
+                            </td>
+                            <td>
+                                社会保障関係費
+                            </td>
+                            <td class="alr">
+                                <span id="a40">33.7</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                公共事業関係費
+                            </td>
+                            <td class="alr">
+                                <span id="a42">5.6</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                文教&middot;科学振興費
+                            </td>
+                            <td class="alr">
+                                <span id="a43">5.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                防衛関係費
+                            </td>
+                            <td class="alr">
+                                <span id="a44">5.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                その他
+                            </td>
+                            <td class="alr">
+                                13.3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                地方財政関係費
+                            </td>
+                            <td class="alr">
+                                <span id="a46">14.8</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span id="a45">国債費</span>
+                            </td>
+                            <td class="alr">
+                                <span id="a47">22.6</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    公共事業
+                </h3>
+                <section>
+                    <h4>
+                        社会資本の種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a60">生産関連社会資本</span>
+                                </dt>
+                                <dd>
+                                    道路, 港湾, 空港などの生産を支える社会資本
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a61">生活関連社会資本</span>
+                                </dt>
+                                <dd>
+                                    住宅, 上下水道, 公演など, 国民生活を支える社会資本
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                租税
+            </h2>
+            <section>
+                <h3>
+                    間接税, 直接税
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                間接税
+                            </dt>
+                            <dd>
+                                負担者と, 納税者が違う
+                            </dd>
+                            <dd>
+                                e.g.) <span id="a100">消費税</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                直接税
+                            </dt>
+                            <dd>
+                                負担者と納税者が同じ
+                            </dd>
+                            <dd>
+                                e.g.) 所得税
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    税の種類
+                </h3>
+                <section>
+                    <h4>
+                        国税 - 直接税
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a120">所得税</span>
+                                </dt>
+                                <dd>
+                                    給料や利益など個人の所得に課される税金. 
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a121">法人税</span>
+                                </dt>
+                                <dd>
+                                    法人の所得に課される税金
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            相続税
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        国税 - 間接税
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a130">消費税</span>
+                                </dt>
+                                <dd>
+                                    商品やサービスの消費にかかる税
+                                </dd>
+                                <dd>
+                                    10%のうち, <span id="a131">7.8</span>% が国税
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            揮発油税
+                        </li>
+                        <li>
+                            酒税
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        地方税 - 直接税
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a140">住民税</span>
+                                </dt>
+                                <dd>
+                                    市町村民税 + 都道府県民税
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a141">固定資産税</span>
+                                </dt>
+                                <dd>
+                                    不動産に課される税
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a142">事業税</span>
+                                </dt>
+                                <dd>
+                                    事業を営む法人個人に課される税
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            自動車税
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        地方税 - 間接税
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a150">地方消費税</span>
+                                </dt>
+                                <dd>
+                                    商品やサービスの消費にかかる税
+                                </dd>
+                                <dd>
+                                    10%のうち, <span id="a151">2.2</span>% が地方税
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    租税の基本原則
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a160">公平</span>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                <span id="a161">垂直的公平</span>
+                                            </dt>
+                                            <dd>
+                                                担税力に応じて税負担が増減する.
+                                            </dd>
+                                            <dd>
+                                                金持ちは沢山税を納めよう.
+                                            </dd>
+                                            <dd>
+                                                <span id="a162">累進課税</span>制度で実現.
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                <span id="a165">水平的公平</span>
+                                            </dt>
+                                            <dd>
+                                                担税力が同じ人には同じ金額の税を負担すべき
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a170">中立</span>
+                            </dt>
+                            <dd>
+                                課税が個人や企業の経済活動に対して中立
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a175">簡素</span>
+                            </dt>
+                            <dd>
+                                手続きが簡単
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    税金のかけ方の考え方
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a180">応能負担の原則</span> (<span id="a181">応能説</span>)
+                            </dt>
+                            <dd>
+                                税金を支払う所得能力がある人が, より多くの税金を負担すべきという考え
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a185">応益負担の原則</span> (<span id="a186">応益説</span>)
+                            </dt>
+                            <dd>
+                                その人の所得や能力に関係なく, 公共サービスから受ける利益に応じて税負担すべき.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    所得税
+                </h3>
+                <section>
+                    <h4>
+                        収め方
+                    </h4>
+                    <p>
+                        会社員:<br/>
+                        勤め先の会社が会社員の給料から所得税分を差し引いて納税してくれる. (<span id="a190">源泉徴収</span>)
+                    </p>
+                    <p>
+                        自営業, 農業者:<br/>
+                        1年間の所得税額を本人が計算して自己申告.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        捕捉率
+                    </h4>
+                    <p>
+                        会社員: <span id="a195">9</span>(<span id="a196">10</span>)<br/>
+                        自営業: <span id="a197">6</span>(<span id="a198">5</span>)<br/>
+                        農業者: <span id="a199">4</span>(<span id="a200">3</span>)
+                    </p>
+                    <p>
+                        「<span id="a201">クロヨン</span>」(「<span id="a202">トーゴーサン</span>」) といわれる.
+                    </p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h2>
+                公債(国債)
+            </h2>
+            <section>
+                <h3>
+                    種類
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a250">建設公債</span>
+                            </dt>
+                            <dd>
+                                公共事業費の財源に充てる
+                            </dd>
+                            <dd>
+                                根拠は <span id="a253">財政法</span>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a251">特例公債</span>(<span id="a252">赤字国債</span>)
+                            </dt>
+                            <dd>
+                                根拠は <span id="a254">特例法</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                金融
+            </h2>
+            <section>
+                <h3>
+                    基本
+                </h3>
+                <p>
+                    金を融通することを <span id="a270">金融</span> という.
+                </p>
+                <p>
+                    貸し手は借り手に対して, お金を返してもらう権利(<span id="a271">債権</span>)をもつ.<br/>
+                    借り手は貸し手に対して, お金を返す義務(<span id="a272">債務</span>)をもつ.
+                </p>
+                <p>
+                    貸し手にとっては, 借り手が必ず返済できるという <span id="a273">信用</span> が重要. 
+                </p>
+            </section>
+            <section>
+                <h3>
+                    通貨
+                </h3>
+                <section>
+                    <h4>
+                        種類
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a275">現金通貨</span>
+                                </dt>
+                                <dd>
+                                    すぐ使える. 
+                                </dd>
+                                <dd>
+                                    紙幣&middot;硬貨.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a276">預金通貨</span>
+                                </dt>
+                                <dd>
+                                    銀行などの金融機関に預けられている通貨
+                                </dd>
+                                <dd>
+                                    小切手, 手形, クレジットカード決済などの様々な支払い手段に使われている.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>
+                        通貨制度
+                    </h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a280">金本位制</span>
+                                </dt>
+                                <dd>
+                                    世界恐慌前の一般
+                                </dd>
+                                <dd>
+                                    紙幣は自由に一定のゴールドと変更可能. (<span id="a281">兌換紙幣</span>)
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span id="a285">管理通貨制度</span>
+                                </dt>
+                                <dd>
+                                    現在の一般
+                                </dd>
+                                <dd>
+                                    紙幣は, ゴールドと交換できない. (<span id="a286">不換紙幣</span>)
+                                </dd>
+                                <dd>
+                                    中央銀や政府が, 通貨量を調整可能.
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>
+                    種類
+                </h3>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a290">直接金融</span>
+                            </dt>
+                            <dd>
+                                株式や社債などに投資し, 企業に資金提供すること.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                <span id="a291">間接金融</span>
+                            </dt>
+                            <dd>
+                                金融機関を仲立ちとして, 企業などに融資がなされること.
+                            </dd>
+                            <dd>
+                                銀行に預金された金を, 企業への融資に用いている.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>
+                日銀
+            </h2>
+            <section>
+                <h3>
+                    機能
+                </h3>
+                <ul>
+                    <li>
+                        <span id="a320">不換紙幣</span>の発行 <small>(年末の発行量が多い)</small>
+                    </li>
+                    <li>
+                        <span id="a321">国庫金</span>の出納. (<span id="a322">政府</span>の銀行)
+                    </li>
+                    <li>
+                        <div>
+                            <span id="a323">銀行</span>の銀行.
+                        </div>
+                        <ul>
+                            <li>
+                                市中の金融機関を対象とした<span id="a324">貸出</span>, 金融機関同士の資金決済, <span id="a325">国債</span>や<span id="a326">手形</span>の売買.
+                            </li>
+                            <li>
+                                各金融機関は, 預金量の一定割合(<span id="a328">預金準備率</span>)を "<span id="a327">預金準備</span>" として, 無利子で預けなければいけない.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    金融政策
+                </h3>
+                <p>
+                    主に <span id="a340">公開市場操作</span> にて行う.
+                </p>
+                <section>
+                    <h4>
+                        好況時
+                    </h4>
+                    <p>
+                        通貨量を減らす. (<span id="a341">金融引き締め</span>)
+                    </p>
+                    <p>
+                        そのために, <span id="a342">売りオペ</span>を行う.<br/>
+                        日銀保有の国債, 手形を市中銀行に買わせて, 通貨量を抑える.
+                    </p>
+                </section>
+                <section>
+                    <h4>
+                        不況時
+                    </h4>
+                    <p>
+                        通貨量を増やす. (<span id="a345">金融緩和</span>)
+                    </p>
+                    <p>
+                        そのために, <span id="a346">買いオペ</span>を行う.<br/>
+                        市中銀行保有の国債, 手形を日銀が買って, 通貨量を増やす.
+                    </p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="btbar">
+            <div>
+                <a class="bt bt_eject" href="#">上に戻る</a>
+                <a href="../../index.html" class="bt bt_home">トップへ</a>
+                
+                <span onclick="AllShow()" class="bt bt_visibility">全表示</span>
+                <span onclick="AllHide()" class="bt bt_visibilityoff">全非表示</span>
+            </div>
+        </div>
+        <p>
+            サイトに関する提案があれば教えてください。
+        </p>
+        <p>
+            Copyright&copy; 2022-2023 C-Sharper.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
